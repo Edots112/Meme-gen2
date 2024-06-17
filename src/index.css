@@ -43,6 +43,7 @@ html {
   background-color: #463221;
   color: white;
   width: 100%;
+  z-index: 1000;
 }
 
 .navbar-brand {
@@ -294,6 +295,7 @@ html {
 .token{
 	padding: 50px;
   background-color: #5f4a39;
+  height: 100vh;
 }
 
 .token h1 {
@@ -377,9 +379,11 @@ html {
    display: flex;
    flex-direction: row;
    align-items: center;
-   padding: 20px;
-   background-color: #333;
+    justify-content: center;
+   padding: 10px;
+  background-color: #463221;
    color: #fff;
+    font-family: "mangat";
  }
 
  .social-links {
@@ -392,6 +396,7 @@ html {
    color: #fff;
    font-size: 24px;
    transition: color 0.3s;
+   padding: 5px;
  }
 
  .social-links a:hover {
@@ -405,25 +410,30 @@ html {
    /* Adjust based on your design */
    position: relative;
    height: 40px;
+   font-family: "Mangat";
+   
+
    /* Adjust based on your design */
  }
 
  .flowing-text {
-   display: inline-block;
-   padding-left: 100%;
-   /* Start the text off the right edge */
+   display: flex;
    animation: flow 10s linear infinite;
+  color: orange;
+
+   /* Adjust the duration as needed */
  }
 
  .flowing-text span {
-   display: inline-block;
-   padding-right: 100%;
-   /* Ensure it continues off the left edge */
+   padding: 0 15px;
+   font-size: 30px;
+   
+   /* Adjust the spacing as needed */
  }
 
  @keyframes flow {
    0% {
-     transform: translateX(0);
+     transform: translateX(100%);
    }
 
    100% {
