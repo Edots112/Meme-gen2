@@ -11,14 +11,27 @@ const Token = () => {
 	  
   return (
 	<div id='token' className='token'>
-		<h1>Tokenomics</h1>
+		<h1 className='font-Adventure'>Tokenomics</h1>
+		<div className="flex ">
 		<div className="supply">
-			<span>Supply</span>
-			<p>1000000000</p>
+			<span className=' font-Adventure'>Supply</span>
+			<p className=' font-Mangat'>1 Billion</p>
+		</div>
+		<div className="supply">
+			<span className=' font-Adventure'>Tax</span>
+			<p className=' font-Mangat'>0% Buy/sell</p>
+		</div>
+		</div>
+			<div className="flex ">
+		<div className="supply">
+			<span className=' font-Adventure'>Liquidity</span>
+			<p className=' font-Mangat'>100% Burn</p>
+		</div>
+
 		</div>
 		<div className="number">
-			<button onClick={copy}>Copy</button>
-			<p id='value'>8zFovnzXzK9JDiftGaw7wiRxARrRtvm9Lz12vJ8CZ5ZA</p>
+			<button onClick={copy} className=' font-Adventure'>Copy</button>
+			<p id='value' className=' font-Adventure'>Comming soon</p>
 		</div>
 	</div>
   )

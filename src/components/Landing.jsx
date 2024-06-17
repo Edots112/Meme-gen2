@@ -1,13 +1,15 @@
 import React from 'react'
+import gifImg from '../assets/headergif.gif'
 
 const Landing = () => {
 	return (
-		<div id='landing'>
-			<div className="text">
-				<h1>Missy the cool Cat</h1>
-				<p>Make your favorite cat missy look sassy</p>
+		<div id='landing' className="flex justify-top items-center">
+			<div className="background-orange-100">
+				<h1 className='font-Adventure text-[20rem]  '>Mucati</h1>
+				<p className='font-Mangat text-center text-[3rem]'>Newborn baby</p>
 			</div>
-			<img src={`${process.env.PUBLIC_URL}/images/character/image1.png`} alt="" />
+			<img src={gifImg} className='w-[65vh] z-10' alt="" />
+			{/* Your code goes here */}
 		</div>
 	)
 }

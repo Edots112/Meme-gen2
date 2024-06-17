@@ -18,7 +18,7 @@ const Footer = () => {
           <FaLinkedin />
         </a>
       </div>
-	  <p> | </p>
+      <p> | </p>
       <div className="flowing-text-container">
         <div className="flowing-text">
           <span>Meme-Gen</span>

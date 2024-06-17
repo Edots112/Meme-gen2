@@ -86,7 +86,7 @@ const OutputImage = (props) => {
 				<button id='reset' className='btn' onClick={handleReset}>Reset</button>
 			</div>
 			<button id='download' className='btn' onClick={handleDownload}>Download</button>
-			<canvas ref={canvasRef} style={{ display: 'none' }} width={1024} height={1024} />
+			<canvas ref={canvasRef} style={{ display: 'none' }} width={500} height={500} />
 		</div>
 	);
 }

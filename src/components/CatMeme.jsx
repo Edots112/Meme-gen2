@@ -18,13 +18,13 @@ const CatMeme = () => {
 				'image1.png', 'image2.png', 'image3.png', 'image4.png'
 			],
 			character: [
-				'image1.png', 'image2.png', 'image3.png', 'image4.png', 'image5.png'
+				'image1.png'
 			],
 			face: [
 				'image1.png', 'image2.png', 'image3.png', 'image4.png'
 			],
 			frontAccessory: [
-				'image1.png', 'image2.png', 'image3.png', 'image4.png', 'image5.png'
+				'image1.png', "image2.png", "image3.png", "image4.png"
 			],
 			hat: [
 				'image1.png', 'image2.png', 'image3.png', 'image4.png'
@@ -34,7 +34,7 @@ const CatMeme = () => {
 
 	return (
 		<div id='meme-gen'>
-			<h1 style={{padding: '80px 0', textAlign: 'center', fontSize: '3rem'}}>Let's turn missy into a Meme</h1>
+			<h1 style={{padding: '80px 0', textAlign: 'center', fontSize: '3rem'}} className="font-Mangat">Create your own Mucati</h1>
 			<div className='d-flex'>
 				<div id='selectionLayers'>
 					<SelectionLayer selected={selected} images={images.character} layer={'character'} setSelected={setSelected} />

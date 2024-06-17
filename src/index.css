@@ -1,9 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: "Adventure";
+  src: url("./fonts/Adventure.otf");
+}
+
+@font-face {
+  font-family: "mangat";
+  src: url("./fonts/mangat.ttf");
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 
 * {
   margin: 0;
   padding: 0;
-  font-family: "Roboto Slab";
+  /* font-family: "Roboto Slab"; */
 }
 
 /* styles.css */
@@ -20,12 +35,14 @@ html {
 }
 
 .navbar {
+  position: fixed;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: #282c34;
+  padding: 1rem 1rem;
+  background-color: #463221;
   color: white;
+  width: 100%;
 }
 
 .navbar-brand {
@@ -35,20 +52,19 @@ html {
 }
 
 .navbar-brand {
-  width: 20vw;
+  width: 10vw;
 }
 
 .navbar-nav {
   display: flex;
-  padding: 0 40px;
-  width: 60%;
-  justify-content: space-between;
-  gap: 1rem;
+  width: 70%;
+  /* justify-content: space-between; */
+  gap: 2rem;
+  font-family: "mangat";
+  color: white;
 }
 
-.container-fluid {
-  width: 100%;
-}
+
 
 .navbar-collapse {
   width: 100%;
@@ -56,18 +72,15 @@ html {
   .navbar {
     width: 100%;
     display: flex;
-    justify-content: space-around;
   }
 }
 
-.nav-item {
-  list-style: none;
-}
+
 
 .nav-link {
   color: white;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.5rem;
   position: relative;
 }
 
@@ -85,6 +98,7 @@ html {
 
 .nav-link:hover::after {
   width: 100%;
+  color: red;
 }
 
 .nav-link.active {
@@ -106,36 +120,30 @@ html {
 
 /* Landing.css */
 
+#meme-gen {
+  background-color: #5f4a39;
+  padding: 20px;
+
+}
+
 #landing {
   height: 90vh;
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   justify-content: center;
   align-items: center;
-  text-align: center;
+  /* text-align: center; */
+  gap: 60px;
+  background-color: #463221;
 }
 
 #landing img {
-  background: linear-gradient(to top, #2b71fb, #082663);
-  border-radius: 34% 64% 77% 26% / 75% 54% 45% 27%;
-  width: 500px;
+  background: linear-gradient(to top, #745A43, #745A43);
+  border-radius: 34% 64% 57% 26% / 75% 54% 45% 27%;
   margin-right: 20px;
   height: auto;
 }
 
-#landing .text {
-  padding: 0 40px;
-}
-
-#landing h1 {
-  font-size: 4.5rem;
-  margin: 20px 0;
-}
-
-#landing p {
-  font-size: 2.5rem;
-  margin: 30px 0;
-}
 
 
 #meme-heading {
@@ -152,9 +160,9 @@ html {
 }
 
 #parent {
-  box-shadow: -1px 1px 14px 3px red;
+  box-shadow: -1px 1px 3px 3px #ffa500;
   border-radius: 10px;
-  border: 2px solid red;
+  border: 2px solid orange;
   position: relative;
   width: 350px;
   height: 350px;
@@ -171,16 +179,16 @@ html {
 }
 
 .btn {
-  border: 2px solid rgb(32, 32, 32);
+  border: 2px solid rgb(66, 44, 11);
   font-weight: bold;
   padding: 10px 20px;
   width: 100%;
-  margin: 15px 10px;
+  margin: 10px 0px;
   font-size: 14px;
   position: relative;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
-  background-color: #f7f5b2;
+  background-color: orange;
   border-radius: 10px;
   box-shadow: -1px 1px 8px 1px rgb(55, 55, 55);
 }
@@ -191,7 +199,8 @@ html {
 
 .d-flex {
   display: flex;
-  justify-content: space-around;
+  gap:5rem;
+  justify-content: center;
 }
 
 #selectionLayers {
@@ -235,15 +244,18 @@ html {
 .buy {
   text-align: center;
   padding: 20px;
+  background-color: #463221;
 }
 
 .buy h1 {
+  font-family: "Adventure";
   text-align: center;
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 20px;
 }
 
 .options {
+  font-family: "Mangat";
   padding: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -251,17 +263,17 @@ html {
 }
 
 .option {
-  border: 2px solid #00fbff;
+  border: 2px solid #ffa600;
   padding: 30px;
   box-shadow: 0 0px 8px rgba(255, 255, 255, 0.563);
 
   h2 {
     font-size: 2rem;
-    color: #2b71fb;
+    color: #ff7300;
   }
 
   h4 {
-    color: #06fbe6;
+    color: #e98e44;
     font-size: 1.5rem;
     padding: 10px 0;
   }
@@ -281,6 +293,7 @@ html {
 
 .token{
 	padding: 50px;
+  background-color: #5f4a39;
 }
 
 .token h1 {
@@ -295,7 +308,7 @@ html {
 	font-size: 3rem;
 	display: flex;
     justify-content: center;
-    background-color: #06fbe6;
+    background-color: orange;
     margin: 40px auto;
 	color: black;
     width: fit-content;
@@ -305,7 +318,7 @@ html {
 
 	span {
 		padding: 10px 20px;
-		background-color: #082663;
+		background-color: #463221;
 		color: white;
 		border-radius: 100px;
 	}
@@ -320,7 +333,7 @@ html {
 	font-size: 2.5rem;
 	display: flex;
     justify-content: center;
-    background-color:  #082663;
+    background-color:  orange;
     margin: 40px auto;
 	color: white;
     width: fit-content;
@@ -330,8 +343,8 @@ html {
 
 	button {
 		padding: 10px 20px;
-		background-color: #06fbe6;
-		color: black;
+		background-color: #463221;
+		color: white;
 		border: 0px;
 		cursor: pointer;
 		border-radius: 100px;
@@ -360,41 +373,75 @@ html {
 	}
   }
   
-  .social-links a {
-	color: white;
-	margin: 0 10px;
-	font-size: 1.5rem;
-	transition: color 0.3s ease;
+ .footer {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   padding: 20px;
+   background-color: #333;
+   color: #fff;
+ }
+
+ .social-links {
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+ }
+
+ .social-links a {
+   color: #fff;
+   font-size: 24px;
+   transition: color 0.3s;
+ }
+
+ .social-links a:hover {
+   color: #ccc;
+ }
+
+ .flowing-text-container {
+   overflow: hidden;
+   white-space: nowrap;
+   width: 100%;
+   /* Adjust based on your design */
+   position: relative;
+   height: 40px;
+   /* Adjust based on your design */
+ }
+
+ .flowing-text {
+   display: inline-block;
+   padding-left: 100%;
+   /* Start the text off the right edge */
+   animation: flow 10s linear infinite;
+ }
+
+ .flowing-text span {
+   display: inline-block;
+   padding-right: 100%;
+   /* Ensure it continues off the left edge */
+ }
+
+ @keyframes flow {
+   0% {
+     transform: translateX(0);
+   }
+
+   100% {
+     transform: translateX(-100%);
+   }
+ }
+
+  #frontaccessory {
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    top: 100px;
+    left: -20px;
   }
-  
-  .social-links a:hover {
-	color: #ddd;
-  }
-  
-  .flowing-text-container {
-	overflow: hidden;
-	white-space: nowrap;
-	width: 60%;
-	position: relative;
-  }
-  
-  .flowing-text {
-	display: inline-block;
-	white-space: nowrap;
-	animation: flowing-text 4s linear infinite;
-  }
-  
-  .flowing-text span {
-	margin: 0 20px;
-	font-size: 20px;
-	color: #fff;
-  }
-  
-  @keyframes flowing-text {
-	0% {
-	  transform: translateX(0%);
-	}
-	100% {
-	  transform: translateX(-35%);
-	}
+  #hat {
+    z-index: 2;
+    width: 350px;
+    height: 250px;
+    top: -65px;
+    left: 10px;
   }

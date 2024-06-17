@@ -1,16 +1,16 @@
 import React from 'react'
+import headerGif from '../assets/headergif.gif'
 
 const Header = () => {
 	return (
 		<div style={{ width: '100vw' }}>
 			<nav className="navbar navbar-expand-lg navbar-light bg-light">
 				<div className="container-fluid">
-					<a className="navbar-brand" href="/">Meme Gen</a>
-					<button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span className="navbar-toggler-icon"></span>
-					</button>
-					<div className="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul className="navbar-nav me-auto mb-2 mb-lg-0">
+					<a className="navbar-brand" href="/">
+						<img src={headerGif} alt="logo" width="75" height="50" className="d-inline-block align-text-top" />
+					</a>
+					<div className="" id="navbarSupportedContent">
+						<ul className="flex  font-Adventure text-4xl gap-10 align-center justify-start">
 							<li className="nav-item">
 								<a className="nav-link active" aria-current="page" href="#landing">Home</a>
 							</li>
