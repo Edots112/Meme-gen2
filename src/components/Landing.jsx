@@ -1,5 +1,5 @@
 import React from 'react'
-import gifImg from '../assets/headergif.gif'
+import gifImg from '../assets/landing.gif'
 
 const Landing = () => {
 	return (

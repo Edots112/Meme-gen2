@@ -63,8 +63,8 @@ const OutputImage = (props) => {
 
     const handleReset = () => {
         props.setSelected({
-            background: '',
-            character: '',
+            background: 'image1.png',
+            character: 'image1.png',
             face: '',
             frontaccessory: '',
             hat: ''
