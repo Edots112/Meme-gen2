@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import catImage from "../assets/cat.png";
-import objectImage1 from "../assets/object1.jpg";
+import objectImage1 from "../assets/object1.png";
 import objectImage2 from "../assets/object2.jpg";
 import objectImage3 from "../assets/object3.jpg";
 import backgroundImage from "../assets/background.png";
