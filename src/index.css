@@ -165,8 +165,8 @@ html {
   border-radius: 10px;
   border: 2px solid orange;
   position: relative;
-  width: 350px;
-  height: 350px;
+  width: 500px;
+  height:500px;
 }
 
 #character,
@@ -175,7 +175,7 @@ html {
 #face,
 #background {
   border-radius: 10px;
-  width: 350px;
+  width: 500px;
   position: absolute;
 }
 
@@ -441,17 +441,3 @@ html {
    }
  }
 
-  #frontaccessory {
-    z-index: 1;
-    width: 150px;
-    height: 150px;
-    top: 100px;
-    left: -20px;
-  }
-  #hat {
-    z-index: 2;
-    width: 350px;
-    height: 250px;
-    top: -65px;
-    left: 10px;
-  }

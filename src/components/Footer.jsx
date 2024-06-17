@@ -1,18 +1,20 @@
 import React from 'react'
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaTelegram } from 'react-icons/fa';
+
+import pumpImg from '../assets/pump.png';
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="social-links">
-        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://x.com/Mucati_Solana" target="_blank" rel="noopener noreferrer">
           <FaTwitter />
         </a>
-        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-          <FaInstagram />
+        <a href="https://t.me/mucativerify" target="_blank" rel="noopener noreferrer">
+          <FaTelegram />
         </a>
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-          <FaLinkedin />
+        <a href="https://pump.fun/board" target="_blank" rel="noopener noreferrer">
+        <img src={pumpImg} className='w-10' />
         </a>
       </div>
       <div className="flowing-text-container">

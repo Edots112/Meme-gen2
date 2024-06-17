@@ -27,7 +27,6 @@ const CatGame = () => {
 	const lastObjectCreation = useRef(Date.now());
 	const [imagesLoaded, setImagesLoaded] = useState(false);
 
-	console.log(creationInterval);
 
 	const backgroundAudio = useRef(new Audio(backgroundMusic));
 	const gameOverAudio = useRef(new Audio(gameOverSound));

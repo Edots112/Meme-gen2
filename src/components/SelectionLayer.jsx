@@ -95,7 +95,7 @@ const imageContainerStyle = {
     display: 'inline-flex',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#f7f5b2',
+    backgroundColor: 'orange',
 };
 
 const imageStyle = {
