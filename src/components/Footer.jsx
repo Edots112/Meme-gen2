@@ -26,7 +26,7 @@ const Footer = () => {
         <a href="https://t.me/+CruZ6cTHvUhjMmU0" target="_blank" rel="noopener noreferrer">
           <FaTelegram  size={48}/>
         </a>
-        <a href="https://pump.fun/board" target="_blank" rel="noopener noreferrer">
+        <a href="GxREqBhL7t9RUxUt2t2s81CjSERv9xa6cpNi3Cjqpump" target="_blank" rel="noopener noreferrer">
         <img src={pumpImg} alt='pumplogo' className='w-12' />
         </a>
       </div>
