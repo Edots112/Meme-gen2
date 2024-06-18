@@ -33,7 +33,7 @@ const Buy = () => {
 				<h4>Progress</h4>
 				<p>You can follow us along our journey here and here.</p>
 				<h4>Community</h4>
-				<p>if you want constant updates join our amazing community here.</p>
+				<p>if you want constant updates join our amazing community <a className='text-black underline' href='https://t.me/+CruZ6cTHvUhjMmU0'> here.</a></p>
 			</div>
 		</div>
 	</div>
