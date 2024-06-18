@@ -12,6 +12,14 @@
   font-family: "mangat";
   src: url("./fonts/mangat.ttf");
 }
+@font-face {
+  font-family: "Yujin";
+  src: url("./fonts/Yujin_Bubbles.ttf");
+}
+@font-face {
+  font-family: "Yellow";
+  src: url("./fonts/YellowPeach.ttf");
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 
@@ -40,7 +48,7 @@ html {
   /* justify-content: space-between; */
   align-items: center;
   padding: 1rem 1rem;
-  background-color: #463221;
+  background-color: #cbec0b;
   color: white;
   width: 100%;
   z-index: 1000;
@@ -61,7 +69,7 @@ html {
   width: 70%;
   /* justify-content: space-between; */
   gap: 2rem;
-  font-family: "mangat";
+  font-family: "Zou";
   color: white;
 }
 
@@ -76,13 +84,21 @@ html {
   }
 }
 
+.nav-item {
+  background-color: #df7316;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+
 
 
 .nav-link {
-  color: white;
+  color: rgb(238, 255, 0);
   text-decoration: none;
   font-size: 1.5rem;
   position: relative;
+  font-weight: bold;
+  
 }
 
 .nav-link::after {
@@ -90,7 +106,7 @@ html {
   display: block;
   width: 0;
   height: 2px;
-  background: white;
+  background: rgb(221, 0, 0);
   transition: width 0.3s;
   position: absolute;
   bottom: -5px;
@@ -109,7 +125,7 @@ html {
 .navbar-toggler {
   border: none;
   background: none;
-  color: white;
+  color: rgb(253, 6, 6);
   font-size: 1.2rem;
 }
 
@@ -122,29 +138,14 @@ html {
 /* Landing.css */
 
 #meme-gen {
-  background-color: #5f4a39;
+  /* background-image: url("./assets/cat.png"); */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-color: #e6f079;
   padding: 20px;
 
 }
-
-#landing {
-  height: 90vh;
-  display: flex;
-  /* flex-direction: row; */
-  justify-content: center;
-  align-items: center;
-  /* text-align: center; */
-  gap: 60px;
-  background-color: #463221;
-}
-
-#landing img {
-  background: linear-gradient(to top, #745A43, #745A43);
-  border-radius: 34% 64% 57% 26% / 75% 54% 45% 27%;
-  margin-right: 20px;
-  height: auto;
-}
-
 
 
 #meme-heading {
@@ -161,9 +162,9 @@ html {
 }
 
 #parent {
-  box-shadow: -1px 1px 3px 3px #ffa500;
+  /* box-shadow: -1px 1px 3px 3px #cee452; */
   border-radius: 10px;
-  border: 2px solid orange;
+  /* border: 2px solid rgb(102, 255, 0); */
   position: relative;
   width: 500px;
   height:500px;
@@ -180,18 +181,19 @@ html {
 }
 
 .btn {
-  border: 2px solid rgb(66, 44, 11);
+  /* border: 2px solid rgb(247, 93, 93); */
   font-weight: bold;
-  padding: 10px 20px;
+  padding: 10px 10px;
   width: 100%;
-  margin: 10px 0px;
+  margin: 2px 0px;
   font-size: 14px;
   position: relative;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
-  background-color: orange;
+  background-color: rgb(255, 185, 185);
   border-radius: 10px;
-  box-shadow: -1px 1px 8px 1px rgb(55, 55, 55);
+  box-shadow: -1px 1px 8px 1px rgb(243, 241, 241);
+  color: black ;
 }
 
 .btn:hover {
@@ -200,8 +202,9 @@ html {
 
 .d-flex {
   display: flex;
-  gap:5rem;
   justify-content: center;
+  align-items: center;
+  gap:5rem;
 }
 
 #selectionLayers {
@@ -211,9 +214,11 @@ html {
 .spec {
   font-size: 18px;
   text-transform: capitalize;
-  color: #ffffff;
+  color: #ee8181;
   text-shadow: 1px 1px 1px #9e9e9e;
   width: 150px;
+  font-weight: bold;
+  font-family: 'Yellow';
 }
 
 .content {
@@ -221,11 +226,11 @@ html {
   height: 100vh;
 
   img {
-    box-shadow: 1px 1px 10px white;
+    box-shadow: 1px 1px 10px rgb(243, 47, 47);
     width: 40%;
     height: fit-content;
     margin: 0 40px;
-    border: 1px solid white;
+    border: 1px solid rgb(230, 15, 15);
   }
 }
 
@@ -245,18 +250,18 @@ html {
 .buy {
   text-align: center;
   padding: 20px;
-  background-color: #463221;
+  background-color: #d44a4a;
 }
 
 .buy h1 {
-  font-family: "Adventure";
+  font-family: "Yujin";
   text-align: center;
   font-size: 4rem;
   margin-bottom: 20px;
 }
 
 .options {
-  font-family: "Mangat";
+  font-family: "Yellow";
   padding: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -264,17 +269,17 @@ html {
 }
 
 .option {
-  border: 2px solid #ffa600;
+  border: 2px solid #f3f583;
   padding: 30px;
   box-shadow: 0 0px 8px rgba(255, 255, 255, 0.563);
 
   h2 {
     font-size: 2rem;
-    color: #ff7300;
+    color: #f1f887;
   }
 
   h4 {
-    color: #e98e44;
+    color: #f7eb81;
     font-size: 1.5rem;
     padding: 10px 0;
   }
@@ -294,7 +299,7 @@ html {
 
 .token{
 	padding: 50px;
-  background-color: #5f4a39;
+  background-color: #e97d7d;
   height: 100vh;
 }
 
@@ -368,6 +373,7 @@ html {
 	padding: 1rem 0;
 	display: flex;
 	justify-content: center;
+  z-index: 1000;
 
 	p 
 	{
@@ -382,7 +388,7 @@ html {
     justify-content: center;
    padding: 10px;
   background-color: #463221;
-   color: #fff;
+   color: #ff0808;
     font-family: "mangat";
  }
 
@@ -441,3 +447,24 @@ html {
    }
  }
 
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+
+
+.blur-background {
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+}

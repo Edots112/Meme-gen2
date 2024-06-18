@@ -90,10 +90,8 @@ const OutputImage = (props) => {
                 {props.selected.frontaccessory && <img id='frontaccessory' src={`${process.env.PUBLIC_URL}/images/frontaccessory/${props.selected.frontaccessory}`} alt="" />}
                 {props.selected.hat && <img id='hat' src={`${process.env.PUBLIC_URL}/images/hat/${props.selected.hat}`} alt="" />}
             </div>
-            <div style={{ display: 'flex', marginTop: '10px' }}>
                 <button id='random' className='btn' onClick={handleRandom}>Generate Random</button>
                 <button id='reset' className='btn' onClick={handleReset}>Reset</button>
-            </div>
             <button id='download' className='btn' onClick={handleDownload}>Download</button>
             <canvas ref={canvasRef} style={{ display: 'none' }} width={500} height={500} />
         </div>

@@ -13,7 +13,7 @@ const Home = () => {
 			<Header />
 			<Landing />
 			<CatMeme />
-			<Game />
+			{/* <Game /> */}
 			<Buy />
 			<Token />
 			<Footer />

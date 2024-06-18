@@ -1,16 +1,16 @@
 import React from 'react'
-import gifImg from '../assets/landing.gif'
+import gifImg from '../assets/landing.png'
+import '../Landing.css' // Add a CSS file for the styles
 
 const Landing = () => {
 	return (
-		<div id='landing' className="flex  items-center">
-			<div className="background-orange-100">
-				<h1 className='font-Adventure text-[10rem] md:text-[15rem]'>Mucati</h1>
-				<p className='font-Mangat text-center text-[2.5rem]'>The most memeable newborn cat on solana.</p>
+		<div id='' className="relative flex flex-col items-center h-[90vh] overflow-hidden">
+			<div className="parallax-background absolute top-0 left-0 w-full h-full z-0"></div>
+			<div className="relative z-10 text-center mt-[10%]">
+				<h1 className='font-Yujin text-[5rem] md:text-[10rem] text-red-500 animate-text'>Billy's Cousine</h1>
 			</div>
-			<img src={gifImg} className='w-[65vh] z-10 hidden md:block' alt="" />
-			<img src={gifImg} className='w-[30vh] z-10 md:hidden' alt="" />
-			{/* Your code goes here */}
+				<p className='absolute w-1/4 bottom-16 left-4 font-Yujin text-[1.5rem] md:text-[2.5rem] text-red-500 font-bold animate-text '>Meet Cilly, Billy's closest cousine</p>
+			<img src={gifImg} className=' z-2 w-[700px] absolute bottom-0' alt="Mucati" />
 		</div>
 	)
 }

@@ -17,7 +17,7 @@ const Buy = () => {
 				<h2>02. Buy some sol</h2>
 				<h4>Buy with Solana
 				</h4>
-				<p>Have SOL in your wallet to switch to $MUCATI. If you don't have any SOL, you can buy SOL from an exchange.</p>
+				<p>Have SOL in your wallet to switch to $CILLY. If you don't have any SOL, you can buy SOL from an exchange.</p>
 				<h4>Phantom wallet
 				</h4>
 				<p>Send your solana to your phantom wallet.</p>
@@ -25,7 +25,7 @@ const Buy = () => {
 			<div className="option">
 				<h2>03. Go to Raydium</h2>
 				<h4>Mobile Users</h4>
-				<p>Ready to join the movement? Head over to Raydium to easily purchase. Simply connect your wallet and swap for $MUCATI to become part of the strongest community in crypto!</p>
+				<p>Ready to join the movement? Head over to Raydium to easily purchase. Simply connect your wallet and swap for $CILLY to become part of the strongest community in crypto!</p>
 				
 			</div>
 			<div className="option">

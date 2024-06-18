@@ -76,6 +76,7 @@ const arrowButtonStyle = {
     cursor: 'pointer',
     fontSize: '24px',
     margin: '10px',
+    color: 'black'
 };
 
 const scrollContainerStyle = {
@@ -95,7 +96,7 @@ const imageContainerStyle = {
     display: 'inline-flex',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'orange',
+    backgroundColor: 'rgb(255, 185, 185)',
 };
 
 const imageStyle = {

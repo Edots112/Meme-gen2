@@ -16,8 +16,7 @@ const Token = () => {
 		<div className="supply">
 			<span className=' font-Adventure'>Supply</span>
 			<p className=' font-Mangat'>1 Billion</p>
-		</div>
-		<div className="supply">
+
 			<span className=' font-Adventure'>Tax</span>
 			<p className=' font-Mangat'>0% Buy/sell</p>
 		</div>
@@ -31,7 +30,7 @@ const Token = () => {
 		</div>
 		<div className="number ">
 			<button onClick={copy} className=' font-Adventure'>Copy</button>
-			<p id='value' className=' font-Adventure'>DM6TDhPo9bXNeKSDWTWAkZm6hmu5ew4RMefaW2Jm2zS5</p>
+			<p id='value' className=' font-Adventure'></p>
 		</div>
 	</div>
   )

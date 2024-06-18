@@ -1,0 +1,37 @@
+.parallax-background {
+    background-image: url('./assets/landingimg.avif');
+    /* Replace with your background image */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.animate-text {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.animate-img {
+    animation: fadeInUp 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

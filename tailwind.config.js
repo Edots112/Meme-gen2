@@ -6,6 +6,8 @@ module.exports = {
 			fontFamily: {
 				Adventure: ["Adventure"],
 				Mangat: ["Mangat"],
+				Yellow: ["Yellow"],
+				Yujin: ["Yujin"],
 			},
 		},
 	},
