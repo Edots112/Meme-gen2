@@ -31,7 +31,7 @@ const Token = () => {
 		</div>
 		<div className="number ">
 			<button onClick={copy} className=' font-Adventure'>Copy</button>
-			<p id='value' className=' font-Adventure'>Comming soon</p>
+			<p id='value' className=' font-Adventure'>w8rpyFjPfaMKmKP8Vj5uXuJBdKprPknSEdPBXxYpump</p>
 		</div>
 	</div>
   )

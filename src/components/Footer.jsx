@@ -13,7 +13,7 @@ const Footer = () => {
         <a href="https://t.me/mucativerify" target="_blank" rel="noopener noreferrer">
           <FaTelegram />
         </a>
-        <a href="https://pump.fun/board" target="_blank" rel="noopener noreferrer">
+        <a href="https://pump.fun/w8rpyFjPfaMKmKP8Vj5uXuJBdKprPknSEdPBXxYpump" target="_blank" rel="noopener noreferrer">
         <img src={pumpImg} className='w-10' />
         </a>
       </div>
