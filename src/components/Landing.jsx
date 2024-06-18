@@ -10,7 +10,7 @@ const Landing = () => {
 				<h1 className='font-Yujin text-[5rem] md:text-[10rem] text-red-500 animate-text'>Billy's Cousin</h1>
 			</div>
 				<p className='absolute w-1/4 bottom-16 left-4 font-Yujin text-[1.5rem] md:text-[2.5rem] text-red-500 font-bold animate-text '>Meet Cilly, Billy's closest cousin</p>
-			<img src={gifImg} className=' z-2 w-[700px] absolute bottom-0' alt="Mucati" />
+			<img src={gifImg} className=' z-2 w-[700px] absolute bottom-0 ' alt="Mucati" />
 		</div>
 	)
 }

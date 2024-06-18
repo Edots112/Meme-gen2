@@ -56,7 +56,7 @@ const OutputImage = (props) => {
 
         // Provide a download link for the canvas image
         const link = document.createElement('a');
-        link.download = 'Your_MiCati.png';
+        link.download = 'Your_Cilly.png';
         link.href = canvas.toDataURL();
         link.click();
     };
