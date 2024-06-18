@@ -32,7 +32,7 @@ const Footer = () => {
       </div>
       <h1 className='font-Yujin text-yellow-200 text-4xl md:text-6xl text-center '>$CILLY</h1>
           <div className=" whitespace-nowrap">
-            <a href="https://pump.fun/board" target="_blank" rel="noopener noreferrer">
+            <a href="https://pump.fun/GxREqBhL7t9RUxUt2t2s81CjSERv9xa6cpNi3Cjqpump" target="_blank" rel="noopener noreferrer">
               <button className='font-Yujin w-60 bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded'>
                 BUY NOW 
               </button>
