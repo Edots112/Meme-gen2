@@ -9,10 +9,21 @@ module.exports = {
 				Yellow: ["Yellow"],
 				Yujin: ["Yujin"],
 			},
+			animation: {
+				pulse: "pulse 2s infinite",
+			},
+			keyframes: {
+				pulse: {
+					"0%, 100%": { opacity: 1 },
+					"50%": { opacity: 0.5 },
+				},
+			},
 		},
 	},
 	variants: {
-		extend: {},
+		extend: {
+			animation: ["hover", "focus"],
+		},
 	},
 	plugins: [],
 };

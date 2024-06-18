@@ -1,5 +1,5 @@
 import React from 'react'
-import headerGif from '../assets/headergif.gif'
+// import headerGif from '../assets/headergif.gif'
 
 const Header = () => {
 	return (
@@ -14,15 +14,16 @@ const Header = () => {
 							{/* <li className="nav-item">
 								<a className="nav-link active" aria-current="page" href="#landing">Home</a>
 							</li> */}
+									<li className="nav-item">
+								<a className="nav-link" href="#meme-gen">Make Meme</a>
+							</li>
 							<li className="nav-item">
 								<a className="nav-link " href="#buy">How to buy?</a>
 							</li>
 							<li className="nav-item">
 								<a className="nav-link" href="#token">Tokenomic</a>
 							</li>
-							<li className="nav-item">
-								<a className="nav-link" href="#meme-gen">Make Meme</a>
-							</li>
+					
 							{/* <li className="nav-item">
 								<a className="nav-link" href="#game">Play Game</a>
 							</li> */}

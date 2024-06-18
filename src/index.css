@@ -48,7 +48,7 @@ html {
   /* justify-content: space-between; */
   align-items: center;
   padding: 1rem 1rem;
-  background-color: #cbec0b;
+  background-color: #50bef1;
   color: white;
   width: 100%;
   z-index: 1000;
@@ -85,7 +85,7 @@ html {
 }
 
 .nav-item {
-  background-color: #df7316;
+  background-color: #f57171;
   padding: 10px 20px;
   border-radius: 50px;
 }
@@ -373,6 +373,7 @@ html {
 	padding: 1rem 0;
 	display: flex;
 	justify-content: center;
+  
   z-index: 1000;
 
 	p 
@@ -384,11 +385,11 @@ html {
  .footer {
    display: flex;
    flex-direction: row;
-   align-items: center;
-    justify-content: center;
-   padding: 10px;
-  background-color: #463221;
-   color: #ff0808;
+   align-items: center; 
+    justify-content: space-around;
+   padding: 35px;
+  background-color: #ff6c61;
+   color: #ffffff;
     font-family: "mangat";
  }
 
@@ -416,7 +417,7 @@ html {
    /* Adjust based on your design */
    position: relative;
    height: 40px;
-   font-family: "Mangat";
+   font-family: "Yujin";
    
 
    /* Adjust based on your design */
@@ -424,8 +425,9 @@ html {
 
  .flowing-text {
    display: flex;
-   animation: flow 10s linear infinite;
-  color: orange;
+   /* animation: flow 10s linear infinite; */
+  color: rgb(13, 198, 255);
+  font-weight: bold;
 
    /* Adjust the duration as needed */
  }
