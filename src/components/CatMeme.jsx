@@ -5,7 +5,7 @@ import splashImg from '../assets/splash.png';
 
 const CatMeme = () => {
     const [selected, setSelected] = useState({
-        background: '18.png',
+        background: '24.png',
         character: '1.png',
         face: '',
         frontaccessory: '',
@@ -14,19 +14,19 @@ const CatMeme = () => {
 
     const [images, setImages] = useState({
         background: [
-            "18.png", "19.png", "20.png", "21.png", "22.png", "23.png", "24.png", "25.png"
+            "21.png", "22.png",  "23.png", "24.png", "25.png", "26.png"
         ],
         character: [
-            "1.png", "26.png", "27.png"
+            "1.png", 
         ],
         face: [
-            "4.png", "5.png", "6.png", "7.png", "8.png",  "10.png",  "13.png", "14.png", "15.png", 
+            "9.png", "10.png", "10.png", "12.png", "13.png",  "14.png",
         ],
-        // frontAccessory: [
-        //     'image1.png', 'image2.png', 'image3.png', 'image4.png'
-        // ],
+        frontAccessory: [
+            "15.png", "16.png", "17.png", "18.png", "19.png", "20.png"
+        ],
         hat: [
-            "2.png", "3.png", "9.png" , "11.png", "12.png", "16.png", "17.png"
+            "2.png", "3.png", "4.png" , "5.png", "6.png", "7.png", "8.png"
         ]
     });
 
@@ -45,7 +45,7 @@ const CatMeme = () => {
                         <div id='selectionLayers '>
                             <SelectionLayer selected={selected} images={images.character} layer={'character'} setSelected={setSelected} />
                             <SelectionLayer selected={selected} images={images.face} layer={'face'} setSelected={setSelected} />
-                            {/* <SelectionLayer selected={selected} images={images.frontAccessory} layer={'frontaccessory'} setSelected={setSelected} /> */}
+                            <SelectionLayer selected={selected} images={images.frontAccessory} layer={'frontaccessory'} setSelected={setSelected} />
                             <SelectionLayer selected={selected} images={images.background} layer={'background'} setSelected={setSelected} />
                             <SelectionLayer selected={selected} images={images.hat} layer={'hat'} setSelected={setSelected} />
                         </div>

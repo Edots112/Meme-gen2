@@ -61,14 +61,14 @@ const OutputImage = (props) => {
 
         // Provide a download link for the canvas image
         const link = document.createElement('a');
-        link.download = 'Your_Cilly.png';
+        link.download = 'Smully.png';
         link.href = canvas.toDataURL();
         link.click();
     };
 
     const handleReset = () => {
         props.setSelected({
-            background: '18.png',
+            background: '24.png',
             character: '1.png',
             face: '',
             frontaccessory: '',
