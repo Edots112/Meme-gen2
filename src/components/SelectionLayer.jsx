@@ -14,37 +14,35 @@ const SelectionLayer = (props) => {
 
     const scrollLeft = () => {
         if (scrollContainerRef.current) {
-            scrollContainerRef.current.scrollBy({ left: -125, behavior: 'smooth' });
+            scrollContainerRef.current.scrollBy({ left: -165, behavior: 'smooth' });
         }
     };
 
     const scrollRight = () => {
         if (scrollContainerRef.current) {
-            scrollContainerRef.current.scrollBy({ left: 125, behavior: 'smooth' });
+            scrollContainerRef.current.scrollBy({ left: 165, behavior: 'smooth' });
         }
     };
 
     return (
-        <div style={{ display: 'flex', alignItems: 'center' }}>
-			<h4 className='spec'>{props.layer}</h4>
-            <button onClick={scrollLeft}  style={arrowButtonStyle}>
-                <FontAwesomeIcon icon={faChevronLeft} className='scroller'/>
+        <div className="flex items-center max-h-20">
+            <button onClick={scrollLeft} className="bg-transparent border-none cursor-pointer text-3xl mx-2 text-black">
+                <FontAwesomeIcon icon={faChevronLeft} className='scroller' />
             </button>
             <div 
                 ref={scrollContainerRef} 
-                style={scrollContainerStyle}
-                className="scroll-container"
+                className="flex overflow-x-scroll max-w-[500px] min-w-[500px] whitespace-nowrap scrollbar-hide"
             >
                 {(props.layer !== 'character' && props.layer !== 'background') && (
                     <div
                         onClick={() => handleClick('')}
                         key='null'
-                        style={imageContainerStyle}
+                        className="border-2 border-black rounded-lg m-2 p-1 w-[150px] h-[75px] min-w-[150px] min-h-[75px] max-w-[150px] max-h-[75px] inline-flex items-center justify-center bg-transparent cursor-pointer"
                     >
                         <img
                             src={`${process.env.PUBLIC_URL}/images/reset.png`}
                             alt='Reset'
-                            style={imageStyle}
+                            className="max-w-full max-h-full"
                         />
                     </div>
                 )}
@@ -52,74 +50,22 @@ const SelectionLayer = (props) => {
                 {props.images.map((imageName) => (
                     <div
                         key={imageName}
-                        style={imageContainerStyle}
+                        className="border-2 border-black rounded-lg m-2 p-1 w-[150px] h-[75px] min-w-[150px] min-h-[75px] max-w-[150px] max-h-[75px] inline-flex items-center justify-center bg-transparent cursor-pointer"
                     >
                         <img
                             src={`${process.env.PUBLIC_URL}/images/${props.layer}/${imageName}`}
                             alt={imageName}
-                            style={imageStyle}
+                            className="max-w-full max-h-full"
                             onClick={() => handleClick(imageName)}
                         />
                     </div>
                 ))}
             </div>
-            <button onClick={scrollRight}  style={arrowButtonStyle}>
-                <FontAwesomeIcon icon={faChevronRight} className='scroller'/>
+            <button onClick={scrollRight} className="bg-transparent border-none cursor-pointer text-3xl mx-2 text-black">
+                <FontAwesomeIcon icon={faChevronRight} className='scroller' />
             </button>
         </div>
     );
 };
 
-const arrowButtonStyle = {
-    backgroundColor: 'transparent',
-    border: 'none',
-    cursor: 'pointer',
-    fontSize: '24px',
-    margin: '10px',
-    color: 'black'
-};
-
-const scrollContainerStyle = {
-    display: 'flex',
-    overflowX: 'scroll',
-    maxWidth: '375px',
-    whiteSpace: 'nowrap',
-    scrollbarWidth: 'none' /* Firefox */
-};
-
-const imageContainerStyle = {
-    border: '2px solid black',
-    borderRadius: '10px',
-    margin: '10px',
-    padding: '2px',
-    minWidth: '100px',
-    display: 'inline-flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: 'rgb(255, 185, 185)',
-};
-
-const imageStyle = {
-    maxWidth: '100%',
-    maxHeight: '100%',
-    cursor: 'pointer',
-};
-
-/* Custom CSS to hide scrollbars */
-const customStyles = `
-.scroll-container {
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
-}
-.scroll-container::-webkit-scrollbar {
-    display: none;  /* Safari and Chrome */
-}
-`;
-
 export default SelectionLayer;
-
-// Inject the custom styles
-const styleSheet = document.createElement("style");
-styleSheet.type = "text/css";
-styleSheet.innerText = customStyles;
-document.head.appendChild(styleSheet);

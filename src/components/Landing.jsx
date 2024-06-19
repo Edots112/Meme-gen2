@@ -1,18 +1,69 @@
-import React from 'react'
-import gifImg from '../assets/landing.png'
-import '../Landing.css' // Add a CSS file for the styles
+import React, { useEffect, useState } from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import mainImg from '../assets/Smully/smully.png';
+// import smallDog from '../assets/smalldog.png'; // Lägg till en liten hundbild
+import '../Landing.css'; // Add a CSS file for the styles
 
 const Landing = () => {
-	return (
-		<div id='' className="relative flex flex-col items-center h-[90vh] overflow-hidden">
-			<div className="parallax-background absolute top-0 left-0 w-full h-full z-0"></div>
-			<div className="relative z-10 text-center mt-[10%]">
-				<h1 className='font-Yujin text-[5rem] md:text-[10rem] text-red-500 animate-text'>Billy's Cousin</h1>
-			</div>
-				<p className='absolute w-1/4 bottom-16 left-4 font-Yujin text-[1.5rem] md:text-[2.5rem] text-red-500 font-bold animate-text '>Meet Cilly, Billy's closest cousin</p>
-			<img src={gifImg} className=' z-2 w-[700px] absolute bottom-0 ' alt="Mucati" />
-		</div>
-	)
-}
+  const controls = useAnimation();
+  const [scrollY, setScrollY] = useState(0);
 
-export default Landing
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    controls.start({
+      y: scrollY / 2, // Justera för att skapa en parallax-effekt
+      transition: { type: 'spring', stiffness: 100 },
+    });
+  }, [scrollY, controls]);
+
+  // Funktion för att generera regnande hundar
+  const generateRain = () => {
+    const rainArray = [];
+    for (let i = 0; i < 50; i++) {
+      const style = {
+        left: `${Math.random() * 100}vw`,
+        animationDuration: `${Math.random() * 2 + 5}s`,
+        animationDelay: `${Math.random() * 5}s`,
+      };
+      rainArray.push(<img key={i} src={mainImg} style={style} alt="small dog" />);
+    }
+    return rainArray;
+  };
+
+  return (
+    <div id='' className="relative flex flex-col items-center h-[90vh] overflow-hidden z-10">
+      <div className="parallax-background absolute top-0 left-0 w-full h-full z-0"></div>
+      <div className="rain">{generateRain()}</div>
+
+      <motion.h1
+        className='absolute bottom-0 font-Dino text-[10rem] xl:text-[15rem] xl:bottom-0 2xl:text-[22rem] text-amber-800 2xl:bottom-[-50px] right-10'
+        animate={controls}
+      >
+        Smully
+      </motion.h1>
+
+      <p className='text-amber-700 absolute w-2/4 top-[25%] left-[40%] font-Dino text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-6xl font-bold animate-text'>
+        Solanas most clueless dog
+      </p>
+
+      <motion.img
+        src={mainImg}
+        className='z-2 w-[550px] absolute bottom-[-50px] left-0'
+        alt="Smully"
+      />
+    </div>
+  );
+};
+
+export default Landing;

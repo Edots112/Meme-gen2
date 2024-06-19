@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import OutputImage from './OutputImage';
 import SelectionLayer from './SelectionLayer';
+import splashImg from '../assets/splash.png';
 
 const CatMeme = () => {
     const [selected, setSelected] = useState({
@@ -30,20 +31,25 @@ const CatMeme = () => {
     });
 
     return (
-        <div id='meme-gen' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+        <div id='meme-gen' className='flex justify-center items-center h-screen '  >
             <div>
-                <h1 className="font-Yujin text-6xl text-red-400 font bold text-center mb-5 ">Create your own CILLY</h1>
-                <div className='relative flex justify-center text-center border-2 border-green-400 rounded-2xl p-5 gap-5 items-center '>
-                    <div className='absolute inset-0 blur-background bg-white/65 '></div>
-                    <div className='flex gap-7 relative z-10 items-center '>
-                        <div id='selectionLayers'>
+                <div className=' flex justify-evenly w-screen text-center rounded-2xl   items-top '>
+                           <div className='relative flex flex-col justify-center items-center'>
+            <img src={splashImg} alt='logo' className='absolute ' style={{ zIndex: 1 }} />
+            <h1 className="font-Dino 2xl:text-8xl xl:text-5xl lg:text-4xl  text-white font-bold text-center mb-5   z-10">Make a Smully</h1>
+            <h3 className="font-Dino 2xl:text-3xl xl:text-2xl  text-white font-bold text-center mb-5  w-1/2 z-10">Scroll through the options and customise your own Smully.</h3>
+            <h4 className="font-Dino 2xl:text-2xl xl:text-2xl text-white font-bold text-center mb-5  w-1/2 z-10">When you're happy with your own Smully, click Download and share your awesome creation</h4>
+        </div>
+                    <div className='flex flex-col  items-center justify-center  p-2  flex-1'>
+                         <OutputImage selected={selected} setSelected={setSelected} images={images} />
+                        <div id='selectionLayers '>
                             <SelectionLayer selected={selected} images={images.character} layer={'character'} setSelected={setSelected} />
                             <SelectionLayer selected={selected} images={images.face} layer={'face'} setSelected={setSelected} />
                             {/* <SelectionLayer selected={selected} images={images.frontAccessory} layer={'frontaccessory'} setSelected={setSelected} /> */}
                             <SelectionLayer selected={selected} images={images.background} layer={'background'} setSelected={setSelected} />
                             <SelectionLayer selected={selected} images={images.hat} layer={'hat'} setSelected={setSelected} />
                         </div>
-                        <OutputImage selected={selected} setSelected={setSelected} images={images} />
+                       
                     </div>
                 </div>
             </div>

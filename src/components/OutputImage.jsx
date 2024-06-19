@@ -1,4 +1,9 @@
 import React, { useRef } from 'react';
+import { GiPerspectiveDiceSixFacesRandom } from "react-icons/gi";
+import { GrPowerReset } from "react-icons/gr";
+import { MdDownload } from "react-icons/md";
+
+
 
 const OutputImage = (props) => {
     const canvasRef = useRef(null);
@@ -90,10 +95,16 @@ const OutputImage = (props) => {
                 {props.selected.frontaccessory && <img id='frontaccessory' src={`${process.env.PUBLIC_URL}/images/frontaccessory/${props.selected.frontaccessory}`} alt="" />}
                 {props.selected.hat && <img id='hat' src={`${process.env.PUBLIC_URL}/images/hat/${props.selected.hat}`} alt="" />}
             </div>
-                <button id='random' className='btn' onClick={handleRandom}>Generate Random</button>
-                <button id='reset' className='btn' onClick={handleReset}>Reset</button>
-            <button id='download' className='btn' onClick={handleDownload}>Download</button>
+            <div className='flex gap-3'>
+                <button id='random' className='btn flex justify-center items-center gap-3 font-Geo ' onClick={handleRandom}>
+                    <GiPerspectiveDiceSixFacesRandom size={30} className='text-white' />
+                    Random</button>
+                <button id='download' className='btn flex justify-center items-center gap-3 font-Geo  ' onClick={handleDownload}>
+                    <MdDownload size={30} className='text-white' />Download</button>
+                <button id='reset' className='btn flex justify-center items-center gap-3 font-Geo ' onClick={handleReset}>
+                    <GrPowerReset size={30} className='text-white' />Reset</button>
             <canvas ref={canvasRef} style={{ display: 'none' }} width={500} height={500} />
+            </div>
         </div>
     );
 };

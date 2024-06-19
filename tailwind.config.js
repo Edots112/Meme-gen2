@@ -4,8 +4,8 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				Adventure: ["Adventure"],
-				Mangat: ["Mangat"],
+				Dino: ["Dino"],
+				Geo: ["Geo"],
 				Yellow: ["Yellow"],
 				Yujin: ["Yujin"],
 			},

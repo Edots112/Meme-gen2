@@ -16,7 +16,7 @@ const Home = () => {
 			{/* <Game /> */}
 			<Buy />
 			<Token />
-			<Footer />
+			{/* <Footer /> */}
 		</>
 	);
 };

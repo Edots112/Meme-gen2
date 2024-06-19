@@ -4,13 +4,13 @@
 
 
 @font-face {
-  font-family: "Adventure";
-  src: url("./fonts/Adventure.otf");
+  font-family: "Dino";
+  src: url("./fonts/Dino.otf");
 }
 
 @font-face {
-  font-family: "mangat";
-  src: url("./fonts/mangat.ttf");
+  font-family: "Geo";
+  src: url("./fonts/Geo.ttf");
 }
 @font-face {
   font-family: "Yujin";
@@ -42,17 +42,16 @@ html {
   scroll-behavior: smooth;
 }
 
-.navbar {
+/* .navbar {
   position: fixed;
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: center;
   align-items: center;
   padding: 1rem 1rem;
-  background-color: #50bef1;
-  color: white;
+  background-color: transparent;
   width: 100%;
   z-index: 1000;
-}
+} */
 
 .navbar-brand {
   font-size: 1.5rem;
@@ -75,25 +74,17 @@ html {
 
 
 
-.navbar-collapse {
-  width: 100%;
 
-  .navbar {
-    width: 100%;
-    display: flex;
-  }
-}
 
 .nav-item {
-  background-color: #f57171;
+  background-color: #ffffff;
   padding: 10px 20px;
-  border-radius: 50px;
+  /* border-radius: 50px; */
 }
-
 
 
 .nav-link {
-  color: rgb(238, 255, 0);
+  color: rgb(0, 0, 0);
   text-decoration: none;
   font-size: 1.5rem;
   position: relative;
@@ -101,7 +92,7 @@ html {
   
 }
 
-.nav-link::after {
+/* .nav-link::after {
   content: "";
   display: block;
   width: 0;
@@ -111,7 +102,7 @@ html {
   position: absolute;
   bottom: -5px;
   left: 0;
-}
+} */
 
 .nav-link:hover::after {
   width: 100%;
@@ -142,7 +133,7 @@ html {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  background-color: #e6f079;
+  background-color: #b49e71;
   padding: 20px;
 
 }
@@ -166,8 +157,12 @@ html {
   border-radius: 10px;
   /* border: 2px solid rgb(102, 255, 0); */
   position: relative;
-  width: 500px;
-  height:500px;
+
+  width: 400px;
+  height:400px;
+  margin: 0 auto;
+  border: 2px solid black;
+  
 }
 
 #character,
@@ -190,10 +185,10 @@ html {
   position: relative;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
-  background-color: rgb(255, 185, 185);
-  border-radius: 10px;
-  box-shadow: -1px 1px 8px 1px rgb(243, 241, 241);
-  color: black ;
+  background-color: rgb(59, 38, 7);
+  /* border-radius: 1000px; */
+  border: 2px solid black;
+  color: rgb(255, 255, 255) ;
 }
 
 .btn:hover {
@@ -469,4 +464,17 @@ html {
 .blur-background {
   filter: blur(10px);
   -webkit-filter: blur(10px);
+}
+
+/* Custom CSS to hide scrollbars */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
 }
