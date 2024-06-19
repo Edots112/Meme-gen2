@@ -46,7 +46,7 @@ const Header = () => {
             />
           </a>
           <div id="navbarSupportedContent" className="flex items-center justify-center w-screen">
-            <ul className="flex font-Geo gap-14 ">
+            <ul className="flex font-Geo gap-14  ">
               <motion.li
                 className="flex items-center space-x-3 text-center justify-center "
                 whileHover={{ scale: 1.1 }}
@@ -61,7 +61,7 @@ const Header = () => {
                 >
                   <TbDogBowl size={30} className="text-amber-600 mb-1" />
                 </motion.div>
-                <a className="text-amber-800 text-4xl font-bold" href="#meme-gen">
+                <a className="text-amber-800 2xl:text-4xl xl:text-2xl lg:text-xl font-bold" href="#meme-gen">
                   Make Meme
                 </a>
               </motion.li>
@@ -71,7 +71,7 @@ const Header = () => {
                 whileTap={{ scale: 0.9 }}
                 onClick={handleLinkClick}
               >
-                <a className="text-amber-800 text-4xl font-bold" href="#buy">
+                <a className="text-amber-800 2xl:text-4xl xl:text-2xl lg:text-xl font-bold" href="#buy">
                   How to buy?
                 </a>
               </motion.li>
@@ -87,7 +87,7 @@ const Header = () => {
                 >
                   <FaBeer size={30} className="text-amber-600" />
                 </motion.div>
-                <a className="text-amber-800 text-4xl font-bold" href="#token">
+                <a className="text-amber-800 2xl:text-4xl xl:text-2xl lg:text-xl font-bold" href="#token">
                   Tokenomics
                 </a>
               </motion.li>
@@ -108,14 +108,8 @@ const Header = () => {
           <div className=" whitespace-nowrap">
 
 			</div>
-			<div className="social-links absolute right-36 ">
-			         <a href="https://pump.fun/" target="_blank" rel="noopener noreferrer">
-              <button className='font-Dino w-40 bg-amber-800 hover:bg-red-700 text-white font-bold py-2 px-2 rounded'>
-                BUY NOW 
-              </button>
-            </a>
-			</div>
       </nav>
+		
     </div>
   );
 };

@@ -63,6 +63,13 @@ const Landing = () => {
         alt="Smully"
 		animate={controls}
       />
+	  	<div className="social-links absolute top-24  ">
+			         <a href="https://pump.fun/" target="_blank" rel="noopener noreferrer">
+              <button className='font-Dino w-60 bg-amber-800 hover:bg-red-700 text-white font-bold py-4 px-4 rounded'>
+                BUY NOW 
+              </button>
+            </a>
+			</div>
     </div>
   );
 };
