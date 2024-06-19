@@ -2,41 +2,36 @@ import React from 'react'
 
 const Buy = () => {
   return (
-	<div id="buy" className='buy'>
-		<h1>HOW TO BUY?</h1>
+    <div id="buy" className='bg-[#3B2607] py-10'>
+      <h1 className="text-4xl font-bold text-center mb-10 font-Geo text-yellow-300">HOW TO BUY?</h1>
 
-		<div className="options">
-			<div className="option">
-				<h2>01. Create a Wallet</h2>
-				<h4>Mobile Users</h4>
-				<p>Download Phantom or your wallet of choice from the App Store or Google Play Store for free.</p>
-				<h4>Desktop Users</h4>
-				<p>Download the Google Chrome extension by visiting phantom.app.</p>
-			</div>
-			<div className="option">
-				<h2>02. Buy some sol</h2>
-				<h4>Buy with Solana
-				</h4>
-				<p>Have SOL in your wallet to switch to $CILLY. If you don't have any SOL, you can buy SOL from an exchange.</p>
-				<h4>Phantom wallet
-				</h4>
-				<p>Send your solana to your phantom wallet.</p>
-			</div>
-			<div className="option">
-				<h2>03. Go to Raydium</h2>
-				<h4>Mobile Users</h4>
-				<p>Ready to join the movement? Head over to Raydium to easily purchase. Simply connect your wallet and swap for $CILLY to become part of the strongest community in crypto!</p>
-				
-			</div>
-			<div className="option">
-				<h2>04. Enjoy</h2>
-				<h4>Progress</h4>
-				<p>You can follow us along our journey here and here.</p>
-				<h4>Community</h4>
-				<p>if you want constant updates join our amazing community <a className='text-black underline' href='https://t.me/+CruZ6cTHvUhjMmU0'> here.</a></p>
-			</div>
-		</div>
-	</div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
+        <div className="border-2 border-yellow-300 p-8 shadow-md transition-transform transform hover:scale-105 duration-300 font-Geo">
+          <h2 className="text-2xl font-bold text-yellow-300 mb-4 text-center"> Download a Wallet</h2>
+          <p className='font-Dino text-2xl text-center'>We recommend using Phantom, although any wallet supporting $SOL is suitable. Desktop users can opt for the Chrome extension, while mobile users can download the respective app.</p>
+        </div>
+        <div className="border-2 border-yellow-300 p-8 shadow-md transition-transform transform hover:scale-105 duration-300 font-Geo">
+          <h2 className="text-2xl font-bold text-yellow-300 mb-4 text-center">Fund Your Wallet with $SOL</h2>
+          <p className='font-Dino text-2xl text-center'>Ensure your wallet is loaded with $SOL to participate in the $SMULLY community. $SOL is required to acquire $SMULLY tokens.</p>
+        </div>
+        <div className="border-2 border-yellow-300 p-8 shadow-md transition-transform transform hover:scale-105 duration-300 font-Geo">
+          <h2 className="text-2xl font-bold text-yellow-300 mb-4 text-center"> SWAP $SOL for $SMULLY</h2>
+          <p className='font-Dino text-2xl text-center'>SWAP your $SOL into $SMULLY tokens at pump.fun.</p>
+        </div>
+        <div className="border-2 border-yellow-300 p-8 shadow-md transition-transform transform hover:scale-105 duration-300 font-Geo">
+          <h2 className="text-2xl font-bold text-yellow-300 mb-4 text-center"> Create Your SMULLY</h2>
+          <p className='font-Dino text-2xl text-center'>Utilize the SMULLY meme generator to forge your unique SMULLY.</p>
+        </div>
+        <div className="border-2 border-yellow-300 p-8 shadow-md transition-transform transform hover:scale-105 duration-300 font-Geo">
+          <h2 className="text-2xl font-bold text-yellow-300 mb-4 text-center"> Engage with the Community</h2>
+          <p className='font-Dino text-2xl text-center'>Connect with the SMULLY on social media platforms. Share your creations and listen out for updates and family meetings.</p>
+        </div>
+        <div className="border-2 border-yellow-300 p-8 shadow-md transition-transform transform hover:scale-105 duration-300 font-Geo">
+          <h2 className="text-2xl font-bold text-yellow-300 mb-4 text-center"> Share and Thrive</h2>
+          <p className='font-Dino text-2xl text-center'>Promote your SMULLY creation and relish the perks of being an integral part of the SMULLY community.</p>
+        </div>
+      </div>
+    </div>
   )
 }
 

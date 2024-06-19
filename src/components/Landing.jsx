@@ -47,20 +47,21 @@ const Landing = () => {
       <div className="rain">{generateRain()}</div>
 
       <motion.h1
-        className='absolute bottom-0 font-Dino text-[10rem] xl:text-[15rem] xl:bottom-0 2xl:text-[22rem] text-amber-800 2xl:bottom-[-50px] right-10'
+        className='absolute z-10 bottom-0 font-Dino text-[10rem] xl:text-[15rem] xl:bottom-0 2xl:text-[22rem] text-amber-800 2xl:bottom-[-50px] right-10'
         animate={controls}
       >
         Smully
       </motion.h1>
 
-      <p className='text-amber-700 absolute w-2/4 top-[25%] left-[40%] font-Dino text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-6xl font-bold animate-text'>
+      <p className='text-amber-700 z-10 absolute w-2/4 top-[25%] left-[40%] font-Dino text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-6xl font-bold animate-text'>
         Solanas most clueless dog
       </p>
 
       <motion.img
         src={mainImg}
-        className='z-2 w-[550px] absolute bottom-[-50px] left-0'
+        className='z-10 w-[550px] absolute bottom-[-50px] left-0'
         alt="Smully"
+		animate={controls}
       />
     </div>
   );

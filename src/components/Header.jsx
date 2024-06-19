@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import { FaBeer,  } from 'react-icons/fa';
 import { TbDogBowl } from "react-icons/tb";
 import mainImg from '../assets/Smully/smully.png';
+import pumpImg from '../assets/pumpfa.png';
+import { FaTwitter, FaTelegram } from 'react-icons/fa';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -92,6 +94,27 @@ const Header = () => {
             </ul>
           </div>
         </div>
+		   <div className="social-links absolute left-0 pl-3">
+        <a href="https://x.com/Cilly_Solana" target="_blank" rel="noopener noreferrer">
+          <FaTwitter size={48} className='text-amber-800'/>
+        </a>
+        <a href="https://t.me/+CruZ6cTHvUhjMmU0" target="_blank" rel="noopener noreferrer">
+          <FaTelegram  size={48} className='text-amber-800'/>
+        </a>
+        <a href="GxREqBhL7t9RUxUt2t2s81CjSERv9xa6cpNi3Cjqpump" target="_blank" rel="noopener noreferrer">
+        <img src={pumpImg} alt='pumplogo' className='w-12 ' />
+        </a>
+      </div>
+          <div className=" whitespace-nowrap">
+
+			</div>
+			<div className="social-links absolute right-36 ">
+			         <a href="https://pump.fun/GxREqBhL7t9RUxUt2t2s81CjSERv9xa6cpNi3Cjqpump" target="_blank" rel="noopener noreferrer">
+              <button className='font-Dino w-40 bg-amber-800 hover:bg-red-700 text-white font-bold py-2 px-2 rounded'>
+                BUY NOW 
+              </button>
+            </a>
+			</div>
       </nav>
     </div>
   );
