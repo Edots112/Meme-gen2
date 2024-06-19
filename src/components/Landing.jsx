@@ -30,11 +30,11 @@ const Landing = () => {
   // Funktion för att generera regnande hundar
   const generateRain = () => {
     const rainArray = [];
-    for (let i = 0; i < 50; i++) {
+    for (let i = 0; i < 100; i++) {
       const style = {
         left: `${Math.random() * 100}vw`,
         animationDuration: `${Math.random() * 2 + 5}s`,
-        animationDelay: `${Math.random() * 5}s`,
+        animationDelay: `${Math.random() * 2}s`,
       };
       rainArray.push(<img key={i} src={mainImg} style={style} alt="small dog" />);
     }
