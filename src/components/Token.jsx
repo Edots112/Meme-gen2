@@ -22,7 +22,7 @@ const Token = () => {
       </div>
       <div className="flex flex-col items-center mt-10">
       </div>
-      <h1 className='font-Spark text-4xl md:text-9xl text-center mb-10  text-white'>$Smully</h1>
+      <h1 className='font-Spark text-4xl md:text-9xl text-center mb-10  text-white'>$OLLIY</h1>
     </div>
   )
 }

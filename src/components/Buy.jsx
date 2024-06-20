@@ -28,7 +28,7 @@ const Buy = () => {
         </div>
         <div className="border-2 border-black p-8 shadow-md transition-transform transform hover:scale-105 duration-300 font-Spark">
           <h2 className="text-2xl font-bold text-black mb-4 text-center"> Share and Thrive</h2>
-          <p className='font-Dino text-2xl text-center'>Promote your OLLIY creation and relish the perks of being an integral part of the SMULLY community.</p>
+          <p className='font-Dino text-2xl text-center'>Promote your OLLIY creation and relish the perks of being an integral part of the OLLIY community.</p>
         </div>
       </div>
     </div>
