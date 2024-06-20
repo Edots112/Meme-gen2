@@ -4,7 +4,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				Dino: ["Dino"],
+				Adelia: ["Adelia"],
 				Geo: ["Geo"],
 				Yellow: ["Yellow"],
 				Yujin: ["Yujin"],
