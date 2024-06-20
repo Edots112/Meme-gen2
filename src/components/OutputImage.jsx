@@ -59,14 +59,14 @@ const OutputImage = (props) => {
 
         // Provide a download link for the canvas image
         const link = document.createElement('a');
-        link.download = 'Smully.png';
+        link.download = 'Olliy.png';
         link.href = canvas.toDataURL();
         link.click();
     };
 
     const handleReset = () => {
         props.setSelected({
-            background: '24.png',
+            background: '18.png',
             character: '1.png',
             face: '',
             frontaccessory: '',
@@ -95,12 +95,12 @@ const OutputImage = (props) => {
             </div>
             <div className='flex gap-3'>
                 <button id='random' className='btn flex justify-center items-center gap-3 font-Geo ' onClick={handleRandom}>
-                    <GiPerspectiveDiceSixFacesRandom size={30} className='text-white' />
+                    <GiPerspectiveDiceSixFacesRandom size={30} className='text-black' />
                     Random</button>
                 <button id='download' className='btn flex justify-center items-center gap-3 font-Geo  ' onClick={handleDownload}>
-                    <MdDownload size={30} className='text-white' />Download</button>
+                    <MdDownload size={30} className='text-black' />Download</button>
                 <button id='reset' className='btn flex justify-center items-center gap-3 font-Geo ' onClick={handleReset}>
-                    <GrPowerReset size={30} className='text-white' />Reset</button>
+                    <GrPowerReset size={30} className='text-black' />Reset</button>
             <canvas ref={canvasRef} style={{ display: 'none' }} width={500} height={500} />
             </div>
         </div>

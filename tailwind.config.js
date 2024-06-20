@@ -8,6 +8,8 @@ module.exports = {
 				Geo: ["Geo"],
 				Yellow: ["Yellow"],
 				Yujin: ["Yujin"],
+				Emo: ["Emo"],
+				Spark: ["Spark"],
 			},
 			animation: {
 				pulse: "pulse 2s infinite",

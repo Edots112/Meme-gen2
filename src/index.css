@@ -13,12 +13,12 @@
   src: url("./fonts/Geo.ttf");
 }
 @font-face {
-  font-family: "Yujin";
-  src: url("./fonts/Yujin_Bubbles.ttf");
+  font-family: "Emo";
+  src: url("./fonts/Emo.ttf");
 }
 @font-face {
-  font-family: "Yellow";
-  src: url("./fonts/YellowPeach.ttf");
+  font-family: "Spark";
+  src: url("./fonts/Spark.otf");
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
@@ -133,7 +133,7 @@ html {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  background-color: #b49e71;
+  background-color: black;
   padding: 20px;
 
 }
@@ -161,7 +161,7 @@ html {
   width: 400px;
   height:400px;
   margin: 0 auto;
-  border: 2px solid black;
+  border: 2px solid white;
   
 }
 
@@ -185,10 +185,10 @@ html {
   position: relative;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
-  background-color: rgb(59, 38, 7);
+  background-color: white;
   /* border-radius: 1000px; */
-  border: 2px solid black;
-  color: rgb(255, 255, 255) ;
+  border: 2px solid white;
+  color: rgb(0, 0, 0) ;
 }
 
 .btn:hover {
