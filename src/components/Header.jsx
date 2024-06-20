@@ -110,7 +110,7 @@ const Header = () => {
           <FaTwitter size={50} className='text-white'/>
         </motion.a>
         <motion.a 
-          href="https://pump.fun/" 
+          href="https://pump.fun/22Zw95gkjP9vefsGCtkPxHE3bzU6bGbGNXp2q1XPpump" 
           target="_blank" 
           rel="noopener noreferrer"
           whileHover={{ scale: 1.2 }}
