@@ -101,7 +101,7 @@ const Header = () => {
         <a href="https://t.me/SmullySolana" target="_blank" rel="noopener noreferrer">
           <FaTelegram  size={48} className='text-amber-800'/>
         </a>
-        <a href="https://pump.fun/" target="_blank" rel="noopener noreferrer">
+        <a href="https://pump.fun/7ePcqNsDs3nKHr7jX9Nis2JraEFPtSBk4PzfGsUqpump" target="_blank" rel="noopener noreferrer">
         <img src={pumpImg} alt='pumplogo' className='w-12 ' />
         </a>
       </div>
