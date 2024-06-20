@@ -119,7 +119,7 @@ const Header = () => {
           <img src={pumpImg} alt='pumplogo' className='w-12' />
         </motion.a>
         <motion.a 
-          href="https://t.me/ArchineOnSolana" 
+          href="https://t.me/+av2cva7CJeE4NzMx" 
           target="_blank" 
           rel="noopener noreferrer"
           whileHover={{ scale: 1.2 }}
