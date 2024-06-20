@@ -13,7 +13,7 @@ const OutputImage = (props) => {
         background: { zIndex: 0, width: 500, height: 500, top: 0, left: 0 },
         character: { zIndex: 1, width: 500, height: 500, top: 0, left: 0  },
         face: { zIndex: 2, width: 500, height: 500, top: 0, left: 0  },
-        // frontaccessory: { zIndex: 3, width: 500, height: 500, top: 0, left: 0  },
+        frontaccessory: { zIndex: 3, width: 500, height: 500, top: 0, left: 0  },
         hat: { zIndex: 4, width: 500, height: 500, top: 0, left: 0 },
     };
 
@@ -29,7 +29,7 @@ const OutputImage = (props) => {
             { layer: 'background' },
             { layer: 'character' },
             { layer: 'face' },
-            // { layer: 'frontaccessory' },
+            { layer: 'frontaccessory' },
             { layer: 'hat' }
         ];
 
@@ -81,7 +81,7 @@ const OutputImage = (props) => {
             background: images.background[Math.floor(Math.random() * images.background.length)] || '',
             face: images.face[Math.floor(Math.random() * images.face.length)] || '',
             hat: images.hat[Math.floor(Math.random() * images.hat.length)] || '',
-            // frontaccessory: images.frontAccessory[Math.floor(Math.random() * images.frontAccessory.length)] || '',
+            frontaccessory: images.frontAccessory[Math.floor(Math.random() * images.frontAccessory.length)] || '',
             character: images.character[Math.floor(Math.random() * images.character.length)] || ''
         });
     };
