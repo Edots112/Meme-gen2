@@ -3,18 +3,16 @@ import { GiPerspectiveDiceSixFacesRandom } from "react-icons/gi";
 import { GrPowerReset } from "react-icons/gr";
 import { MdDownload } from "react-icons/md";
 
-
-
 const OutputImage = (props) => {
     const canvasRef = useRef(null);
     const { images } = props;
 
     const layerStyles = {
         background: { zIndex: 0, width: 500, height: 500, top: 0, left: 0 },
-        character: { zIndex: 1, width: 500, height: 500, top: 0, left: 0  },
-        face: { zIndex: 2, width: 500, height: 500, top: 0, left: 0  },
-        frontaccessory: { zIndex: 3, width: 500, height: 500, top: 0, left: 0  },
-        hat: { zIndex: 4, width: 500, height: 500, top: 0, left: 0 },
+        character: { zIndex: 1, width: 500, height: 500, top: 0, left: 0 },
+        face: { zIndex: 4, width: 500, height: 500, top: 0, left: 0 },
+        frontaccessory: { zIndex: 3, width: 500, height: 500, top: 0, left: 0 },
+        hat: { zIndex: 2, width: 500, height: 500, top: 0, left: 0 },
     };
 
     const handleDownload = async () => {
@@ -91,9 +89,9 @@ const OutputImage = (props) => {
             <div id='parent'>
                 {props.selected.background && <img id='background' src={`${process.env.PUBLIC_URL}/images/background/${props.selected.background}`} alt="" />}
                 {props.selected.character && <img id='character' src={`${process.env.PUBLIC_URL}/images/character/${props.selected.character}`} alt="" />}
-                {props.selected.face && <img id='face' src={`${process.env.PUBLIC_URL}/images/face/${props.selected.face}`} alt="" />}
-                {props.selected.frontaccessory && <img id='frontaccessory' src={`${process.env.PUBLIC_URL}/images/frontaccessory/${props.selected.frontaccessory}`} alt="" />}
                 {props.selected.hat && <img id='hat' src={`${process.env.PUBLIC_URL}/images/hat/${props.selected.hat}`} alt="" />}
+                {props.selected.frontaccessory && <img id='frontaccessory' src={`${process.env.PUBLIC_URL}/images/frontaccessory/${props.selected.frontaccessory}`} alt="" />}
+                {props.selected.face && <img id='face' src={`${process.env.PUBLIC_URL}/images/face/${props.selected.face}`} alt="" />}
             </div>
             <div className='flex gap-3'>
                 <button id='random' className='btn flex justify-center items-center gap-3 font-Geo ' onClick={handleRandom}>
