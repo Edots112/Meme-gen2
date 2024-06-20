@@ -12,23 +12,23 @@ const Buy = () => {
         </div>
         <div className="border-2 border-black p-8 shadow-md transition-transform transform hover:scale-105 duration-300 font-Spark">
           <h2 className="text-2xl font-bold text-black mb-4 text-center">Fund Your Wallet with $SOL</h2>
-          <p className='font-Dino text-2xl text-center'>Ensure your wallet is loaded with $SOL to participate in the $OLLIY community. $SOL is required to acquire $OLLIY tokens.</p>
+          <p className='font-Dino text-2xl text-center'>Ensure your wallet is loaded with $SOL to participate in the $ARCHIE community. $SOL is required to acquire $ARCHIE tokens.</p>
         </div>
         <div className="border-2 border-black p-8 shadow-md transition-transform transform hover:scale-105 duration-300 font-Spark">
-          <h2 className="text-2xl font-bold text-black mb-4 text-center"> SWAP $SOL for $OLLIY</h2>
-          <p className='font-Dino text-2xl text-center'>SWAP your $SOL into $OLLIY tokens at pump.fun.</p>
+          <h2 className="text-2xl font-bold text-black mb-4 text-center"> SWAP $SOL for $ARCHIE</h2>
+          <p className='font-Dino text-2xl text-center'>SWAP your $SOL into $ARCHIE tokens at pump.fun.</p>
         </div>
         <div className="border-2 border-black p-8 shadow-md transition-transform transform hover:scale-105 duration-300 font-Spark">
-          <h2 className="text-2xl font-bold text-black mb-4 text-center"> Create Your OLLIY</h2>
-          <p className='font-Dino text-2xl text-center'>Utilize the OLLIY meme generator to forge your unique OLLIY.</p>
+          <h2 className="text-2xl font-bold text-black mb-4 text-center"> Create Your ARCHIE</h2>
+          <p className='font-Dino text-2xl text-center'>Utilize the ARCHIE meme generator to forge your unique ARCHIE.</p>
         </div>
         <div className="border-2 border-black p-8 shadow-md transition-transform transform hover:scale-105 duration-300 font-Spark">
           <h2 className="text-2xl font-bold text-black mb-4 text-center"> Engage with the Community</h2>
-          <p className='font-Dino text-2xl text-center'>Connect with the OLLIY on social media platforms. Share your creations and listen out for updates and family meetings.</p>
+          <p className='font-Dino text-2xl text-center'>Connect with the ARCHIE on social media platforms. Share your creations and listen out for updates and family meetings.</p>
         </div>
         <div className="border-2 border-black p-8 shadow-md transition-transform transform hover:scale-105 duration-300 font-Spark">
           <h2 className="text-2xl font-bold text-black mb-4 text-center"> Share and Thrive</h2>
-          <p className='font-Dino text-2xl text-center'>Promote your OLLIY creation and relish the perks of being an integral part of the OLLIY community.</p>
+          <p className='font-Dino text-2xl text-center'>Promote your ARCHIE creation and relish the perks of being an integral part of the ARCHIE community.</p>
         </div>
       </div>
     </div>

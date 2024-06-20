@@ -56,17 +56,17 @@ const Landing = () => {
         className='absolute z-10  top-20 font-Spark text-[10rem] xl:text-[15rem]  2xl:text-[18rem] text-white  right-'
         animate={controls}
       >
-        Olliy
+        ARCHIE
       </motion.h1>
 
       <p className='text-white z-10 absolute bottom-[45%]  font-Spark text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-6xl font-bold animate-text'>
-        Olliy the most adorable dog on Solana
+        ARCHIE the most adorable dog on Solana
       </p>
 
       <motion.img
         src={catSolanaImg}
         className='z-10 w-[625px] absolute bottom-[-50px] left-[-100px]'
-        alt="Olliy"
+        alt="ARCHIE"
         animate={controls}
       />
      <motion.div
