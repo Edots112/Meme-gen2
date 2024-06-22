@@ -12,6 +12,7 @@ module.exports = {
 				Spark: ["Spark"],
 				Priest: ["Priest"],
 				Demon: ["Demon"],
+				Alvin: ["Alvin"],
 			},
 			animation: {
 				pulse: "pulse 2s infinite",

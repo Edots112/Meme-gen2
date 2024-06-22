@@ -57,7 +57,7 @@ const Landing = () => {
         loop
         muted
       ></video>
-      <div className="rain">{generateRain()}</div>
+      {/* <div className="rain">{generateRain()}</div> */}
 
       <motion.h1
         className='absolute z-10  top-10 left-10 font-Priest text-[8rem] xl:text-[13rem]  2xl:text-[15rem] text-white  right-'
