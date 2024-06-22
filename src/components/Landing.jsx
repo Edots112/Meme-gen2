@@ -5,9 +5,10 @@ import dog1 from '../assets/Villy/olliys.png'; // Lägg till dina hundbilder
 import dog2 from '../assets/Solana/sun.png';
 import dog3 from '../assets/Solana/palm.png';
 import catSolanaImg from '../assets/Villy/olliy.png';
-import '../Landing.css'; // Add a CSS file for the styles
+import backgroundVideo from '../assets/priest/bg-video.mp4'; // Importera videofilen
+import '../Landing.css'; // Lägg till en CSS-fil för stilarna
 
-const dogImages = [ dog1]; // Array med bilder
+const dogImages = [dog1]; // Array med bilder
 
 const Landing = () => {
   const controls = useAnimation();
@@ -49,7 +50,13 @@ const Landing = () => {
 
   return (
     <div id='' className="relative flex flex-col items-center h-[100vh] overflow-hidden z-10 ">
-      <div className="parallax-background absolute top-0 left-0 w-full h-full z-0"></div>
+      <video
+        className="absolute top-0 left-0 w-full h-full object-cover z-0"
+        src={backgroundVideo}
+        autoPlay
+        loop
+        muted
+      ></video>
       <div className="rain">{generateRain()}</div>
 
       <motion.h1
@@ -63,12 +70,12 @@ const Landing = () => {
         ARCHIE the most adorable dog on Solana
       </p>
 
-      <motion.img
+      {/* <motion.img
         src={catSolanaImg}
         className='z-10 w-[625px] absolute bottom-[-50px] left-[-100px]'
         alt="ARCHIE"
         animate={controls}
-      />
+      /> */}
      <motion.div
         className="social-links absolute bottom-1/4 z-10 "
         initial={{ opacity: 0, scale: 0.8 }}
