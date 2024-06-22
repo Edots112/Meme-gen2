@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 // import mainImg from '../assets/Smully/smully.png';
 import dog1 from '../assets/Villy/olliys.png'; // Lägg till dina hundbilder
-// import dog2 from '../assets/Solana/sun.png';
-// import dog3 from '../assets/Solana/palm.png';
-// import catSolanaImg from '../assets/Villy/olliy.png';
+import object1Img from "../assets/priest/object1.png"
+import object2Img from "../assets/priest/object2.png"
+import object3Img from "../assets/priest/object3.png"
 import backgroundVideo from '../assets/priest/bg-video.mp4'; // Importera videofilen
 import '../Landing.css'; // Lägg till en CSS-fil för stilarna
 
-const dogImages = [dog1]; // Array med bilder
+const dogImages = [object1Img,object2Img, object3Img ]; // Array med bilder
 
 const Landing = () => {
   const controls = useAnimation();
@@ -57,7 +57,7 @@ const Landing = () => {
         loop
         muted
       ></video>
-      {/* <div className="rain">{generateRain()}</div> */}
+      <div className="rain">{generateRain()}</div>
 
       <motion.h1
         className='absolute z-10  top-10 left-10 font-Priest text-[8rem] xl:text-[13rem]  2xl:text-[15rem] text-white  right-'
