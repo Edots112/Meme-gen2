@@ -1,0 +1,34 @@
+#buy {
+    background-image: url("./assets/priest/down.gif");
+    /* Se till att du har en bakgrundsbild här */
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-opacity-50 {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.border-2 {
+    border-width: 2px;
+}
+
+.text-white {
+    color: white;
+}
+
+.rounded-xl {
+    border-radius: 1rem;
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.transition-transform {
+    transition: transform 0.3s ease-in-out;
+}
+
+.hover\\:scale-105:hover {
+    transform: scale(1.05);
+}

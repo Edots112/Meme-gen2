@@ -57,17 +57,17 @@ const Landing = () => {
         loop
         muted
       ></video>
-      <div className="rain">{generateRain()}</div>
+      {/* <div className="rain">{generateRain()}</div> */}
 
       <motion.h1
-        className='absolute z-10  top-20 font-Spark text-[10rem] xl:text-[15rem]  2xl:text-[18rem] text-white  right-'
+        className='absolute z-10  top-10 left-10 font-Priest text-[8rem] xl:text-[13rem]  2xl:text-[15rem] text-white  right-'
         animate={controls}
       >
-        ARCHIE
+        MITSY
       </motion.h1>
 
-      <p className='text-white z-10 absolute bottom-[45%]  font-Spark text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-6xl font-bold animate-text'>
-        ARCHIE the most adorable dog on Solana
+      <p className='text-white z-10 absolute top-[40%] left-10 w-[35%]  font-Priest text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-6xl font-bold animate-text'>
+        Preach the gospel of the MITSY to the world
       </p>
 
       {/* <motion.img
@@ -77,14 +77,14 @@ const Landing = () => {
         animate={controls}
       /> */}
      <motion.div
-        className="social-links absolute bottom-1/4 z-10 "
+        className="social-links absolute bottom-10 right-10 z-10 "
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5, ease: 'easeOut' }}
       >
-        <a href="https://pump.fun/22Zw95gkjP9vefsGCtkPxHE3bzU6bGbGNXp2q1XPpump" target="_blank" rel="noopener noreferrer">
+        <a href="https://pump.fun/" target="_blank" rel="noopener noreferrer">
           <motion.button
-            className='font-Dino w-[20rem] bg-white hover:bg-green-400 text-black font-bold py-8 px-4  border-2 border-black rounded-full font-Adelia'
+            className='font-Priest w-[30rem] bg-white hover:bg-red-600 hover:text-white text-black font-bold py-8 px-4  border-2 border-black rounded-full font-Adelia'
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >

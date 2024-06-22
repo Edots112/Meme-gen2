@@ -10,6 +10,8 @@ module.exports = {
 				Yujin: ["Yujin"],
 				Emo: ["Emo"],
 				Spark: ["Spark"],
+				Priest: ["Priest"],
+				Demon: ["Demon"],
 			},
 			animation: {
 				pulse: "pulse 2s infinite",

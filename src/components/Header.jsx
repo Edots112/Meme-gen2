@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaBeer,  } from 'react-icons/fa';
 import { TbDogBowl } from "react-icons/tb";
-import mainImg from '../assets/Villy/olliys.png';
+import mainImg from '../assets/priest/smallimg.png';
 import pumpImg from '../assets/pumpfa.png';
 import { FaTwitter, FaTelegram } from 'react-icons/fa';
 
@@ -38,15 +38,15 @@ const Header = () => {
             <motion.img
               src={mainImg}
               alt="logo"
-              width="75"
-              height="75"
+              width="100"
+              height="100"
               className="pt-2"
-              animate={{ rotateY: 360 }}
+              animate={{ rotateX: 360 }}
               transition={{ repeat: Infinity, duration: 2, ease: "linear" }}
             />
           </a>
           <div id="navbarSupportedContent" className="flex items-center justify-center w-screen">
-            <ul className="flex font-Emo  gap-14  ">
+            <ul className="flex font-Priest  gap-14  ">
               <motion.li
                 className="flex items-center space-x-3 text-center justify-center "
                 whileHover={{ scale: 1.1 }}
@@ -59,7 +59,7 @@ const Header = () => {
                   transition={{ repeat: Infinity, duration: 1.5 }}
 
                 >
-                  <TbDogBowl size={30} className="text-red-500 mb-1" />
+                  {/* <TbDogBowl size={30} className="text-red-500 mb-1" /> */}
                 </motion.div>
                 <a className="text-white 2xl:text-5xl xl:text-3xl lg:text-xl font-bold" href="#meme-gen">
                   Make Meme
@@ -71,7 +71,7 @@ const Header = () => {
                 whileTap={{ scale: 0.9 }}
                 onClick={handleLinkClick}
               >
-                <a className="text-green-500 2xl:text-5xl xl:text-3xl lg:text-xl font-bold" href="#buy">
+                <a className="text-red-700 2xl:text-5xl xl:text-3xl lg:text-xl font-bold" href="#buy">
                   How to buy?
                 </a>
               </motion.li>
@@ -85,7 +85,7 @@ const Header = () => {
                   animate={{ scale: [1, 1.5, 1] }}
                   transition={{ repeat: Infinity, duration: 1.5 }}
                 >
-                  <FaBeer size={30} className="text-red-500" />
+                  {/* <FaBeer size={30} className="text-red-500" /> */}
                 </motion.div>
                 <a className="text-white 2xl:text-5xl xl:text-3xl lg:text-xl font-bold" href="#token">
                   Tokenomics
@@ -101,7 +101,7 @@ const Header = () => {
         transition={{ duration: 0.5, ease: 'easeOut' }}
       >
         <motion.a 
-          href="https://x.com/archiedogsol" 
+          href="https://x.com/MitsyOnSolana" 
           target="_blank" 
           rel="noopener noreferrer"
           whileHover={{ scale: 1.2 }}
@@ -110,7 +110,7 @@ const Header = () => {
           <FaTwitter size={50} className='text-white'/>
         </motion.a>
         <motion.a 
-          href="https://pump.fun/22Zw95gkjP9vefsGCtkPxHE3bzU6bGbGNXp2q1XPpump" 
+          href="https://pump.fun/" 
           target="_blank" 
           rel="noopener noreferrer"
           whileHover={{ scale: 1.2 }}
@@ -119,7 +119,7 @@ const Header = () => {
           <img src={pumpImg} alt='pumplogo' className='w-12' />
         </motion.a>
         <motion.a 
-          href="https://t.me/+av2cva7CJeE4NzMx" 
+          href="https://t.me/+uVle8t__CkVmNzlk" 
           target="_blank" 
           rel="noopener noreferrer"
           whileHover={{ scale: 1.2 }}
