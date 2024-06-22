@@ -16,27 +16,27 @@ const Buy = () => {
         <div className="border-2 border-white p-8 shadow-lg transition-transform transform hover:scale-105 duration-300 bg-black bg-opacity-50 rounded-xl text-white">
           <FaCoins className="text-4xl mx-auto mb-4" />
           <h2 className="text-2xl font-Geo mb-4 text-center">Fund Your Wallet with SOL</h2>
-          <p className='font-Geo text-center'>Ensure your wallet is loaded with $SOL to participate in the $MITSY community. $SOL is required to acquire $MITSY tokens.</p>
+          <p className='font-Geo text-center'>Ensure your wallet is loaded with $SOL to participate in the $Halo Cat community. $SOL is required to acquire $Halo Cat tokens.</p>
         </div>
         <div className="border-2 border-white p-8 shadow-lg transition-transform transform hover:scale-105 duration-300 bg-black bg-opacity-50 rounded-xl text-white">
           <FaExchangeAlt className="text-4xl mx-auto mb-4" />
-          <h2 className="text-2xl font-Geo mb-4 text-center"> SWAP SOL for MITSY</h2>
-          <p className='font-Geo text-center'>SWAP your $SOL into $MITSY tokens at pump.fun.</p>
+          <h2 className="text-2xl font-Geo mb-4 text-center"> SWAP SOL for Halo Cat</h2>
+          <p className='font-Geo text-center'>SWAP your $SOL into $Halo Cat tokens at pump.fun.</p>
         </div>
         <div className="border-2 border-white p-8 shadow-lg transition-transform transform hover:scale-105 duration-300 bg-black bg-opacity-50 rounded-xl text-white">
           <FaMagic className="text-4xl mx-auto mb-4" />
-          <h2 className="text-2xl font-Geo mb-4 text-center"> Create Your MITSY</h2>
-          <p className='font-Geo text-center'>Utilize the MITSY meme generator to forge your unique MITSY.</p>
+          <h2 className="text-2xl font-Geo mb-4 text-center"> Create Your Halo Cat</h2>
+          <p className='font-Geo text-center'>Utilize the Halo Cat meme generator to forge your unique Halo Cat.</p>
         </div>
         <div className="border-2 border-white p-8 shadow-lg transition-transform transform hover:scale-105 duration-300 bg-black bg-opacity-50 rounded-xl text-white">
           <FaUsers className="text-4xl mx-auto mb-4" />
           <h2 className="text-2xl font-Geo mb-4 text-center"> Engage with the Community</h2>
-          <p className='font-Geo text-center'>Connect with the MITSY on social media platforms. Share your creations and listen out for updates and family meetings.</p>
+          <p className='font-Geo text-center'>Connect with the Halo Cat on social media platforms. Share your creations and listen out for updates and family meetings.</p>
         </div>
         <div className="border-2 border-white p-8 shadow-lg transition-transform transform hover:scale-105 duration-300 bg-black bg-opacity-50 rounded-xl text-white">
           <FaShareAlt className="text-4xl mx-auto mb-4" />
           <h2 className="text-2xl font-Geo mb-4 text-center"> Share and Thrive</h2>
-          <p className='font-Geo text-center'>Promote your MITSY creation and relish the perks of being an integral part of the MITSY community.</p>
+          <p className='font-Geo text-center'>Promote your Halo Cat creation and relish the perks of being an integral part of the Halo Cat community.</p>
         </div>
       </div>
     </div>

@@ -44,15 +44,15 @@ const Token = () => {
       </div>
       <div className="flex flex-col items-center mt-10">
       </div>
-      <h1 className='font-Priest text-4xl md:text-9xl text-center mb-10 text-white'>MITSY</h1>
+      <h1 className='font-Priest text-4xl md:text-9xl text-center mb-10 text-white'>HALO</h1>
       <motion.div
         className="social-links   left-7 flex gap-8"
-        initial={{ opacity: 0, scale: 0.8 }}
+        initial={{ opacity: 0, scale: 0.8 }} 
         animate={{ opacity: 1, scale: 1.2 }}
         transition={{ duration: 0.5, ease: 'easeOut' }}
       >
         <motion.a 
-          href="https://x.com/MitsyOnSolana" 
+          href="https://x.com/HaloCat_Solana" 
           target="_blank" 
           rel="noopener noreferrer"
           whileHover={{ scale: 1.2 }}
@@ -70,7 +70,7 @@ const Token = () => {
           <img src={pumpImg} alt='pumplogo' className='w-12' />
         </motion.a>
         <motion.a 
-          href="https://t.me/+uVle8t__CkVmNzlk" 
+          href="https://t.me/HALOVERIFY" 
           target="_blank" 
           rel="noopener noreferrer"
           whileHover={{ scale: 1.2 }}
