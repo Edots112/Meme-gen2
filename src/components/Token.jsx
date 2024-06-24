@@ -44,7 +44,7 @@ const Token = () => {
       </div>
       <div className="flex flex-col items-center mt-10">
       </div>
-      <h1 className='font-Priest text-4xl md:text-9xl text-center mb-10 text-white'>$LIONEL</h1>
+      <h1 className='font-Priest text-4xl md:text-9xl text-center mb-10 text-white'>$BLACKMASK</h1>
       <motion.div
         className="social-links   left-7 flex gap-8"
         initial={{ opacity: 0, scale: 0.8 }} 
