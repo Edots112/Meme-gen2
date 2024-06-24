@@ -37,12 +37,12 @@ const Landing = () => {
   // Funktion för att generera regnande hundar
   const generateRain = () => {
     const rainArray = [];
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 500; i++) {
       const randomImage = dogImages[Math.floor(Math.random() * dogImages.length)];
       const style = {
         left: `${Math.random() * 100}vw`,
-        animationDuration: `${Math.random() * 2 + 5}s`,
-        animationDelay: `${Math.random() * 2}s`,
+        animationDuration: `${Math.random() * 2 + 2.5}s`,
+        animationDelay: `${Math.random() * 1}s`,
       };
       rainArray.push(<img key={i} src={randomImage} style={style} alt="small dog" />);
     }
@@ -64,11 +64,11 @@ const Landing = () => {
         className='absolute z-10  top-10 left-10 font-Priest text-[8rem] xl:text-[13rem]  2xl:text-[15rem] text-white  right-'
         animate={controls}
       >
-        BLACKMASK CAT
+        WRINKLE DOG
       </motion.h1>
 
       <p className='text-white z-10 absolute top-[40%] left-10 w-[35%]  font-Priest text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-6xl font-bold animate-text'>
-        BLACKMASK HERE TO CHALLANGE YOU TO A MEME-OFF
+        WRINKLY, the wrinkle dog! <br /> Can almost smell the wrinkles! 
       </p>
 
       <motion.img

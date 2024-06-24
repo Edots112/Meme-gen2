@@ -16,27 +16,27 @@ const Buy = () => {
         <div className="border-2 border-white p-8 shadow-lg transition-transform transform hover:scale-105 duration-300 bg-black bg-opacity-50 rounded-xl text-white">
           <FaCoins className="text-4xl mx-auto mb-4" />
           <h2 className="text-2xl font-Geo mb-4 text-center">Fund Your Wallet with SOL</h2>
-          <p className='font-Geo text-center'>Ensure your wallet is loaded with $SOL to participate in the $BLACKMASK dog community. $SOL is required to acquire $BLACKMASK dog tokens.</p>
+          <p className='font-Geo text-center'>Ensure your wallet is loaded with $SOL to participate in the $WRINKLY dog community. $SOL is required to acquire $WRINKLY dog tokens.</p>
         </div>
         <div className="border-2 border-white p-8 shadow-lg transition-transform transform hover:scale-105 duration-300 bg-black bg-opacity-50 rounded-xl text-white">
           <FaExchangeAlt className="text-4xl mx-auto mb-4" />
-          <h2 className="text-2xl font-Geo mb-4 text-center"> SWAP SOL for BLACKMASK dog</h2>
-          <p className='font-Geo text-center'>SWAP your $SOL into $BLACKMASK dog tokens at pump.fun.</p>
+          <h2 className="text-2xl font-Geo mb-4 text-center"> SWAP SOL for WRINKLY dog</h2>
+          <p className='font-Geo text-center'>SWAP your $SOL into $WRINKLY dog tokens at pump.fun.</p>
         </div>
         <div className="border-2 border-white p-8 shadow-lg transition-transform transform hover:scale-105 duration-300 bg-black bg-opacity-50 rounded-xl text-white">
           <FaMagic className="text-4xl mx-auto mb-4" />
-          <h2 className="text-2xl font-Geo mb-4 text-center"> Create Your BLACKMASK dog</h2>
-          <p className='font-Geo text-center'>Utilize the BLACKMASK dog meme generator to forge your unique BLACKMASK dog.</p>
+          <h2 className="text-2xl font-Geo mb-4 text-center"> Create Your WRINKLY dog</h2>
+          <p className='font-Geo text-center'>Utilize the WRINKLY dog meme generator to forge your unique WRINKLY dog.</p>
         </div>
         <div className="border-2 border-white p-8 shadow-lg transition-transform transform hover:scale-105 duration-300 bg-black bg-opacity-50 rounded-xl text-white">
           <FaUsers className="text-4xl mx-auto mb-4" />
           <h2 className="text-2xl font-Geo mb-4 text-center"> Engage with the Community</h2>
-          <p className='font-Geo text-center'>Connect with the BLACKMASK dog on social media platforms. Share your creations and listen out for updates and family meetings.</p>
+          <p className='font-Geo text-center'>Connect with the WRINKLY dog on social media platforms. Share your creations and listen out for updates and family meetings.</p>
         </div>
         <div className="border-2 border-white p-8 shadow-lg transition-transform transform hover:scale-105 duration-300 bg-black bg-opacity-50 rounded-xl text-white">
           <FaShareAlt className="text-4xl mx-auto mb-4" />
           <h2 className="text-2xl font-Geo mb-4 text-center"> Share and Thrive</h2>
-          <p className='font-Geo text-center'>Promote your BLACKMASK dog creation and relish the perks of being an integral part of the BLACKMASK dog community.</p>
+          <p className='font-Geo text-center'>Promote your WRINKLY dog creation and relish the perks of being an integral part of the WRINKLY dog community.</p>
         </div>
       </div>
     </div>
