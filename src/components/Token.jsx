@@ -52,7 +52,7 @@ const Token = () => {
         transition={{ duration: 0.5, ease: 'easeOut' }}
       >
         <motion.a 
-          href="https://x.com/HaloCat_Solana" 
+          href="https://x.com/WrinkleDog_Sol" 
           target="_blank" 
           rel="noopener noreferrer"
           whileHover={{ scale: 1.2 }}

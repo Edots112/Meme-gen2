@@ -20,10 +20,10 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="social-links">
-                <a href="https://x.com/Black_mask_Cat" target="_blank" rel="noopener noreferrer">
+                <a href="https://x.com/WrinkleDog_Sol" target="_blank" rel="noopener noreferrer">
                     <FaTwitter size={48} />
                 </a>
-                <a href="https://t.me/WRINKLYCat" target="_blank" rel="noopener noreferrer">
+                <a href="https://t.me/wrinkledogs" target="_blank" rel="noopener noreferrer">
                     <FaTelegram size={48} />
                 </a>
                 <a href="https://pump.fun/" target="_blank" rel="noopener noreferrer">
