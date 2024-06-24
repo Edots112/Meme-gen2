@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaBeer,  } from 'react-icons/fa';
 import { TbDogBowl } from "react-icons/tb";
-import mainImg from '../assets/priest/smallimg.png';
+import mainImg from '../assets/doggy.png';
 import pumpImg from '../assets/pumpfa.png';
 import { FaTwitter, FaTelegram } from 'react-icons/fa';
 
@@ -47,7 +47,7 @@ const Header = () => {
           </a>
           <div id="navbarSupportedContent" className="flex items-center justify-center w-screen">
             <ul className="flex font-Priest  gap-14  ">
-              <motion.li
+              {/* <motion.li
                 className="flex items-center space-x-3 text-center justify-center "
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
@@ -60,11 +60,12 @@ const Header = () => {
 
                 >
                   {/* <TbDogBowl size={30} className="text-red-500 mb-1" /> */}
-                </motion.div>
-                <a className="text-white 2xl:text-5xl xl:text-3xl lg:text-xl font-bold" href="#meme-gen">
+                {/* </motion.div> */}
+                {/* <a className="text-white 2xl:text-5xl xl:text-3xl lg:text-xl font-bold" href="#meme-gen">
                   Make Meme
                 </a>
-              </motion.li>
+              </motion.li> */} 
+
               <motion.li
                 className="flex items-center space-x-2"
                 whileHover={{ scale: 1.1 }}
@@ -101,7 +102,7 @@ const Header = () => {
         transition={{ duration: 0.5, ease: 'easeOut' }}
       >
         <motion.a 
-          href="https://x.com/HaloCat_Solana" 
+          href="https://x.com/SadnessDog_Sol" 
           target="_blank" 
           rel="noopener noreferrer"
           whileHover={{ scale: 1.2 }}
@@ -110,7 +111,7 @@ const Header = () => {
           <FaTwitter size={50} className='text-white'/>
         </motion.a>
         <motion.a 
-          href="https://pump.fun/CiBhBScHVT7v12zBrzVk5tyDcwfS9HnQmwy8ZNUpump" 
+          href="https://pump.fun/" 
           target="_blank" 
           rel="noopener noreferrer"
           whileHover={{ scale: 1.2 }}
@@ -119,7 +120,7 @@ const Header = () => {
           <img src={pumpImg} alt='pumplogo' className='w-12' />
         </motion.a>
         <motion.a 
-          href="https://t.me/HALOVERIFY" 
+          href="https://t.me/sadnessdog" 
           target="_blank" 
           rel="noopener noreferrer"
           whileHover={{ scale: 1.2 }}
