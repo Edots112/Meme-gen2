@@ -64,11 +64,11 @@ const Landing = () => {
         className='absolute z-10  top-10 left-10 font-Priest text-[8rem] xl:text-[13rem]  2xl:text-[15rem] text-white  right-'
         animate={controls}
       >
-        WRINKLE DOG
+        SMILEO
       </motion.h1>
 
       <p className='text-white z-10 absolute top-[40%] left-10 w-[35%]  font-Priest text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-6xl font-bold animate-text'>
-        SMILEO, the wrinkle dog! <br /> Can almost smell the wrinkles! 
+        SMILEO, The moste Smiley Doggy on Solana
       </p>
 
       <motion.img
