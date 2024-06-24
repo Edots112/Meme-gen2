@@ -9,7 +9,7 @@ import backgroundVideo from '../assets/priest/bg-video.mp4'; // Importera videof
 import doggyImg from '../assets/doggy.png'; // Importera din hundbild
 import '../Landing.css'; // Lägg till en CSS-fil för stilarna
 
-const dogImages = [object1Img,object2Img, object3Img ]; // Array med bilder
+const dogImages = [doggyImg ]; // Array med bilder
 
 const Landing = () => {
   const controls = useAnimation();
@@ -50,7 +50,7 @@ const Landing = () => {
   };
 
   return (
-    <div id='' className="relative flex flex-col items-center h-[100vh] overflow-hidden z-10 ">
+    <div id='' className="relative flex flex-col items-center h-[100vh] overflow-hidden z-10 bg-black ">
       {/* <video
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
         src={backgroundVideo}
@@ -64,11 +64,11 @@ const Landing = () => {
         className='absolute z-10  top-10 left-10 font-Priest text-[8rem] xl:text-[13rem]  2xl:text-[15rem] text-white  right-'
         animate={controls}
       >
-        Sadness dog
+        Lionel Inu
       </motion.h1>
 
       <p className='text-white z-10 absolute top-[40%] left-10 w-[35%]  font-Priest text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-6xl font-bold animate-text'>
-        Saddest dog on solana
+        Lionel Has Arrived, <br /> The Doge Of The Future
       </p>
 
       <motion.img

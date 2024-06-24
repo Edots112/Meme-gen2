@@ -41,7 +41,7 @@ const Header = () => {
               width="100"
               height="100"
               className="pt-2"
-              animate={{ rotateX: 360 }}
+              animate={{ rotateY: 360 }}
               transition={{ repeat: Infinity, duration: 2, ease: "linear" }}
             />
           </a>
@@ -102,7 +102,7 @@ const Header = () => {
         transition={{ duration: 0.5, ease: 'easeOut' }}
       >
         <motion.a 
-          href="https://x.com/SadnessDog_Sol" 
+          href="https://x.com/Lionelinu_sol" 
           target="_blank" 
           rel="noopener noreferrer"
           whileHover={{ scale: 1.2 }}
@@ -120,7 +120,7 @@ const Header = () => {
           <img src={pumpImg} alt='pumplogo' className='w-12' />
         </motion.a>
         <motion.a 
-          href="https://t.me/sadnessdog" 
+          href="https://t.me/LionelInu" 
           target="_blank" 
           rel="noopener noreferrer"
           whileHover={{ scale: 1.2 }}
