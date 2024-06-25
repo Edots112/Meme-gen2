@@ -103,7 +103,7 @@ const Header = () => {
         transition={{ duration: 0.5, ease: 'easeOut' }}
       >
         <motion.a 
-          href="https://x.com/Smileo_Solana" 
+          href="https://x.com/Gremliy_Solana" 
           target="_blank" 
           rel="noopener noreferrer"
           whileHover={{ scale: 1.2 }}
@@ -121,7 +121,7 @@ const Header = () => {
           <img src={pumpImg} alt='pumplogo' className='w-24' />
         </motion.a>
         <motion.a 
-          href="https://t.me/SmileOSOL" 
+          href="https://t.me/+G8I6SwZyqnBkNzNk" 
           target="_blank" 
           rel="noopener noreferrer"
           whileHover={{ scale: 1.2 }}
