@@ -2,11 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 // import mainImg from '../assets/Smully/smully.png';
 import dog1 from '../assets/Villy/olliys.png'; // Lägg till dina hundbilder
-import object1Img from "../assets/priest/object1.png"
+import gifImg from "../assets/Gremliy/GREMLIY.gif"
 import object2Img from "../assets/priest/object2.png"
 import object3Img from "../assets/priest/object3.png"
 import backgroundVideo from '../assets/priest/bg-video.mp4'; // Importera videofilen
-import doggyImg from '../assets/doggy.png'; // Importera din hundbild
+import doggyImg from '../assets/Gremliy/Gremliy.png'; // Importera din hundbild
+import backgroundImg from '../assets/Gremliy/background.gif'; // Importera din bakgrundsbild
 import '../Landing.css'; // Lägg till en CSS-fil för stilarna
 
 const dogImages = [doggyImg ]; // Array med bilder
@@ -50,30 +51,35 @@ const Landing = () => {
   };
 
   return (
-    <div id='' className="relative flex flex-col items-center h-[100vh] overflow-hidden z-10 bg-black ">
-      {/* <video
+    <div id='' className="relative flex flex-col items-center h-[100vh] overflow-hidden z-10 bg-white b ">
+      <img
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
-        src={backgroundVideo}
-        autoPlay
-        loop
-        muted
-      ></video> */}
-      <div className="rain">{generateRain()}</div>
+        src={backgroundImg}
+        alt="background"
+      />
+      {/* <div className="rain">{generateRain()}</div> */}
 
-      <motion.h1
-        className='absolute z-10  top-10 left-10 font-Priest text-[8rem] xl:text-[13rem]  2xl:text-[15rem] text-white  right-'
+      {/* <motion.h1
+        className='absolute z-10  bottom-10 font-Priest text-[8rem] xl:text-[13rem]  2xl:text-[20rem] text-white  right-'
         animate={controls}
       >
         SMILEO
-      </motion.h1>
+      </motion.h1> */}
 
-      <p className='text-white z-10 absolute top-[40%] left-10 w-[35%]  font-Priest text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-6xl font-bold animate-text'>
-        SMILEO, The moste Smiley Doggy on Solana
+      <p className='text-[#FFF500] z-10 absolute top-[40%] right-10 w-[35%]  font-Priest text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-6xl font-bold animate-text'>
+        Don't get fouled by his looks, he can bite! 
       </p>
 
       <motion.img
         src={doggyImg}
-        className='z-10 w-[525px] absolute bottom-24 right-0'
+        className='z-10 w-[425px] absolute bottom-[-10%] left-[10%] '
+        alt="ARCHIE"
+        animate={controls}
+      />
+
+      <motion.img 
+        src={gifImg}
+        className='z-10 absolute bottom-[-15%]'
         alt="ARCHIE"
         animate={controls}
       />
@@ -83,7 +89,7 @@ const Landing = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5, ease: 'easeOut' }}
       >
-        <a href="https://pump.fun/" target="_blank" rel="noopener noreferrer">
+        {/* <a href="https://pump.fun/" target="_blank" rel="noopener noreferrer">
           <motion.button
             className='font-Priest w-[30rem] bg-white hover:bg-red-600 hover:text-white text-black font-bold py-8 px-4  border-2 border-black rounded-full '
             whileHover={{ scale: 1.1 }}
@@ -91,7 +97,7 @@ const Landing = () => {
           >
             BUY NOW 
           </motion.button>
-        </a>
+        </a> */}
       </motion.div>
     </div>
   );

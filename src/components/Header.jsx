@@ -4,6 +4,7 @@ import { FaBeer,  } from 'react-icons/fa';
 import { TbDogBowl } from "react-icons/tb";
 import mainImg from '../assets/doggy.png';
 import pumpImg from '../assets/pumpfa.png';
+import doggyImg2 from '../assets/Gremliy/Gremliyhead.png'
 import { FaTwitter, FaTelegram } from 'react-icons/fa';
 
 const Header = () => {
@@ -32,21 +33,21 @@ const Header = () => {
 
   return (
     <div style={{ width: '100vw' }}>
-      <nav className={`flex fixed z-50 w-screen p-6  justify-center items-center  transition-all duration-300  ${scrolled ? 'bg-black' : 'bg-transparent'} ${hidden ? '-top-40' : 'top-0'}`}>
+      <nav className={`flex fixed z-50 w-screen p-6  justify-center items-center  transition-all duration-300  ${scrolled ? 'bg-transparent' : 'bg-transparent'} ${hidden ? '-top-40' : 'top-0'}`}>
         <div className="container mx-auto flex justify-between items-center p-2">
           <a className="absolute top-0 right-6" href="/">
             <motion.img
-              src={mainImg}
+              src={doggyImg2}
               alt="logo"
-              width="100"
-              height="100"
+              width="120"
+              height="120"
               className="pt-2"
-              animate={{ rotateY: 360 }}
+              // animate={{ rotateY: 360 }}
               transition={{ repeat: Infinity, duration: 2, ease: "linear" }}
             />
           </a>
-          <div id="navbarSupportedContent" className="flex items-center justify-center w-screen">
-            <ul className="flex font-Priest  gap-14  ">
+          {/* <div id="navbarSupportedContent" className="flex items-center justify-center w-screen"> */}
+            {/* <ul className="flex font-Priest  gap-14  "> */}
               {/* <motion.li
                 className="flex items-center space-x-3 text-center justify-center "
                 whileHover={{ scale: 1.1 }}
@@ -66,7 +67,7 @@ const Header = () => {
                 </a>
               </motion.li> */} 
 
-              <motion.li
+              {/* <motion.li
                 className="flex items-center space-x-2"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
@@ -87,16 +88,16 @@ const Header = () => {
                   transition={{ repeat: Infinity, duration: 1.5 }}
                 >
                   {/* <FaBeer size={30} className="text-red-500" /> */}
-                </motion.div>
+                {/* </motion.div>
                 <a className="text-white 2xl:text-5xl xl:text-3xl lg:text-xl font-bold" href="#token">
                   Tokenomics
                 </a>
               </motion.li>
-            </ul>
-          </div> 
+            </ul> */} 
+          {/* </div>  */}
          </div>
- <motion.div
-        className="social-links  absolute left-7 flex gap-8"
+     <motion.div
+        className="social-links  absolute top-6  flex gap-8"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1.2 }}
         transition={{ duration: 0.5, ease: 'easeOut' }}
@@ -108,7 +109,7 @@ const Header = () => {
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
         >
-          <FaTwitter size={50} className='text-white'/>
+          <FaTwitter size={100} className='text-[#FFF500] '/>
         </motion.a>
         <motion.a 
           href="https://pump.fun/" 
@@ -117,7 +118,7 @@ const Header = () => {
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
         >
-          <img src={pumpImg} alt='pumplogo' className='w-12' />
+          <img src={pumpImg} alt='pumplogo' className='w-24' />
         </motion.a>
         <motion.a 
           href="https://t.me/SmileOSOL" 
@@ -126,7 +127,7 @@ const Header = () => {
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
         >
-          <FaTelegram size={50} className='text-white'/>
+          <FaTelegram size={100} className='text-[#FFF500]'/>
         </motion.a>
       </motion.div>
           <div className=" whitespace-nowrap">
