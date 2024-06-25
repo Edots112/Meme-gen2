@@ -61,7 +61,7 @@ const Token = () => {
           <FaTwitter size={50} className='text-black'/>
         </motion.a>
         <motion.a 
-          href="https://pump.fun/CiBhBScHVT7v12zBrzVk5tyDcwfS9HnQmwy8ZNUpump" 
+          href="https://pump.fun/76vppeEyiwoULNjg2TDVQBRwymVHaWD8VD6HxPEepump" 
           target="_blank" 
           rel="noopener noreferrer"
           whileHover={{ scale: 1.2 }}
