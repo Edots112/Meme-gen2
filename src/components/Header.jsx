@@ -33,9 +33,9 @@ const Header = () => {
 
   return (
     <div style={{ width: '100vw' }}>
-      <nav className={`flex fixed z-50 w-screen p-6  justify-center items-center  transition-all duration-300  ${scrolled ? 'bg-transparent' : 'bg-transparent'} ${hidden ? '-top-40' : 'top-0'}`}>
-        <div className="container mx-auto flex justify-between items-center p-2">
-          <a className="absolute top-0 right-6" href="/">
+      <nav className={`flex fixed z-50 w-screen p-6 pr-20  justify-end items-center  transition-all duration-300  ${scrolled ? 'bg-transparent' : 'bg-transparent'} ${hidden ? '-top-40' : 'top-0'}`}>
+        <div className="container mx-auto flex justify- items-center p-2">
+          {/* <a className="absolute top-0 right-6" href="/">
             <motion.img
               src={doggyImg2}
               alt="logo"
@@ -45,7 +45,7 @@ const Header = () => {
               // animate={{ rotateY: 360 }}
               transition={{ repeat: Infinity, duration: 2, ease: "linear" }}
             />
-          </a>
+          </a> */}
           {/* <div id="navbarSupportedContent" className="flex items-center justify-center w-screen"> */}
             {/* <ul className="flex font-Priest  gap-14  "> */}
               {/* <motion.li
@@ -103,13 +103,13 @@ const Header = () => {
         transition={{ duration: 0.5, ease: 'easeOut' }}
       >
         <motion.a 
-          href="https://x.com/Mumty_Sol" 
+          href="https://x.com/Quisi_Sol" 
           target="_blank" 
           rel="noopener noreferrer"
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
         >
-          <FaTwitter size={100} className='text-[#FFF500] '/>
+          <FaTwitter size={100} className='text-pink-200 '/>
         </motion.a>
         <motion.a 
           href="https://pump.fun/" 
@@ -121,13 +121,13 @@ const Header = () => {
           <img src={pumpImg} alt='pumplogo' className='w-24' />
         </motion.a>
         <motion.a 
-          href="https://t.me/MUMTY_SOL" 
+          href="https://t.me/QuisiSOL" 
           target="_blank" 
           rel="noopener noreferrer"
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
         >
-          <FaTelegram size={100} className='text-[#FFF500]'/>
+          <FaTelegram size={100} className='text-pink-200'/>
         </motion.a>
       </motion.div>
           <div className=" whitespace-nowrap">
