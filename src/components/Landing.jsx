@@ -6,7 +6,7 @@ import gifImg from "../assets/Gremliy/GREMLIY.gif"
 import object2Img from "../assets/priest/object2.png"
 import object3Img from "../assets/priest/object3.png"
 import backgroundVideo from '../assets/priest/bg-video.mp4'; // Importera videofilen
-import doggyImg from '../assets/qusi.jpg'; // Importera din hundbild
+import doggyImg from '../assets/qusi.png'; // Importera din hundbild
 import backgroundImg from '../assets/2580.jpg'; // Importera din bakgrundsbild
 import '../Landing.css'; // Lägg till en CSS-fil för stilarna
 
