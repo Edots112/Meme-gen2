@@ -51,20 +51,20 @@ const Landing = () => {
   };
 
   return (
-    <div id='' className="relative flex flex-col items-center h-[100vh] overflow-hidden z-10 bg-white b ">
-      <img
+    <div id='' className="relative flex flex-col items-center h-[100vh] overflow-hidden z-10 bg-black ">
+      {/* <img
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
         src={backgroundImg}
         alt="background"
-      />
+      /> */}
       {/* <div className="rain">{generateRain()}</div> */}
 
-      {/* <motion.h1
-        className='absolute z-10  bottom-10 font-Priest text-[8rem] xl:text-[13rem]  2xl:text-[20rem] text-white  right-'
+      <motion.h1
+        className='absolute z-30  bottom-[-130px] font-Priest text-[8rem] xl:text-[13rem]  2xl:text-[22rem] text-[#FFF500]  right-'
         animate={controls}
       >
-        SMILEO
-      </motion.h1> */}
+        MUMTY
+      </motion.h1>
 
       <p className='text-[#FFF500] z-10 absolute top-[40%] right-10 w-[35%]  font-Priest text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-6xl font-bold animate-text'>
         Don't get fouled by his looks, he can bite! 
@@ -73,16 +73,16 @@ const Landing = () => {
       <motion.img
         src={doggyImg}
         className='z-10 w-[425px] absolute bottom-[-10%] left-[10%] '
-        alt="ARCHIE"
+        alt="MUM"
         animate={controls}
       />
 
-      <motion.img 
+      {/* <motion.img 
         src={gifImg}
         className='z-10 absolute bottom-[-15%]'
-        alt="ARCHIE"
+        alt="MUM"
         animate={controls}
-      />
+      /> */}
      <motion.div
         className="social-links absolute bottom-36 left-10 z-10 "
         initial={{ opacity: 0, scale: 0.8 }}
