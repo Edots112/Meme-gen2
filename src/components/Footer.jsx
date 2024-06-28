@@ -23,7 +23,7 @@ const Footer = () => {
                 <a href="https://x.com/Smileo_Solana" target="_blank" rel="noopener noreferrer">
                     <FaTwitter size={48} />
                 </a>
-                <a href="https://t.me/SmileOSOL" target="_blank" rel="noopener noreferrer">
+                <a href="https://t.me/MUMTY_SOL" target="_blank" rel="noopener noreferrer">
                     <FaTelegram size={48} />
                 </a>
                 <a href="https://pump.fun/" target="_blank" rel="noopener noreferrer">

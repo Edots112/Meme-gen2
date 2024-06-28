@@ -50,6 +50,15 @@ const Landing = () => {
     return rainArray;
   };
 
+  // Funktion för att kopiera text till urklipp
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText('Your string to copy').then(() => {
+      alert('Text copied to clipboard!');
+    }).catch(err => {
+      console.error('Failed to copy text: ', err);
+    });
+  };
+
   return (
     <div id='' className="relative flex flex-col items-center h-[100vh] overflow-hidden z-10 bg-black ">
        <img
@@ -83,6 +92,14 @@ const Landing = () => {
         alt="MUM"
         animate={controls}
       /> */}
+
+      <h2 
+        className='text-[#FFF500] z-10 absolute bg-black/65 p-4 rounded-full top-[15%] font-Priest text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-6xl font-bold animate-text cursor-pointer'
+        onClick={copyToClipboard}
+      >
+        Copy Ca
+      </h2>
+
      <motion.div
         className="social-links absolute bottom-36 left-10 z-10 "
         initial={{ opacity: 0, scale: 0.8 }}
