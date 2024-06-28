@@ -33,7 +33,7 @@ const Header = () => {
 
   return (
     <div style={{ width: '100vw' }}>
-      <nav className={`flex fixed z-50 w-screen p-6 pr-20  justify-end items-center  transition-all duration-300  ${scrolled ? 'bg-transparent' : 'bg-transparent'} ${hidden ? '-top-40' : 'top-0'}`}>
+      <nav className={`flex fixed z-50 w-screen p-8   justify-start items-center  transition-all duration-100  ${scrolled ? 'bg-transparent' : 'bg-transparent'} ${hidden ? '-top-40' : 'top-0'}`}>
         <div className="container mx-auto flex justify- items-center p-2">
           {/* <a className="absolute top-0 right-6" href="/">
             <motion.img
@@ -97,21 +97,12 @@ const Header = () => {
           {/* </div>  */}
          </div>
      <motion.div
-        className="social-links  absolute top-6  flex gap-8"
+        className="social-links absolute top-10  flex gap-8"
         initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1.2 }}
+        animate={{ opacity: 1, scale: 0.9 }}
         transition={{ duration: 0.5, ease: 'easeOut' }}
       >
-        <motion.a 
-          href="https://x.com/Quisi_Sol" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          whileHover={{ scale: 1.2 }}
-          whileTap={{ scale: 0.9 }}
-        >
-          <FaTwitter size={100} className='text-pink-200 '/>
-        </motion.a>
-        <motion.a 
+        {/* <motion.a 
           href="https://pump.fun/" 
           target="_blank" 
           rel="noopener noreferrer"
@@ -119,15 +110,24 @@ const Header = () => {
           whileTap={{ scale: 0.9 }}
         >
           <img src={pumpImg} alt='pumplogo' className='w-24' />
-        </motion.a>
+        </motion.a> */}
         <motion.a 
-          href="https://t.me/QuisiSOL" 
+          href="https://x.com/SolYawnti" 
           target="_blank" 
           rel="noopener noreferrer"
-          whileHover={{ scale: 1.2 }}
+          whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
-          <FaTelegram size={100} className='text-pink-200'/>
+          <FaTwitter size={100} className='text-black '/>
+        </motion.a>
+        <motion.a 
+          href="https://t.me/Yawnti" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          <FaTelegram size={100} className='text-black'/>
         </motion.a>
       </motion.div>
           <div className=" whitespace-nowrap">

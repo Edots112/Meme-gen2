@@ -13,6 +13,7 @@ module.exports = {
 				Priest: ["Priest"],
 				Demon: ["Demon"],
 				Alvin: ["Alvin"],
+				Flame: ["Flame"],
 			},
 			animation: {
 				pulse: "pulse 2s infinite",

@@ -5,9 +5,9 @@ import dog1 from '../assets/Villy/olliys.png'; // Lägg till dina hundbilder
 import gifImg from "../assets/Gremliy/GREMLIY.gif"
 import object2Img from "../assets/priest/object2.png"
 import object3Img from "../assets/priest/object3.png"
-import backgroundVideo from '../assets/priest/bg-video.mp4'; // Importera videofilen
-import doggyImg from '../assets/qusi.png'; // Importera din hundbild
-import backgroundImg from '../assets/2580.jpg'; // Importera din bakgrundsbild
+import backgroundVideo from '../assets/testa.mp4'; // Importera videofilen
+import doggyImg from '../assets/yawn.png'; // Importera din hundbild
+import backgroundImg from '../assets/flame.jpg'; // Importera din bakgrundsbild
 import '../Landing.css'; // Lägg till en CSS-fil för stilarna
 
 const dogImages = [doggyImg]; // Array med bilder
@@ -65,47 +65,51 @@ const Landing = () => {
         src={backgroundImg}
         alt="background"
       />
+
+      <video autoPlay muted loop className="absolute top-0 left-0 w-full h-full object-cover z-0">
+        <source src={backgroundVideo} type="video/mp4" />
+      </video>
       {/* <div className="rain">{generateRain()}</div> */}
 
       <motion.h1
-        className='absolute z-30 top-0 left-0 font- font-Adelia text-[8rem] xl:text-[13rem] 2xl:text-[17rem] text-blue-600 right-'
+        className='absolute z-30 bottom-0 left-0 font- font-Flame text-[8rem] xl:text-[13rem] 2xl:text-[17rem] text-black right-'
       >
-        QUISI
+        YAWNTI
       </motion.h1>
 
       <motion.img
         src={doggyImg}
-        className='z-10 w-[525px] absolute top-[32%] rounded-xl'
+        className='z-10 w-[725px] absolute top-[25%] right-10 rounded-xl'
         alt="MUM"
       />
 
-      {visibleBoxes[0] && (
+      {/* {visibleBoxes[0] && (
         <div className='text-red-500 z-10 absolute top-[30%] right-2 w-[35%] font-Geo text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-6xl font-bold animate-text'>
           Quisi! Just took a nap and woke up ready to pump!
         </div>
-      )}
+      )} */}
 
       {visibleBoxes[1] && (
-        <div className='text-green-400 z-10 absolute  p-4 rounded-full top-[45%] w-[35%] left-4 font-Priest text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-6xl font-bold animate-text'>
-          To see the world upside down is understandable, but to see it upside down and backwards is a whole new level of understanding.
+        <div className='text-black z-10 absolute  p-4 rounded-full top-[25%] w-[55%] left-[7%] text-center font-Priest text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-6xl font-bold animate-text'>
+          YAAAWWWN! Whats happening here? Hmm it smells wierd? anyway Im Yawnti and I am here to pump!  
         </div>
       )}
 
-      {visibleBoxes[2] && (
+      {/* {visibleBoxes[2] && (
         <div className='text-orange-500 z-10 absolute  p-4 rounded-full top-[75%] left-[65%] font-Demon text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-5xl font-bold animate-text'>
           Be smart! Buy Quisi! 
         </div>
-      )}
+      )} */}
 
       <motion.div
-        className="social-links absolute top-10 left-[45%] z-10"
+        className="social-links absolute top-10  z-10"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5, ease: 'easeOut' }}
       >
         <a href="https://pump.fun/" target="_blank" rel="noopener noreferrer">
           <motion.button
-            className='font-Priest w-[30rem] bg-pink-200 hover:bg-green-300 hover:text-white text-black font-bold py-8 px-4  border-2 border-black rounded-full '
+            className='font-Flame w-[30rem] bg-black hover:bg-red-700 hover:text-white text-White font-bold py-8 px-4  border-2 border-black '
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
