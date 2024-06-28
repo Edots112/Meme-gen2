@@ -7,7 +7,7 @@ import object2Img from "../assets/priest/object2.png"
 import object3Img from "../assets/priest/object3.png"
 import backgroundVideo from '../assets/priest/bg-video.mp4'; // Importera videofilen
 import doggyImg from '../assets/Gremliy/Gremliy.png'; // Importera din hundbild
-import backgroundImg from '../assets/Gremliy/background.gif'; // Importera din bakgrundsbild
+import backgroundImg from '../assets/Gremliy/run.gif'; // Importera din bakgrundsbild
 import '../Landing.css'; // Lägg till en CSS-fil för stilarna
 
 const dogImages = [doggyImg ]; // Array med bilder
@@ -52,12 +52,12 @@ const Landing = () => {
 
   return (
     <div id='' className="relative flex flex-col items-center h-[100vh] overflow-hidden z-10 bg-black ">
-      {/* <img
+       <img
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
         src={backgroundImg}
         alt="background"
-      /> */}
-      {/* <div className="rain">{generateRain()}</div> */}
+      /> 
+      {/* <div className="rain">{generateRain()}</div>  */}
 
       <motion.h1
         className='absolute z-30  bottom-[-130px] font-Priest text-[8rem] xl:text-[13rem]  2xl:text-[22rem] text-[#FFF500]  right-'
@@ -67,7 +67,7 @@ const Landing = () => {
       </motion.h1>
 
       <p className='text-[#FFF500] z-10 absolute top-[40%] right-10 w-[35%]  font-Priest text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-6xl font-bold animate-text'>
-        Don't get fouled by his looks, he can bite! 
+        Don't get fouled by his looks, He now how to handle <span className='text-pink-500'>$MUM</span> 
       </p>
 
       <motion.img
