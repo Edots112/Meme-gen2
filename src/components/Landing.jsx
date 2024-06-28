@@ -76,7 +76,7 @@ const Landing = () => {
       </motion.h1>
 
       <p className='text-[#FFF500] z-10 absolute top-[40%] right-10 w-[35%]  font-Priest text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-6xl font-bold animate-text'>
-        Don't get fouled by his looks, He now how to handle <span className='text-pink-500'>$MUM</span> 
+        Don't get fouled by his looks, He know how to handle <span className='text-pink-500'>$MUM</span> 
       </p>
 
       <motion.img
