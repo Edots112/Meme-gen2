@@ -7,7 +7,7 @@ import object2Img from "../assets/priest/object2.png"
 import object3Img from "../assets/priest/object3.png"
 import backgroundVideo from '../assets/testa.mp4'; // Importera videofilen
 import doggyImg from '../assets/purr.png'; // Importera din hundbild
-import backgroundImg from '../assets/purrbg.png'; // Importera din bakgrundsbild
+// import backgroundImg from '../assets/purrbg.png'; // Importera din bakgrundsbild
 import '../Landing.css'; // Lägg till en CSS-fil för stilarna
 
 const dogImages = [doggyImg]; // Array med bilder
@@ -59,12 +59,12 @@ const Landing = () => {
   };
 
   return (
-    <div id='' className="relative flex flex-col items-center h-[100vh] overflow-hidden z-10 bg-black ">
-      <img
+    <div id='' className="relative flex flex-col items-center h-[100vh] overflow-hidden z-10 bg-blue-200 ">
+      {/* <img
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
         src={backgroundImg}
         alt="background"
-      />
+      /> */}
 
       {/* <video autoPlay muted loop className="absolute top-0 left-0 w-full h-full object-cover z-0">
         <source src={backgroundVideo} type="video/mp4" />
@@ -74,12 +74,12 @@ const Landing = () => {
       <motion.h1
         className='absolute z-30 top-[-40px] right-0 font- font-Flame text-[8rem] xl:text-[10rem] 2xl:text-[12rem] text-black right-'
       >
-        PURRNY
+        BENDIE
       </motion.h1>
 
       <motion.img
         src={doggyImg}
-        className='z-10 w-[1025px] absolute bottom-0 right-10 rounded-xl'
+        className='z-10 w-[825px] absolute bottom-0  rounded-xl'
         alt="MUM"
       />
 
@@ -90,8 +90,8 @@ const Landing = () => {
       )} */}
 
       {visibleBoxes[1] && (
-        <div className='text-black z-10 absolute  p-4 rounded-full bottom-[25%] w-[55%] left-0 text-center font-Priest text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-6xl font-bold animate-text'>
-          Purrhub just launched! I will be here all night to pump! Purrny way! 
+        <div className='text-black z-10 absolute  rounded-full bottom-[25%] w-[45%] left-0 text-center font-Priest text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-6xl font-bold animate-text'>
+          BEND it like BENDIE!
         </div>
       )}
 
@@ -107,7 +107,7 @@ const Landing = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5, ease: 'easeOut' }}
       >
-        <a href="https://pump.fun/FXu57kH3nkrTQbwk7JLvuKQCoqvUBuxxQ3k2bqTepump" target="_blank" rel="noopener noreferrer">
+        <a href="https://pump.fun/" target="_blank" rel="noopener noreferrer">
           <motion.button
             className='font-Flame w-[30rem] bg-black hover:bg-red-700 hover:text-white text-White font-bold py-8 px-4  border-2 border-black '
             whileHover={{ scale: 1.1 }}
