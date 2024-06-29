@@ -112,22 +112,22 @@ const Header = () => {
           <img src={pumpImg} alt='pumplogo' className='w-24' />
         </motion.a> */}
         <motion.a 
-          href="https://x.com/Bendie_Sol" 
+          href="https://x.com/Gendy_Sol" 
           target="_blank" 
           rel="noopener noreferrer"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
-          <FaTwitter size={300} className='text-black '/>
+          <FaTwitter size={300} className='text-white '/>
         </motion.a>
         <motion.a 
-          href="https://t.me/BendieSol" 
+          href="https://t.me/GendySol" 
           target="_blank" 
           rel="noopener noreferrer"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
-          <FaTelegram size={300} className='text-black'/>
+          <FaTelegram size={300} className='text-white'/>
         </motion.a>
       </motion.div>
           <div className=" whitespace-nowrap">
