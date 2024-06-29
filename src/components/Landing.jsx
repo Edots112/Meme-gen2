@@ -6,8 +6,8 @@ import gifImg from "../assets/Gremliy/GREMLIY.gif"
 import object2Img from "../assets/priest/object2.png"
 import object3Img from "../assets/priest/object3.png"
 import backgroundVideo from '../assets/testa.mp4'; // Importera videofilen
-import doggyImg from '../assets/yawn.png'; // Importera din hundbild
-import backgroundImg from '../assets/flame.jpg'; // Importera din bakgrundsbild
+import doggyImg from '../assets/purr.png'; // Importera din hundbild
+import backgroundImg from '../assets/purrbg.png'; // Importera din bakgrundsbild
 import '../Landing.css'; // Lägg till en CSS-fil för stilarna
 
 const dogImages = [doggyImg]; // Array med bilder
@@ -66,20 +66,20 @@ const Landing = () => {
         alt="background"
       />
 
-      <video autoPlay muted loop className="absolute top-0 left-0 w-full h-full object-cover z-0">
+      {/* <video autoPlay muted loop className="absolute top-0 left-0 w-full h-full object-cover z-0">
         <source src={backgroundVideo} type="video/mp4" />
-      </video>
+      </video> */}
       {/* <div className="rain">{generateRain()}</div> */}
 
       <motion.h1
-        className='absolute z-30 bottom-0 left-0 font- font-Flame text-[8rem] xl:text-[13rem] 2xl:text-[17rem] text-black right-'
+        className='absolute z-30 top-[-40px] right-0 font- font-Flame text-[8rem] xl:text-[10rem] 2xl:text-[12rem] text-black right-'
       >
-        YAWNTI
+        PURRNY
       </motion.h1>
 
       <motion.img
         src={doggyImg}
-        className='z-10 w-[725px] absolute top-[25%] right-10 rounded-xl'
+        className='z-10 w-[1025px] absolute bottom-0 right-10 rounded-xl'
         alt="MUM"
       />
 
@@ -90,8 +90,8 @@ const Landing = () => {
       )} */}
 
       {visibleBoxes[1] && (
-        <div className='text-black z-10 absolute  p-4 rounded-full top-[25%] w-[55%] left-[7%] text-center font-Priest text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-6xl font-bold animate-text'>
-          YAAAWWWN! Whats happening here? Hmm it smells wierd? anyway Im Yawnti and I am here to pump!  
+        <div className='text-black z-10 absolute  p-4 rounded-full bottom-[25%] w-[55%] left-0 text-center font-Priest text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-6xl font-bold animate-text'>
+          Purrhub just launched! I will be here all night to pump! Purrny way! 
         </div>
       )}
 
@@ -102,7 +102,7 @@ const Landing = () => {
       )} */}
 
       <motion.div
-        className="social-links absolute top-10  z-10"
+        className="social-links absolute bottom-10 left-48  z-10"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5, ease: 'easeOut' }}
