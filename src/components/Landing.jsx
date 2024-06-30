@@ -113,7 +113,7 @@ const Landing = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5, ease: 'easeOut' }}
       >
-        <a href="https://pump.fun/" target="_blank" rel="noopener noreferrer">
+        <a href="https://pump.fun/4Tb6r5AMiXvC7uFRtCJujESgAkBfwRagyN6vp4kdpump" target="_blank" rel="noopener noreferrer">
           <motion.button
             className='font-Flame w-[30rem] text-black bg-white hover:bg-green-700 hover:text-black text-White font-bold py-8 px-4  border-2 border-black '
             whileHover={{ scale: 1.1 }}
