@@ -6,8 +6,9 @@ import gifImg from "../assets/Gremliy/GREMLIY.gif"
 import object2Img from "../assets/priest/object2.png"
 import object3Img from "../assets/priest/object3.png"
 import backgroundVideo from '../assets/testa.mp4'; // Importera videofilen
-import doggyImg from '../assets/gendy.png'; // Importera din hundbild
-import backgroundImg from '../assets/genbg.webp'; // Importera din bakgrundsbild
+import doggyImg from '../assets/bar.png'; // Importera din hundbild
+import barbImg from '../assets/barb.png'; // Importera din hundbild
+import backgroundImg from '../assets/barbershop.jpg'; // Importera din bakgrundsbild
 import '../Landing.css'; // Lägg till en CSS-fil för stilarna
 
 const dogImages = [doggyImg]; // Array med bilder
@@ -72,14 +73,23 @@ const Landing = () => {
       {/* <div className="rain">{generateRain()}</div> */}
 
       <motion.h1
-        className='absolute z-30 top-[-40px] right-0 font- font-Priest text-[8rem] xl:text-[10rem] 2xl:text-[14rem] text-white right-'
+        className='absolute z-30 top-4  font- font-Priest text-[8rem] xl:text-[10rem] 2xl:text-[14rem] text-red-800 right-'
       >
-        Gendy
+        Pitsu
+           <div className='text-white z-10 absolute top-[17rem] rounded-full left-0 text-center font-Priest text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-6xl font-bold animate-text'>
+          Pitsu! , About to get that furr done! 
+        </div>
       </motion.h1>
 
       <motion.img
         src={doggyImg}
-        className='z-10 w-[825px] absolute bottom-0 right-0  rounded-xl'
+        className='z-10 w-[405px] absolute bottom-24   rounded-xl'
+        alt="MUM"
+      />
+
+         <motion.img
+        src={barbImg}
+        className=' w-[805px] absolute bottom-0 right-10  rounded-xl'
         alt="MUM"
       />
 
@@ -89,11 +99,7 @@ const Landing = () => {
         </div>
       )} */}
 
-      {visibleBoxes[1] && (
-        <div className='text-white z-10 absolute  rounded-full bottom-[25%] w-[45%] left-0 text-center font-Priest text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-6xl font-bold animate-text'>
-          This is Gendy, He had a rough day!
-        </div>
-      )}
+   
 
       {/* {visibleBoxes[2] && (
         <div className='text-orange-500 z-10 absolute  p-4 rounded-full top-[75%] left-[65%] font-Demon text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-5xl font-bold animate-text'>
@@ -102,7 +108,7 @@ const Landing = () => {
       )} */}
 
       <motion.div
-        className="social-links absolute bottom-10 left-48  z-10"
+        className="social-links absolute top-10 right-5  z-10"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5, ease: 'easeOut' }}
