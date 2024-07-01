@@ -6,9 +6,9 @@ import gifImg from "../assets/Gremliy/GREMLIY.gif"
 import object2Img from "../assets/priest/object2.png"
 import object3Img from "../assets/priest/object3.png"
 import backgroundVideo from '../assets/testa.mp4'; // Importera videofilen
-import doggyImg from '../assets/geggy.jpg'; // Importera din hundbild
+import doggyImg from '../assets/pekie.png'; // Importera din hundbild
 import small from '../assets/smallgeggy.png'; // Importera din hundbild
-// import backgroundImg from '../assets/g.jpg'; // Importera din bakgrundsbild
+import backgroundImg from '../assets/bg.avif'; // Importera din bakgrundsbild
 import '../Landing.css'; // Lägg till en CSS-fil för stilarna
 
 const dogImages = [small]; // Array med bilder
@@ -61,25 +61,25 @@ const Landing = () => {
 
   return (
     <div id='' className="relative flex flex-col items-center h-[100vh] overflow-hidden z-10 bg-blue-200 ">
-      {/* <img
+      <img
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
         src={backgroundImg}
         alt="background"
-      /> */}
+      />
 
       {/* <video autoPlay muted loop className="absolute top-0 left-0 w-full h-full object-cover z-0">
         <source src={backgroundVideo} type="video/mp4" />
       </video> */}
-      <div className="rain">{generateRain()}</div>
+      {/* <div className="rain">{generateRain()}</div> */}
 
       <motion.h1
-        className='absolute z-30 top-4  font- font-Priest text-[8rem] xl:text-[10rem] 2xl:text-[14rem] text-white right-'
+        className='absolute z-30 top-4  font- font-Priest text-[8rem] xl:text-[10rem] 2xl:text-[14rem] text-black right-'
       >
-        GEGGY
+        Pekie
       </motion.h1>
 
-           <div className='text-white z-10 absolute bottom-64 rounded-full p-2 left-10 text-center font-Priest text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-5xl font-bold animate-text'>
-         Solans most beggiset cat! 
+           <div className='text-black z-10 absolute bottom-0 rounded-full p-2 left-10 text-center font-Priest text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-5xl font-bold animate-text'>
+        Pekie here to take Solana to Pekie highs
         </div>
       <motion.img
         src={doggyImg}
