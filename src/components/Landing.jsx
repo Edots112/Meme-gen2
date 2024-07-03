@@ -75,11 +75,11 @@ const Landing = () => {
       <motion.h1
         className='absolute z-30 top-4  font- font-Priest text-[8rem] xl:text-[10rem] 2xl:text-[14rem] text-black right-'
       >
-        Pekie
+        GISHI
       </motion.h1>
 
            <div className='text-black z-10 absolute bottom-0 rounded-full p-2 left-10 text-center font-Priest text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-5xl font-bold animate-text'>
-        Pekie here to take Solana to Pekie highs
+        GISHI here to take Solana to GISHI highs
         </div>
       <motion.img
         src={doggyImg}
