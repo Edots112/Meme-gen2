@@ -6,7 +6,7 @@ import gifImg from "../assets/Gremliy/GREMLIY.gif"
 import object2Img from "../assets/priest/object2.png"
 import object3Img from "../assets/priest/object3.png"
 import backgroundVideo from '../assets/testa.mp4'; // Importera videofilen
-import doggyImg from '../assets/pekie.png'; // Importera din hundbild
+import doggyImg from '../assets/Nidias.png'; // Importera din hundbild
 import small from '../assets/smallgeggy.png'; // Importera din hundbild
 import backgroundImg from '../assets/bg.avif'; // Importera din bakgrundsbild
 import '../Landing.css'; // Lägg till en CSS-fil för stilarna
@@ -75,11 +75,11 @@ const Landing = () => {
       <motion.h1
         className='absolute z-30 top-4  font- font-Priest text-[8rem] xl:text-[10rem] 2xl:text-[14rem] text-black right-'
       >
-        GISHI
+        NIDIAS
       </motion.h1>
 
            <div className='text-black z-10 absolute bottom-0 rounded-full p-2 left-10 text-center font-Priest text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-5xl font-bold animate-text'>
-        GISHI here to take Solana to GISHI highs
+        Hello! I'm Nidias, here to check in on you!
         </div>
       <motion.img
         src={doggyImg}
