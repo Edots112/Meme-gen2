@@ -97,7 +97,7 @@ const Header = () => {
           {/* </div>  */}
          </div>
      <motion.div
-        className="absolute top-0 flex flex-col gap-8"
+        className="absolute top-16 left-72 flex gap-8"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 0.9 }}
         transition={{ duration: 0.5, ease: 'easeOut' }}
@@ -112,22 +112,22 @@ const Header = () => {
           <img src={pumpImg} alt='pumplogo' className='w-24' />
         </motion.a> */}
         <motion.a 
-          href="https://x.com/NidiasSol" 
+          href="https://x.com/Vikie_Sol" 
           target="_blank" 
           rel="noopener noreferrer"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
-          <FaTwitter size={150} className='text-white '/>
+          <FaTwitter size={250} className='text-black '/>
         </motion.a>
         <motion.a 
-          href="https://t.me/NidiasSol" 
+          href="https://t.me/VikieSol" 
           target="_blank" 
           rel="noopener noreferrer"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
-          <FaTelegram size={150} className='text-white'/>
+          <FaTelegram size={250} className='text-black'/>
         </motion.a>
       </motion.div>
           <div className=" whitespace-nowrap">

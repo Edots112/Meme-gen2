@@ -6,9 +6,9 @@ import gifImg from "../assets/Gremliy/GREMLIY.gif"
 import object2Img from "../assets/priest/object2.png"
 import object3Img from "../assets/priest/object3.png"
 import backgroundVideo from '../assets/testa.mp4'; // Importera videofilen
-import doggyImg from '../assets/Nidias.png'; // Importera din hundbild
+import doggyImg from '../assets/vikie.png'; // Importera din hundbild
 import small from '../assets/smallgeggy.png'; // Importera din hundbild
-import backgroundImg from '../assets/bg.avif'; // Importera din bakgrundsbild
+import backgroundImg from '../assets/bg2.jpeg'; // Importera din bakgrundsbild
 import '../Landing.css'; // Lägg till en CSS-fil för stilarna
 
 const dogImages = [small]; // Array med bilder
@@ -73,17 +73,17 @@ const Landing = () => {
       {/* <div className="rain">{generateRain()}</div> */}
 
       <motion.h1
-        className='absolute z-30 top-4  font- font-Priest text-[8rem] xl:text-[10rem] 2xl:text-[14rem] text-black right-'
+        className='absolute z-30 bottom-[-50px] left-4  font- font-Adelia text-[8rem] xl:text-[10rem] 2xl:text-[20rem] text-black right-'
       >
-        NIDIAS
+        Vikie
       </motion.h1>
 
-           <div className='text-black z-10 absolute bottom-0 rounded-full p-2 left-10 text-center font-Priest text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-5xl font-bold animate-text'>
-        Hello! I'm Nidias, here to check in on you!
+           <div className='text-black z-10 absolute bottom-[400px] rounded-full p-2 left-16 text-center font-Priest text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-5xl font-bold animate-text'>
+        The most adroable cat on Solana blockchain! 
         </div>
       <motion.img
         src={doggyImg}
-        className='z-10 w-[505px] absolute bottom-24   rounded-xl'
+        className='z-10 w-[505px] absolute bottom-48 right-36   rounded-xl'
         alt="MUM"
       />
 
@@ -108,14 +108,14 @@ const Landing = () => {
       )} */}
 
       <motion.div
-        className="social-links absolute bottom-10 right-5  z-10"
+        className="social-links absolute bottom-10 right-36   z-10"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5, ease: 'easeOut' }}
       >
         <a href="https://pump.fun/" target="_blank" rel="noopener noreferrer">
           <motion.button
-            className='font-Flame w-[30rem] text-black bg-white hover:bg-blue-400 hover:text-black text-White font-bold py-8 px-4  border-2 border-black '
+            className='font-Flame w-[30rem] text-white  bg-black hover:bg-white hover:text-black text-White font-bold py-8 px-4 rounded-full  border-2 border-black '
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
