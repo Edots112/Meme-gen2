@@ -6,7 +6,7 @@ import gifImg from "../assets/Gremliy/GREMLIY.gif"
 import object2Img from "../assets/priest/object2.png"
 import object3Img from "../assets/priest/object3.png"
 import backgroundVideo from '../assets/testa.mp4'; // Importera videofilen
-import doggyImg from '../assets/vikie.png'; // Importera din hundbild
+import doggyImg from '../assets/yawnty.png'; // Importera din hundbild
 import small from '../assets/smallgeggy.png'; // Importera din hundbild
 import backgroundImg from '../assets/bg2.jpeg'; // Importera din bakgrundsbild
 import '../Landing.css'; // Lägg till en CSS-fil för stilarna
@@ -73,13 +73,13 @@ const Landing = () => {
       {/* <div className="rain">{generateRain()}</div> */}
 
       <motion.h1
-        className='absolute z-30 bottom-[-50px] left-4  font- font-Adelia text-[8rem] xl:text-[10rem] 2xl:text-[20rem] text-black right-'
+        className='absolute z-30 bottom-0 left-4  font- font-Adelia text-[8rem] xl:text-[10rem] 2xl:text-[15rem] text-black right-'
       >
-        Vikie
+        Yawnty
       </motion.h1>
 
            <div className='text-black z-10 absolute bottom-[400px] rounded-full p-2 left-16 text-center font-Priest text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-5xl font-bold animate-text'>
-        The most adroable cat on Solana blockchain! 
+        Yawnty, with paws like your mums tits!! 
         </div>
       <motion.img
         src={doggyImg}
