@@ -97,7 +97,7 @@ const Header = () => {
           {/* </div>  */}
          </div>
      <motion.div
-        className="absolute top-16 left-72 flex gap-8"
+        className="absolute top-10 right-10 flex gap-8"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 0.9 }}
         transition={{ duration: 0.5, ease: 'easeOut' }}
@@ -118,7 +118,7 @@ const Header = () => {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
-          <FaTwitter size={250} className='text-black '/>
+          <FaTwitter size={100} className='text-white '/>
         </motion.a>
         <motion.a 
           href="https://t.me/FITTUSOL" 
@@ -127,7 +127,7 @@ const Header = () => {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
-          <FaTelegram size={250} className='text-black'/>
+          <FaTelegram size={100} className='text-white'/>
         </motion.a>
       </motion.div>
           <div className=" whitespace-nowrap">
