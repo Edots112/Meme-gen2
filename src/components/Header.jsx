@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaBeer,  } from 'react-icons/fa';
 import { TbDogBowl } from "react-icons/tb";
-import mainImg from '../assets/doggy.png';
-import pumpImg from '../assets/pumpfa.png';
-import doggyImg2 from '../assets/Gremliy/Gremliyhead.png'
+// import mainImg from '../assets/doggy.png';
+// import pumpImg from '../assets/pumpfa.png';
+// import doggyImg2 from '../assets/Gremliy/Gremliyhead.png'
 import { FaTwitter, FaTelegram } from 'react-icons/fa';
 
 const Header = () => {
@@ -112,7 +112,7 @@ const Header = () => {
           <img src={pumpImg} alt='pumplogo' className='w-24' />
         </motion.a> */}
         <motion.a 
-          href="https://x.com/BonniySol82227" 
+          href="https://x.com/LizieCatSol" 
           target="_blank" 
           rel="noopener noreferrer"
           whileHover={{ scale: 1.1 }}
@@ -121,7 +121,7 @@ const Header = () => {
           <FaTwitter size={100} className='text-white '/>
         </motion.a>
         <motion.a 
-          href="https://t.me/BonniySol" 
+          href="https://t.me/LizieSol" 
           target="_blank" 
           rel="noopener noreferrer"
           whileHover={{ scale: 1.1 }}

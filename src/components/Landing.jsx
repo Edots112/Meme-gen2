@@ -6,9 +6,9 @@ import gifImg from "../assets/Gremliy/GREMLIY.gif"
 import object2Img from "../assets/priest/object2.png"
 import object3Img from "../assets/priest/object3.png"
 import backgroundVideo from '../assets/landbg.mp4'; // Importera videofilen
-import doggyImg from '../assets/bonniy.png'; // Importera din hundbild
-import small from '../assets/bonniy.png'; // Importera din hundbild
-import backgroundImg from '../assets/prison.jpg'; // Importera din bakgrundsbild
+import doggyImg from '../assets/Lizie.png'; // Importera din hundbild
+import small from '../assets/Lizie.png'; // Importera din hundbild
+import backgroundImg from '../assets/2580.jpg'; // Importera din bakgrundsbild
 import '../Landing.css'; // Lägg till en CSS-fil för stilarna
 
 const dogImages = [small]; // Array med bilder
@@ -90,29 +90,29 @@ const Landing = () => {
 
   return (
     <div id='' className="relative flex flex-col items-center h-[100vh] overflow-hidden z-10 bg-blue-200 ">
-      {/* <img
+      <img
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
         src={backgroundImg}
         alt="background"
-      /> */}
+      />
 
-      <video autoPlay muted loop className="absolute top-0 left-0 w-full h-full object-cover z-0">
+      {/* <video autoPlay muted loop className="absolute top-0 left-0 w-full h-full object-cover z-0">
         <source src={backgroundVideo} type="video/mp4" />
-      </video>
-      <div className="rain">{generateRain()}</div>
+      </video> */}
+      {/* <div className="rain">{generateRain()}</div> */}
 
       <motion.h1
-        className='absolute z-30 top-0 left-10  font- font-Adelia text-[8rem] xl:text-[10rem] 2xl:text-[15rem] text-white right-'
+        className='absolute z-30 top-0 left-[18%]  font- font-Adelia text-[8rem] xl:text-[10rem] 2xl:text-[15rem] text-blue-500 right-'
       >
-        BONNIY
+        LIZIE
       </motion.h1>
 
            <div className='text-white z-10 absolute top-[350px] w-[50%] rounded-full p-2 left-48 text-center font-Priest text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-5xl font-bold animate-text'>
-        Hello! My name is <span className='text-red-300 text-7xl'>Bonniy!</span> I'm just Solanas most beautiful dog!
+        This is  <span className='text-blue-500 text-7xl'>Lizie</span> Hanging down from the green candels
         </div>
       <motion.img
         src={doggyImg}
-        className='z-10 w-[655px] absolute bottom-0 right-0 animate-bounce   rounded-xl'
+        className='z-10 w-[655px] absolute top-0 right-0    rounded-xl'
         alt="MUM"
       />
 
@@ -142,7 +142,7 @@ const Landing = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5, ease: 'easeOut' }}
       >
-        <a href="https://pump.fun/2EJbvKX5h6pcMbEV7XvcqWYskbgb6trKvXTp7jtKpump" target="_blank" rel="noopener noreferrer">
+        <a href="https://pump.fun/" target="_blank" rel="noopener noreferrer">
           <motion.button
             className='font-Flame w-[30rem] text-black  bg-white hover:bg-white hover:text-black text-White font-bold py-8 px-4 rounded-full  border-2 border-black '
             whileHover={{ scale: 1.1 }}
