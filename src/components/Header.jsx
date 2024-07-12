@@ -112,7 +112,7 @@ const Header = () => {
           <img src={pumpImg} alt='pumplogo' className='w-24' />
         </motion.a> */}
         <motion.a 
-          href="https://x.com/LizieCatSol" 
+          href="https://x.com/AshllySol" 
           target="_blank" 
           rel="noopener noreferrer"
           whileHover={{ scale: 1.1 }}
@@ -121,7 +121,7 @@ const Header = () => {
           <FaTwitter size={100} className='text-white '/>
         </motion.a>
         <motion.a 
-          href="https://t.me/LizieSol" 
+          href="https://t.me/AshllySol" 
           target="_blank" 
           rel="noopener noreferrer"
           whileHover={{ scale: 1.1 }}
