@@ -6,7 +6,7 @@ import gifImg from "../assets/Gremliy/GREMLIY.gif"
 import object2Img from "../assets/priest/object2.png"
 import object3Img from "../assets/priest/object3.png"
 import backgroundVideo from '../assets/beach.mp4'; // Importera videofilen
-import doggyImg from '../assets/ashllybg.png'; // Importera din hundbild
+import doggyImg from '../assets/lickie.png'; // Importera din hundbild
 import small from '../assets/Lizie.png'; // Importera din hundbild
 import backgroundImg from '../assets/2580.jpg'; // Importera din bakgrundsbild
 import '../Landing.css'; // Lägg till en CSS-fil för stilarna
@@ -96,23 +96,23 @@ const Landing = () => {
         alt="background"
       /> */}
 
-      <video autoPlay muted loop className="absolute top-0 left-0 w-full h-full object-cover z-0">
+      {/* <video autoPlay muted loop className="absolute top-0 left-0 w-full h-full object-cover z-0">
         <source src={backgroundVideo} type="video/mp4" />
-      </video>
+      </video> */}
       {/* <div className="rain">{generateRain()}</div> */}
 
       <motion.h1
-        className='absolute z-30 top-0 left-[5%]  font- font-Adelia text-[8rem] xl:text-[10rem] 2xl:text-[15rem] text-blue-500 right-'
+        className='absolute z-30 top-0 left-[5%]  font- font-Adelia text-[8rem] xl:text-[10rem] 2xl:text-[12rem] text-black right-'
       >
-        Ashlly
+        Lickie Cat
       </motion.h1>
 
            <div className='text-white z-10 absolute top-[350px] w-[50%] rounded-full p-2 left-48 text-center font-Priest text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-5xl font-bold animate-text'>
-        This is  <span className='text-blue-500 text-7xl'>Ashlly</span> making her spot on the beach. Now she is ready to pump!
+        This is  <span className='text-blue-500 text-7xl'>LICKIE</span> CAT. Just one more lick plzz
         </div>
       <motion.img
         src={doggyImg}
-        className='z-10 w-[500px] absolute bottom-0 right-[20%]    rounded-xl'
+        className='z-10 w-[500px] absolute bottom-[10%] right-[10%]    rounded-xl'
         alt="MUM"
       />
 
