@@ -45,7 +45,7 @@ const Token = () => {
           
           <div className="flex justify-center items-center gap-8">
             <motion.a 
-              href="https://x.com/JaxlySol" 
+              href="https://x.com/Jaxly_solana" 
               target="_blank" 
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1, rotate: 10 }}
@@ -63,7 +63,7 @@ const Token = () => {
               <img src={pumpImg} alt='pumplogo' className='w-12 h-12' />
             </motion.a>
             <motion.a 
-              href="https://t.me/JaxlySOL" 
+              href="https://t.me/JaxlyDog" 
               target="_blank" 
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1, rotate: 10 }}

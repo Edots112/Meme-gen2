@@ -23,13 +23,13 @@ const Buy = () => {
           <motion.div variants={cardVariants} initial="hidden" whileInView="visible" viewport={{ once: true }} className="bg-blue-900 p-8 shadow-lg rounded-xl text-white hover:shadow-2xl transition-shadow duration-300">
             <FaCoins className="text-5xl mx-auto mb-6 text-yellow-400" />
             <h2 className="text-2xl font-Priest font-bold mb-4 text-center">Fund Your Wallet</h2>
-            <p className='font-Priest text-center'>Load your wallet with $SOL. You'll need it to buy $JAXLY tokens and participate in our community.</p>
+            <p className='font-Priest text-center'>Load your wallet with $SOL. You'll need it to buy $JAX tokens and participate in our community.</p>
           </motion.div>
 
           <motion.div variants={cardVariants} initial="hidden" whileInView="visible" viewport={{ once: true }} className="bg-blue-900 p-8 shadow-lg rounded-xl text-white hover:shadow-2xl transition-shadow duration-300">
             <FaExchangeAlt className="text-5xl mx-auto mb-6 text-yellow-400" />
-            <h2 className="text-2xl font-Priest font-bold mb-4 text-center">Swap for $JAXLY</h2>
-            <p className='font-Priest text-center'>Visit pump.fun to swap your $SOL for $JAXLY tokens. Join the pack!</p>
+            <h2 className="text-2xl font-Priest font-bold mb-4 text-center">Swap for $JAX</h2>
+            <p className='font-Priest text-center'>Visit pump.fun to swap your $SOL for $JAX tokens. Join the pack!</p>
           </motion.div>
 
           <motion.div variants={cardVariants} initial="hidden" whileInView="visible" viewport={{ once: true }} className="bg-blue-900 p-8 shadow-lg rounded-xl text-white hover:shadow-2xl transition-shadow duration-300">

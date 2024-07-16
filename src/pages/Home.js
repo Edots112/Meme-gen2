@@ -6,6 +6,7 @@ import Game from "../components/CatGame";
 import Buy from "../components/Buy";
 import Token from "../components/Token";
 import Footer from "../components/Footer";
+import MemeSection from "../components/MemeSection";
 
 const Home = () => {
 	return (
@@ -16,6 +17,7 @@ const Home = () => {
 			{/* <Game /> */}
 			<Buy />
 			<Token />
+			<MemeSection />
 			{/* <Footer /> */}
 		</>
 	);
