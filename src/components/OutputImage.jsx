@@ -13,6 +13,7 @@ const OutputImage = (props) => {
         face: { zIndex: 4, width: 500, height: 500, top: 0, left: 0 },
         frontaccessory: { zIndex: 3, width: 500, height: 500, top: 0, left: 0 },
         hat: { zIndex: 2, width: 500, height: 500, top: 0, left: 0 },
+        accessory: { zIndex: 5, width: 500, height: 500, top: 0, left: 0 }
     };
 
     const handleDownload = async () => {
@@ -28,7 +29,8 @@ const OutputImage = (props) => {
             { layer: 'character' },
             { layer: 'face' },
             { layer: 'frontaccessory' },
-            { layer: 'hat' }
+            { layer: 'hat' },
+            { layer: 'accessory' } // Add your new layer here
         ];
 
         // Function to load an image
@@ -59,18 +61,19 @@ const OutputImage = (props) => {
 
         // Provide a download link for the canvas image
         const link = document.createElement('a');
-        link.download = 'MITSY.png';
+        link.download = 'Jaxly.png';
         link.href = canvas.toDataURL();
         link.click();
     };
 
     const handleReset = () => {
         props.setSelected({
-            background: '33.png',
+            background: '24.png',
             character: '1.png',
             face: '',
             frontaccessory: '',
-            hat: ''
+            hat: '',
+            accessory: ''
         });
     };
 
@@ -80,29 +83,48 @@ const OutputImage = (props) => {
             face: images.face[Math.floor(Math.random() * images.face.length)] || '',
             hat: images.hat[Math.floor(Math.random() * images.hat.length)] || '',
             frontaccessory: images.frontAccessory[Math.floor(Math.random() * images.frontAccessory.length)] || '',
-            character: images.character[Math.floor(Math.random() * images.character.length)] || ''
+            character: images.character[Math.floor(Math.random() * images.character.length)] || '',
+            accessory: images.accessory[Math.floor(Math.random() * images.accessory.length)] || ''
         });
     };
 
     return (
         <div>
-            <div id='parent'>
-                {props.selected.background && <img id='background' src={`${process.env.PUBLIC_URL}/images/background/${props.selected.background}`} alt="" />}
-                {props.selected.character && <img id='character' src={`${process.env.PUBLIC_URL}/images/character/${props.selected.character}`} alt="" />}
-                {props.selected.hat && <img id='hat' src={`${process.env.PUBLIC_URL}/images/hat/${props.selected.hat}`} alt="" />}
-                {props.selected.frontaccessory && <img id='frontaccessory' src={`${process.env.PUBLIC_URL}/images/frontaccessory/${props.selected.frontaccessory}`} alt="" />}
-                {props.selected.face && <img id='face' src={`${process.env.PUBLIC_URL}/images/face/${props.selected.face}`} alt="" />}
+            <div id='parent' style={{ position: 'relative', width: 500, height: 500 }}>
+                {Object.entries(layerStyles).map(([layer, style]) => (
+                    props.selected[layer] && (
+                        <img 
+                            key={layer}
+                            id={layer} 
+                            src={`${process.env.PUBLIC_URL}/images/${layer}/${props.selected[layer]}`} 
+                            alt=""
+                            style={{
+                                position: 'absolute',
+                                top: style.top,
+                                left: style.left,
+                                width: style.width,
+                                height: style.height,
+                                zIndex: style.zIndex
+                            }}
+                        />
+                    )
+                ))}
             </div>
-            <div className='flex gap-3'>
-                <button id='random' className='btn flex justify-center items-center gap-3 font-Geo ' onClick={handleRandom}>
+            <div className='w-[68%] mx-auto flex flex-col gap-1 pt-2 '>
+                <button id='random' className='btn flex justify-center items-center gap-5 font-Geo' onClick={handleRandom}>
                     <GiPerspectiveDiceSixFacesRandom size={30} className='text-black' />
-                    Random</button>
-                <button id='download' className='btn flex justify-center items-center gap-3 font-Geo  ' onClick={handleDownload}>
-                    <MdDownload size={30} className='text-black' />Download</button>
-                <button id='reset' className='btn flex justify-center items-center gap-3 font-Geo ' onClick={handleReset}>
-                    <GrPowerReset size={30} className='text-black' />Reset</button>
-            <canvas ref={canvasRef} style={{ display: 'none' }} width={500} height={500} />
+                    Random
+                </button>
+                <button id='download' className='btn flex justify-center items-center gap-5 font-Geo' onClick={handleDownload}>
+                    <MdDownload size={30} className='text-black' />
+                    Download
+                </button>
+                <button id='reset' className='btn flex justify-center items-center gap-5 font-Geo' onClick={handleReset}>
+                    <GrPowerReset size={30} className='text-black' />
+                    Reset
+                </button>
             </div>
+            <canvas ref={canvasRef} style={{ display: 'none' }} width={500} height={500} />
         </div>
     );
 };

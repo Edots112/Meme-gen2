@@ -1,55 +1,53 @@
 import React, { useState } from 'react';
 import OutputImage from './OutputImage';
 import SelectionLayer from './SelectionLayer';
-import splashImg from '../assets/Villy/splash.png';
 
 const CatMeme = () => {
     const [selected, setSelected] = useState({
-        background: '2.png',
+        background: '24.png',
         character: '1.png',
         face: '',
         frontaccessory: '',
-        hat: ''
+        hat: '',
+        accessory: '' // New accessory layer
     });
 
     const [images, setImages] = useState({
-        background: [
-            "2.png", "3.png" ,"4.png" ,"5.png" ,"6.png" ,
-        ],
-        character: [
-            "1.png", "24.png", "27.png"
-        ],
-        face: [
-             "20.png", "21.png", "22.png", "23.png",  "26.png",  
-        ],
-        frontAccessory: [
-            "16.png", "17.png",  "19.png", "25.png", "28.png"
-        ],
-        hat: [
-            "7.png", "8.png", "9.png", "10.png", "11.png", "12.png", "13.png", "14.png", "15.png",
-        ]
+        background: ["24.png", "20.png", "21.png", "22.png", "23.png", "19.png"],
+        character: ["1.png", "25.png", "26.png", "27.png", "28.png"],
+        face: ["2.png", "4.png", "6.png", "8.png", "11.png", "12.png"],
+        frontAccessory: ["5.png", "7.png", "9.png",],
+        hat: ["3.png", "10.png", "13.png", "14.png",],
+        accessory: ["15.png", "16.png", "17.png", "18.png"] // Add your accessory images here
     });
 
     return (
-        <div id='meme-gen' className='flex justify-center items-center h-screen '  >
-            <div>
-                <div className=' flex justify-evenly w-screen text-center rounded-2xl items-top '>
-                            <div className='relative flex flex-col justify-center items-center bg-black rounded-full'>
-                 {/* <img src={splashImg} alt='logo' className='absolute ' style={{ zIndex: 1 }} /> */}
-                    <h1 className="font-Priest 2xl:text-7xl xl:text-5xl lg:text-4xl   font-bold text-center mb-5 mr-14   z-10">Make your own <span className='text-[#FFF500] font-bold'>MumTy</span></h1>
-                    <h3 className="font-Priest 2xl:text-3xl xl:text-2xl   font-bold text-center mb-5 mr-14 w-1/2 z-10">Select your layers and create your MumTy.</h3>
-                    <h4 className="font-Priest 2xl:text-2xl xl:text-2xl  font-bold text-center mb-5 mr-14 w-1/2 z-10">When you're happy, click the Download button and share your awesome creation</h4>
-              </div>
-                    <div className='flex flex-col  items-center justify-center  p-2  '>
-                         <OutputImage selected={selected} setSelected={setSelected} images={images} />
-                        <div id='selectionLayers '>
-                            <SelectionLayer selected={selected} images={images.character} layer={'character'} setSelected={setSelected} />
-                            <SelectionLayer selected={selected} images={images.background} layer={'background'} setSelected={setSelected} />
-                            <SelectionLayer selected={selected} images={images.face} layer={'face'} setSelected={setSelected} />
-                            <SelectionLayer selected={selected} images={images.frontAccessory} layer={'frontaccessory'} setSelected={setSelected} />
-                            <SelectionLayer selected={selected} images={images.hat} layer={'hat'} setSelected={setSelected} />
-                        </div>
-                       
+        <div id='meme-gen' className='min-h-screen bg-green-200 py-10 px-4 rounded-[5rem] mb-20'>
+            <div className='container mx-auto'>
+                <h1 className="font-Priest text-4xl lg:text-8xl font-bold text-center text-yellow-400 mb-10">
+                    Make your own <span className='text-blue-500'>Jaxly</span>
+                </h1>
+                
+                <div className='flex flex-col lg:flex-row justify-between items-start gap-10'>
+                    {/* Left column: Output Image */}
+                    <div className='lg:w-1/2 sticky top-10'>
+                        <OutputImage selected={selected} setSelected={setSelected} images={images} />
+                        <p className="font-Priest text-xl text-center text-white mt-4">
+                            When you're happy, click the Download button and share your awesome creation!
+                        </p>
+                    </div>
+                    
+                    {/* Right column: Selection Layers */}
+                    <div className='lg:w-1/2 space-y-6'>
+                        <h3 className="text-center font-Priest text-2xl lg:text-3xl font-bold text-white mb-5">
+                            Select your layers to create your Jaxly:
+                        </h3>
+                        <SelectionLayer selected={selected} images={images.character} layer={'character'} setSelected={setSelected} />
+                        <SelectionLayer selected={selected} images={images.background} layer={'background'} setSelected={setSelected} />
+                        <SelectionLayer selected={selected} images={images.face} layer={'face'} setSelected={setSelected} />
+                        <SelectionLayer selected={selected} images={images.frontAccessory} layer={'frontaccessory'} setSelected={setSelected} />
+                        <SelectionLayer selected={selected} images={images.hat} layer={'hat'} setSelected={setSelected} />
+                        <SelectionLayer selected={selected} images={images.accessory} layer={'accessory'} setSelected={setSelected} />
                     </div>
                 </div>
             </div>

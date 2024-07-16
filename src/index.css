@@ -37,10 +37,15 @@
 /* styles.css */
 
 body {
+  padding: 20px; 
   margin: 0;
   color: white;
   overflow-x: hidden;
-  background-color: #282c34ea;
+  background-image: url("./assets/background.png");
+  background-size: cover;
+  background-attachment: fixed;
+  
+  
 }
 
 html {
@@ -133,15 +138,7 @@ html {
 
 /* Landing.css */
 
-#meme-gen {
-  /* background-image: url("./assets/cat.png"); */
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  background-color: #FFF500;
-  padding: 20px;
 
-}
 
 
 #meme-heading {

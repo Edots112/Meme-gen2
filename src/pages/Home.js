@@ -12,10 +12,10 @@ const Home = () => {
 		<>
 			<Header />
 			<Landing />
-			{/* <CatMeme /> */}
+			<CatMeme />
 			{/* <Game /> */}
-			{/* <Buy /> */}
-			{/* <Token /> */}
+			<Buy />
+			<Token />
 			{/* <Footer /> */}
 		</>
 	);

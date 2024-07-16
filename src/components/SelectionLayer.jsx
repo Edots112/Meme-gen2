@@ -1,68 +1,66 @@
 import React, { useRef } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { motion } from 'framer-motion';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
-const SelectionLayer = (props) => {
+const SelectionLayer = ({ selected, images, layer, setSelected }) => {
     const scrollContainerRef = useRef(null);
 
     const handleClick = (imageName) => {
-        props.setSelected(prevSelected => ({
+        setSelected(prevSelected => ({
             ...prevSelected,
-            [props.layer]: imageName
+            [layer]: imageName
         }));
     };
 
-    const scrollLeft = () => {
+    const scroll = (direction) => {
         if (scrollContainerRef.current) {
-            scrollContainerRef.current.scrollBy({ left: -165, behavior: 'smooth' });
-        }
-    };
-
-    const scrollRight = () => {
-        if (scrollContainerRef.current) {
-            scrollContainerRef.current.scrollBy({ left: 165, behavior: 'smooth' });
+            const scrollAmount = direction === 'left' ? -200 : 200;
+            scrollContainerRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
         }
     };
 
     return (
-        <div className="flex items-center max-h-20">
-            <button onClick={scrollLeft} className="bg-transparent border-none cursor-pointer text-3xl mx-2 text-white">
-                <FontAwesomeIcon icon={faChevronLeft} className='scroller' />
+        <div className="flex items-center bg-blue-900 rounded-lg p-4">
+            <button onClick={() => scroll('left')} className="bg-yellow-400 text-blue-900 p-2 rounded-full mr-4">
+                <FaChevronLeft size={24} />
             </button>
             <div 
                 ref={scrollContainerRef} 
-                className="flex overflow-x-scroll max-w-[500px] min-w-[500px] whitespace-nowrap scrollbar-hide border-white"
+                className="flex overflow-x-scroll scrollbar-hide space-x-4 flex-grow"
             >
-                {(props.layer !== 'character' && props.layer !== 'background') && (
-                    <div
+                {(layer !== 'character' && layer !== 'background') && (
+                    <motion.div
                         onClick={() => handleClick('')}
-                        key='null'
-                        className="border-2 border-white rounded-lg m-2 p-1 w-[150px] h-[75px] min-w-[150px] min-h-[75px] max-w-[150px] max-h-[75px] inline-flex items-center justify-center bg-transparent cursor-pointer"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="flex-shrink-0 w-32 h-32 bg-green-200 rounded-lg flex items-center justify-center cursor-pointer"
                     >
                         <img
                             src={`${process.env.PUBLIC_URL}/images/reset.png`}
                             alt='Reset'
                             className="max-w-full max-h-full"
                         />
-                    </div>
+                    </motion.div>
                 )}
 
-                {props.images.map((imageName) => (
-                    <div
+                {images.map((imageName) => (
+                    <motion.div
                         key={imageName}
-                        className="border-2 border-white rounded-lg m-2 p-1 w-[150px] h-[75px] min-w-[150px] min-h-[75px] max-w-[150px] max-h-[75px] inline-flex items-center justify-center bg-transparent cursor-pointer"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="flex-shrink-0 w-32 h-32 bg-green-200 rounded-lg flex items-center justify-center cursor-pointer"
+                        onClick={() => handleClick(imageName)}
                     >
                         <img
-                            src={`${process.env.PUBLIC_URL}/images/${props.layer}/${imageName}`}
+                            src={`${process.env.PUBLIC_URL}/images/${layer}/${imageName}`}
                             alt={imageName}
-                            className="max-w-full max-h-full"
-                            onClick={() => handleClick(imageName)}
+                            className="max-w-full max-h-full object-contain"
                         />
-                    </div>
+                    </motion.div>
                 ))}
             </div>
-            <button onClick={scrollRight} className="bg-transparent border-none cursor-pointer text-3xl mx-2 text-white">
-                <FontAwesomeIcon icon={faChevronRight} className='scroller' />
+            <button onClick={() => scroll('right')} className="bg-yellow-400 text-blue-900 p-2 rounded-full ml-4">
+                <FaChevronRight size={24} />
             </button>
         </div>
     );

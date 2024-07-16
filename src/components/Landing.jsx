@@ -1,156 +1,200 @@
 import React, { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
-// import mainImg from '../assets/Smully/smully.png';
-import dog1 from '../assets/Villy/olliys.png'; // Lägg till dina hundbilder
-import gifImg from "../assets/Gremliy/GREMLIY.gif"
-import object2Img from "../assets/priest/object2.png"
-import object3Img from "../assets/priest/object3.png"
-import backgroundVideo from '../assets/beach.mp4'; // Importera videofilen
-import doggyImg from '../assets/lickie.png'; // Importera din hundbild
-import small from '../assets/Lizie.png'; // Importera din hundbild
-import backgroundImg from '../assets/2580.jpg'; // Importera din bakgrundsbild
-import '../Landing.css'; // Lägg till en CSS-fil för stilarna
+import { motion, AnimatePresence } from 'framer-motion';
+import doggyImg from '../assets/jaxly/jaxly.png';
+import small from '../assets/jaxly/jaxly.png';
 
-const dogImages = [small]; // Array med bilder
+import dog1 from '../assets/jaxly/topdog.png';
+import dog2 from '../assets/jaxly/leftdog.png';
+import dog3 from '../assets/jaxly/rightdog.png';
+// import dogLeft from '../assets/jaxly/jaxly.png';
 
 const Landing = () => {
-  const [scrollY, setScrollY] = useState(0);
-  const [visibleBoxes, setVisibleBoxes] = useState([false, false, false]);
+  const [dogPosition, setDogPosition] = useState({ x: 0, y: 0 });
+  const [showDog, setShowDog] = useState(false);
+  const [currentDog, setCurrentDog] = useState(null);
+  const [peekSide, setPeekSide] = useState('top');
+  const [mainDogVisible, setMainDogVisible] = useState(true);
+
+  const dogImages = {
+    top: dog1,
+    left: dog2,
+    right: dog3
+  };
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
+    const interval = setInterval(() => {
+      const sides = ['top', 'left', 'right'];
+      const randomSide = sides[Math.floor(Math.random() * sides.length)];
+      let newPosition;
 
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  useEffect(() => {
-    const order = [0, 1, 2];
-    order.sort(() => Math.random() - 0.5);
-
-    order.forEach((index, i) => {
-      setTimeout(() => {
-        setVisibleBoxes((prev) => {
-          const newBoxes = [...prev];
-          newBoxes[index] = true;
-          return newBoxes;
-        });
-      }, i * 1000); // Small delay of 1 second between each box
-    });
-  }, []);
-
-  // Funktion för att generera regnande hundar
-  const generateRain = () => {
-    const rainArray = [];
-    for (let i = 0; i < 100; i++) {
-      const randomImage = dogImages[Math.floor(Math.random() * dogImages.length)];
-      const side = Math.floor(Math.random() * 4); // 0: top, 1: right, 2: bottom, 3: left
-      let style = {};
-
-      switch (side) {
-        case 0: // top
-          style = {
-            top: '-100px',
-            left: `${Math.random() * 100}vw`,
-            animation: `fallFromTop ${Math.random() * 2 + 2.5}s linear ${Math.random() * 1}s infinite`,
+      switch (randomSide) {
+        case 'top':
+          newPosition = { 
+            x: Math.random() * (window.innerWidth - 100), 
+            y: -100 
           };
           break;
-        case 1: // right
-          style = {
-            top: `${Math.random() * 100}vh`,
-            right: '-100px',
-            animation: `fallFromRight ${Math.random() * 2 + 2.5}s linear ${Math.random() * 1}s infinite`,
+        case 'left':
+          newPosition = { 
+            x: -100, 
+            y: Math.random() * (window.innerHeight - 100) 
           };
           break;
-        case 2: // bottom
-          style = {
-            bottom: '-100px',
-            left: `${Math.random() * 100}vw`,
-            animation: `fallFromBottom ${Math.random() * 2 + 2.5}s linear ${Math.random() * 1}s infinite`,
-          };
-          break;
-        case 3: // left
-          style = {
-            top: `${Math.random() * 100}vh`,
-            left: '-100px',
-            animation: `fallFromLeft ${Math.random() * 2 + 2.5}s linear ${Math.random() * 1}s infinite`,
+        case 'right':
+          newPosition = { 
+            x: window.innerWidth - 100, 
+            y: Math.random() * (window.innerHeight - 100) 
           };
           break;
       }
+      
+      setDogPosition(newPosition);
+      setCurrentDog(dogImages[randomSide]);
+      setPeekSide(randomSide);
+      setShowDog(true);
 
-      rainArray.push(<img key={i} src={randomImage} style={style} alt="small dog" className="absolute w-8 h-8" />);
+      console.log('dogPosition', dogPosition);
+      
+      
+      setTimeout(() => setShowDog(false), 2500);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const getAnimationProps = (side) => {
+    switch (side) {
+      case 'top':
+        return {
+          initial: { y: -50, opacity: 1 },
+          animate: { y: 50, opacity: 1 },
+          exit: { y: -100, opacity: 1 }
+        };
+      case 'left':
+        return {
+          initial: { x: -50, opacity: 1 },
+          animate: { x: 75, opacity: 1 },
+          exit: { x: -100, opacity: 1 }
+        };
+      case 'right':
+        return {
+          initial: { x: 100, opacity: 1 },
+          animate: { x:0, opacity: 1 },
+          exit: { x: 100, opacity: 1 }
+        };
     }
-    return rainArray;
   };
 
+  const generateRepeatingText = () => {
+    const text = 'Jaxly ';
+    const repeats = 1000;
+    const colors = ['text-yellow-400', 'text-blue-500', 'text-red-500', 'text-green-500'];
+    let result = [];
+    
+    for (let i = 0; i < repeats; i++) {
+      const colorClass = colors[i % colors.length];
+      result.push(<span key={i} className={colorClass}>{text}</span>);
+    }
+    
+    return result;
+  };
+
+  const dogVariants = {
+    initial: { y: 1000, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+    hover: { 
+      y: [-50, 0],
+      transition: {
+        y: {
+          repeat: Infinity,
+          repeatType: "reverse",
+          duration: 0.1,
+          ease: "easeInOut"
+        }
+      }
+    }
+  };
   return (
-    <div id='' className="relative flex flex-col items-center h-[100vh] overflow-hidden z-10 bg-blue-200 ">
-      {/* <img
-        className="absolute top-0 left-0 w-full h-full object-cover z-0"
-        src={backgroundImg}
-        alt="background"
-      /> */}
-
-      {/* <video autoPlay muted loop className="absolute top-0 left-0 w-full h-full object-cover z-0">
-        <source src={backgroundVideo} type="video/mp4" />
-      </video> */}
-      {/* <div className="rain">{generateRain()}</div> */}
-
-      <motion.h1
-        className='absolute z-30 top-0 left-[5%]  font- font-Adelia text-[8rem] xl:text-[10rem] 2xl:text-[12rem] text-black right-'
+    <div className="relative rounded-full mb-20 flex flex-col items-center h-[90vh] overflow-hidden z-10 bg-green-200">
+         <div 
+        className="absolute inset-0 overflow-hidden opacity-30 text-yellow-400"
+        style={{
+          fontSize: '4rem',
+          lineHeight: '1',
+          fontFamily: 'Adelia, sans-serif',
+          whiteSpace: 'wrap',
+          transform: 'rotate(-45deg) translateY(-50%)',
+          top: '50%',
+          left: '-30%',
+          right: '-50%',
+          bottom: '-50%',
+          width: '200%',
+          height: '200%',
+        }}
       >
-        Lickie Cat
-      </motion.h1>
+        {generateRepeatingText()}
+      </div>
 
-           <div className='text-white z-10 absolute top-[350px] w-[50%] rounded-full p-2 left-48 text-center font-Priest text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-5xl font-bold animate-text'>
-        This is  <span className='text-blue-500 text-7xl'>LICKIE</span> CAT. Just one more lick plzz
-        </div>
-      <motion.img
-        src={doggyImg}
-        className='z-10 w-[500px] absolute bottom-[10%] right-[10%]    rounded-xl'
-        alt="MUM"
-      />
+      <div className='text-white z-10 absolute top-[350px] w-[50%] rounded-full p-2 left-48 text-center font-Priest text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-5xl font-bold'>
+        <motion.h3 className='text-black z-10 absolute w-[70%] rounded-full p-2 left-0 text-center font-Priest text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-5xl font-bold animate-text'>
+          Hello! I'm Jaxly and I'm a dog. People call me Jax, but you can call me <span className='text-yellow-500 underline animate-spin'>PUMP THIS BITCH</span>
+        </motion.h3>
+      </div>
 
-         {/* <motion.img
-        src={barbImg}
-        className=' w-[805px] absolute bottom-0 right-10  rounded-xl'
-        alt="MUM"
-      /> */}
+     <AnimatePresence>
+        {mainDogVisible && (
+          <motion.img
+            src={doggyImg}
+            className='z-10 w-[325px] absolute bottom-[4%] right-[30%] rounded-xl cursor-pointer'
+            alt="Jaxly"
+            variants={dogVariants}
+            initial="initial"
+            animate="animate"
+            whileHover="hover"
+            transition={{ 
+              type: 'spring', 
+              stiffness: 120, 
+              damping: 10 
+            }}
+          />
+        )}
+      </AnimatePresence>
 
-      {/* {visibleBoxes[0] && (
-        <div className='text-red-500 z-10 absolute top-[30%] right-2 w-[35%] font-Geo text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-6xl font-bold animate-text'>
-          Quisi! Just took a nap and woke up ready to pump!
-        </div>
-      )} */}
-
-   
-
-      {/* {visibleBoxes[2] && (
-        <div className='text-orange-500 z-10 absolute  p-4 rounded-full top-[75%] left-[65%] font-Demon text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-5xl font-bold animate-text'>
-          Be smart! Buy Quisi! 
-        </div>
-      )} */}
+       <AnimatePresence>
+        {showDog && currentDog && (
+          <motion.img
+            src={currentDog}
+            className='absolute w-40 h-40 object-contain'
+            style={{ 
+              left: dogPosition.x, 
+              top: dogPosition.y, 
+            }}
+            {...getAnimationProps(peekSide)}
+            transition={{ 
+              type: "spring",
+              stiffness: 100,
+              damping: 10,
+              duration: 0.1 
+            }}
+          />
+        )}
+      </AnimatePresence>
 
       <motion.div
-        className="social-links absolute bottom-44 left-[22%]   z-10"
+        className="social-links absolute bottom-44 left-[22%] z-10"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5, ease: 'easeOut' }}
       >
-        <a href="https://pump.fun/" target="_blank" rel="noopener noreferrer">
+        {/* <a href="https://pump.fun/" target="_blank" rel="noopener noreferrer">
           <motion.button
-            className='font-Flame w-[30rem] text-black  bg-white hover:bg-white hover:text-black text-White font-bold py-8 px-4 rounded-full  border-2 border-black '
+            className='font-Flame w-[30rem] text-black bg-white hover:bg-white hover:text-black text-White font-bold py-8 px-4 rounded-full border-2 border-black'
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
             BUY NOW 
           </motion.button>
-        </a>
+        </a> */}
       </motion.div>
     </div>
   );
