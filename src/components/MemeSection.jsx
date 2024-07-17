@@ -1,6 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import meme1 from '../assets/jaxly/meme1.png';
+import meme2 from '../assets/jaxly/meme2.png';
+import meme3 from '../assets/jaxly/meme3.png';
+import meme4 from '../assets/jaxly/meme4.png';
+import meme5 from '../assets/jaxly/meme5.png';
+import meme6 from '../assets/jaxly/meme6.png';
 
 const MemeCard = ({ meme }) => (
   <motion.div
@@ -16,21 +21,21 @@ const MemeCard = ({ meme }) => (
         />
       </div>
     </div>
-    <div className="p-4 bg-blue-900">
+    {/* <div className="p-4 bg-blue-900">
       <h3 className="text-yellow-400 font-Priest text-xl mb-1 truncate">{meme.title}</h3>
       <p className="text-white font-Priest text-sm opacity-80 truncate">{meme.description}</p>
-    </div>
+    </div> */}
   </motion.div>
 );
 
 const MemeSection = () => {
   const memes = [
     { id: 1, title: "Jaxly's Bath Time", description: "When you try to give Jaxly a bath", imageUrl: meme1 },
-    { id: 2, title: "Treat Time", description: "Jaxly's face when he hears the treat bag", imageUrl: meme1 },
-    { id: 3, title: "Walkies!", description: "Jaxly when you say the 'W' word", imageUrl: meme1 },
-    { id: 4, title: "Jaxly vs Vacuum", description: "The epic standoff", imageUrl: meme1 },
-    { id: 5, title: "Puppy Eyes", description: "Jaxly's secret weapon", imageUrl: meme1 },
-    { id: 6, title: "Jaxly's Zoom Call", description: "Working from home with Jaxly", imageUrl: meme1 },
+    { id: 2, title: "Treat Time", description: "Jaxly's face when he hears the treat bag", imageUrl: meme2 },
+    { id: 3, title: "Walkies!", description: "Jaxly when you say the 'W' word", imageUrl: meme3 },
+    { id: 4, title: "Jaxly vs Vacuum", description: "The epic standoff", imageUrl: meme4 },
+    { id: 5, title: "Puppy Eyes", description: "Jaxly's secret weapon", imageUrl: meme5 },
+    { id: 6, title: "Jaxly's Zoom Call", description: "Working from home with Jaxly", imageUrl: meme6 },
   ];
 
   return (
