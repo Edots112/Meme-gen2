@@ -30,18 +30,18 @@ const MemeCard = ({ meme }) => (
 
 const MemeSection = () => {
   const memes = [
-    { id: 1, title: "Jaxly's Bath Time", description: "When you try to give Jaxly a bath", imageUrl: meme1 },
-    { id: 2, title: "Treat Time", description: "Jaxly's face when he hears the treat bag", imageUrl: meme2 },
-    { id: 3, title: "Walkies!", description: "Jaxly when you say the 'W' word", imageUrl: meme3 },
-    { id: 4, title: "Jaxly vs Vacuum", description: "The epic standoff", imageUrl: meme4 },
-    { id: 5, title: "Puppy Eyes", description: "Jaxly's secret weapon", imageUrl: meme5 },
-    { id: 6, title: "Jaxly's Zoom Call", description: "Working from home with Jaxly", imageUrl: meme6 },
+    { id: 1, title: "Spyly's Bath Time", description: "When you try to give Jaxly a bath", imageUrl: meme1 },
+    { id: 2, title: "Treat Time", description: "Spyly's face when he hears the treat bag", imageUrl: meme2 },
+    { id: 3, title: "Walkies!", description: "Spyly when you say the 'W' word", imageUrl: meme3 },
+    { id: 4, title: "Spyly vs Vacuum", description: "The epic standoff", imageUrl: meme4 },
+    { id: 5, title: "Puppy Eyes", description: "Spyly's secret weapon", imageUrl: meme5 },
+    { id: 6, title: "Spyly's Zoom Call", description: "Working from home with Spyly", imageUrl: meme6 },
   ];
 
   return (
     <div className="bg-green-200 py-20 px-4">
       <div className="container mx-auto">
-        <h2 className="text-6xl font-Priest text-center text-blue-500 mb-12">Jaxly <span className="text-yellow-400">Memes</span></h2>
+        <h2 className="text-6xl font-Priest text-center text-blue-500 mb-12">Spyly <span className="text-yellow-400">Memes</span></h2>
         <motion.div 
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
           variants={{

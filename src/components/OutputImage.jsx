@@ -61,7 +61,7 @@ const OutputImage = (props) => {
 
         // Provide a download link for the canvas image
         const link = document.createElement('a');
-        link.download = 'Jaxly.png';
+        link.download = 'Spyly.png';
         link.href = canvas.toDataURL();
         link.click();
     };

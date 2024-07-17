@@ -86,7 +86,7 @@ const Landing = () => {
   };
 
   const generateRepeatingText = () => {
-    const text = 'Jaxly ';
+    const text = 'Spyly ';
     const repeats = 1000;
     const colors = ['text-yellow-400', 'text-blue-500', 'text-red-500', 'text-green-500'];
     let result = [];
@@ -137,7 +137,7 @@ const Landing = () => {
 
       <div className='text-white z-10 absolute top-[350px] w-[50%] rounded-full p-2 left-48 text-center font-Priest text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-5xl font-bold'>
         <motion.h3 className='text-black z-10 absolute w-[70%] rounded-full p-2 left-0 text-center font-Priest text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-5xl font-bold animate-text'>
-          Hello! I'm Jaxly and I'm a dog. People call me Jax, but you can call me <span className='text-yellow-500 underline animate-spin'>PUMP THIS BITCH</span>
+          Hello! I'm Spyly and I'm a dog. You can call me SPY! Cause I'm a spy dog. 
         </motion.h3>
       </div>
 
@@ -146,7 +146,7 @@ const Landing = () => {
           <motion.img
             src={doggyImg}
             className='z-10 w-[325px] absolute bottom-[4%] right-[30%] rounded-xl cursor-pointer'
-            alt="Jaxly"
+            alt="Spyly"
             variants={dogVariants}
             initial="initial"
             animate="animate"

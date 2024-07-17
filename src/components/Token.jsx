@@ -25,7 +25,7 @@ const Token = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          Jaxly <span className="text-yellow-400">Tokenomics</span>
+          Spyly <span className="text-yellow-400">Tokenomics</span>
         </motion.h1>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
@@ -40,12 +40,12 @@ const Token = () => {
           animate={{ scale: 1 }}
           transition={{ type: "spring", stiffness: 200, delay: 0.2 }}
         >
-          <h2 className='font-Priest text-6xl md:text-8xl text-center mb-6 text-yellow-400'>$JAX</h2>
-          <p className="font-Priest text-xl text-center text-white mb-8">Join the pack and get some $JAX tokens!</p>
+          <h2 className='font-Priest text-6xl md:text-8xl text-center mb-6 text-yellow-400'>$SPY</h2>
+          <p className="font-Priest text-xl text-center text-white mb-8">Join the pack and get some $SPY tokens!</p>
           
           <div className="flex justify-center items-center gap-8">
             <motion.a 
-              href="https://x.com/Jaxly_solana" 
+              href="https://x.com/Spyly_Solana" 
               target="_blank" 
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1, rotate: 10 }}
@@ -54,7 +54,7 @@ const Token = () => {
               <FaTwitter size={40} className='text-white'/>
             </motion.a>
             <motion.a 
-              href="https://pump.fun/Dt6PKUCRn5tjwDbshuP4Q6cfXoZ5BgisVN8cxgGvpump" 
+              href="https://pump.fun/" 
               target="_blank" 
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1, rotate: -10 }}
@@ -63,7 +63,7 @@ const Token = () => {
               <img src={pumpImg} alt='pumplogo' className='w-12 h-12' />
             </motion.a>
             <motion.a 
-              href="https://t.me/JaxlyDog" 
+              href="https://t.me/spylysol" 
               target="_blank" 
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1, rotate: 10 }}

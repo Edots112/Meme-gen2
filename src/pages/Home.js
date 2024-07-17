@@ -17,7 +17,7 @@ const Home = () => {
 			{/* <Game /> */}
 			<Buy />
 			<Token />
-			<MemeSection />
+			{/* <MemeSection /> */}
 			{/* <Footer /> */}
 		</>
 	);

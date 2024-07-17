@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaTwitter, FaTelegram } from 'react-icons/fa';
-import doggyImg2 from '../assets/jaxly/header.png';
+import doggyImg2 from '../assets/jaxly/head.png';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -74,7 +74,7 @@ const Header = () => {
           {/* Right side with Buy button and social icons */}
           <div className="flex items-center space-x-4 absolute right-20 top-1/2 transform -translate-y-1/2">
             <motion.a 
-              href="https://pump.fun/Dt6PKUCRn5tjwDbshuP4Q6cfXoZ5BgisVN8cxgGvpump"
+              href="https://pump.fun/"
               target="_blank" 
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1 }}
@@ -84,7 +84,7 @@ const Header = () => {
               BUY NOW
             </motion.a>
             <motion.a 
-              href="https://x.com/Jaxly_solana" 
+              href="https://x.com/Spyly_Solana" 
               target="_blank" 
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1 }}
@@ -93,7 +93,7 @@ const Header = () => {
               <FaTwitter size={50} className='text-black' />
             </motion.a>
             <motion.a 
-              href="https://t.me/JaxlyDog" 
+              href="https://t.me/spylysol" 
               target="_blank" 
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1 }}

@@ -25,7 +25,7 @@ const CatMeme = () => {
         <div id='meme-gen' className='min-h-screen bg-green-200 py-10 px-4 rounded-[5rem] mb-20'>
             <div className='container mx-auto'>
                 <h1 className="font-Priest text-4xl lg:text-8xl font-bold text-center text-yellow-400 mb-10">
-                    Make your own <span className='text-blue-500'>Jaxly</span>
+                    Make your own <span className='text-blue-500'>Spyly</span>
                 </h1>
                 
                 <div className='flex flex-col lg:flex-row justify-between items-start gap-10'>
@@ -40,7 +40,7 @@ const CatMeme = () => {
                     {/* Right column: Selection Layers */}
                     <div className='lg:w-1/2 space-y-6'>
                         <h3 className="text-center font-Priest text-2xl lg:text-3xl font-bold text-white mb-5">
-                            Select your layers to create your Jaxly:
+                            Select your layers to create your Spyly:
                         </h3>
                         <SelectionLayer selected={selected} images={images.character} layer={'character'} setSelected={setSelected} />
                         <SelectionLayer selected={selected} images={images.background} layer={'background'} setSelected={setSelected} />
