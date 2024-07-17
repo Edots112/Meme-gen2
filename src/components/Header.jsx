@@ -74,7 +74,7 @@ const Header = () => {
           {/* Right side with Buy button and social icons */}
           <div className="flex items-center space-x-4 absolute right-20 top-1/2 transform -translate-y-1/2">
             <motion.a 
-              href="https://pump.fun/"
+              href="https://pump.fun/Dt6PKUCRn5tjwDbshuP4Q6cfXoZ5BgisVN8cxgGvpump"
               target="_blank" 
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1 }}
