@@ -29,7 +29,7 @@ const Header = () => {
   };
 
   return (
-    <div className="w-full">
+    <div className="w-full font-Lon">
       <nav className={`fixed z-50 w-full transition-all duration-300 ${scrolled ? 'bg-transparent' : 'bg-transparent'} ${hidden ? '-top-40' : 'top-6'}`}>
         <div className=" mx-auto px-4 py-2 flex justify-center items-center relative h-24">
           {/* Logo in the left corner */}
@@ -47,7 +47,7 @@ const Header = () => {
 
           {/* Centered Navigation items */}
           <div className="bg-green-500 bg-opacity-90 rounded-full px-10 py-5">
-            <ul className="flex space-x-10 font-Geo text-blue-700">
+            <ul className="flex space-x-10  text-blue-700">
               <motion.li
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
