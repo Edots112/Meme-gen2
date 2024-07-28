@@ -46,11 +46,15 @@ const Roadmap = () => {
   const [activeStep, setActiveStep] = useState(0);
   const [containerWidth, setContainerWidth] = useState(0);
   const containerRef = useRef(null);
+  const roadmapRef = useRef(null);
 
   useEffect(() => {
     const updateWidth = () => {
-      if (containerRef.current) {
-        setContainerWidth(containerRef.current.offsetWidth);
+      if (containerRef.current && roadmapRef.current) {
+        const fullWidth = containerRef.current.offsetWidth;
+        const roadmapWidth = fullWidth * 0.7; // 70% of container width
+        setContainerWidth(roadmapWidth);
+        roadmapRef.current.style.width = `${roadmapWidth}px`;
       }
     };
 
@@ -60,15 +64,15 @@ const Roadmap = () => {
   }, []);
 
   const getItemPosition = (index) => {
-    const position = (index / (roadmapData.length - 1)) * 100;
+    const position = (index / (roadmapData.length - 1)) * 90;
     return { left: `${position}%`, transform: 'translateX(-50%)' };
   };
 
   return (
-    <div className="bg-yellow-300 p-4 md:p-8 rounded-3xl mx-4  mb-10 relative overflow-hidden" ref={containerRef}>
+    <div className="bg-black/50 shadow-2xl p-4 md:p-8 rounded-3xl mx-4 mb-10 relative overflow-hidden" ref={containerRef} id="roadmap">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">Roadmap</h2>
 
-      <div className="relative mb-24">
+      <div className="relative mb-28 mx-auto" ref={roadmapRef}>
         <div className="h-2 bg-white rounded-full mb-8" />
         <motion.div 
           className="absolute top-0 left-0"
@@ -76,7 +80,7 @@ const Roadmap = () => {
           animate={{ x: `${(activeStep / (roadmapData.length - 1)) * containerWidth}px` }}
           transition={{ type: "spring", stiffness: 300, damping: 30 }}
         >
-          <img src={dogImg} alt="Max" className="w-12 h-12 md:w-24 md:h-20 rounded-full -mt-10 -ml-6 md:-ml-8" />
+          <img src={dogImg} alt="Max" className="w-12 h-16 md:w-28 md:h-20 rounded-full -mt-10 -ml-6 md:-ml-12" />
         </motion.div>
         {roadmapData.map((item, index) => (
           <RoadmapItem 

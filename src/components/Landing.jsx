@@ -35,8 +35,8 @@ const Landing = () => {
       <AnimatePresence>
         <motion.img
           src={headImg}
-          className='z-10  absolute left-[-100px] top-8 rounded-xl'
-          alt="Spyly"
+          className='z-10  absolute left-[-100px] top-10 rounded-xl  cursor-pointer 2xl:w-[1250px] md:w-[1000px]'
+          alt="Max"
           transition={{ 
             type: 'spring', 
             stiffness: 120, 
@@ -48,8 +48,8 @@ const Landing = () => {
       <AnimatePresence>
         <motion.img
           src={doggyImg}
-          className='z-10 w-[525px] absolute top-10 right-32 rounded-xl cursor-pointer'
-          alt="Spyly"
+          className='z-10 2xl:w-[525px] 2xl:top-10 xl:right-32 w-[300px] absolute bottom-0 right-32 rounded-xl cursor-pointer'
+          alt="Max"
           initial="initial"
           animate="animate"
           variants={dogVariants}
@@ -71,20 +71,11 @@ const Landing = () => {
         {/* Social links or other content can be added here */}
       </motion.div>
       
- {/* <motion.a 
-              href="https://pump.fun/"
-              target="_blank" 
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              className="bg-yellow-400 font-Geo text-black font-bold py-4 px-12 rounded-full"
-            >
-              BUY NOW
-            </motion.a> */}
 
-            <div className="flex items-center space-x-4 absolute bottom-4 bg-black p-5 rounded-2xl">
+
+            <div className="flex items-center space-x-4 absolute bottom-24 left-5 bg-black p-5 rounded-2xl">
             <motion.a 
-              href="https://x.com/Spyly_Solana" 
+              href="https://x.com/MaxOnSolan" 
               target="_blank" 
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1 }}
@@ -94,7 +85,7 @@ const Landing = () => {
             </motion.a> 
             </div>
 
-            <div className="flex items-center space-x-4 absolute bottom-24 left-[35%] bg-blue-200 p-5 rounded-2xl">
+            <div className="flex items-center space-x-4 absolute bottom-24 left-48 bg-blue-200 p-5 rounded-2xl">
              <motion.a 
               href="https://t.me/spylysol" 
               target="_blank" 
@@ -104,6 +95,18 @@ const Landing = () => {
             >
               <FaTelegram size={125} className='text-white' />
             </motion.a> 
+            <div className="flex items-center  absolute  left-[15rem]  p-5 rounded-2xl">
+              <motion.a 
+              href="https://pump.fun/"
+              target="_blank" 
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              className="bg-yellow-400 font-Geo text-black font-bold py-8 px-40 rounded-full"
+            >
+              BUY NOW
+            </motion.a> 
+            </div>
             </div>
 
       <h3 className='text-white z-10 absolute left-6 bottom-6 w-full font-Priest text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-5xl font-bold'>

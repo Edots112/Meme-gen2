@@ -35,7 +35,7 @@ const Token = () => {
         </div> */}
 
         <motion.div
-          className="bg-blue-900 rounded-3xl p-8 shadow-xl max-w-2xl mx-auto"
+          className="rounded-3xl bg-white/20 p-8 shadow-2xl max-w-2xl mx-auto"
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ type: "spring", stiffness: 200, delay: 0.2 }}
@@ -45,7 +45,7 @@ const Token = () => {
           
           <div className="flex justify-center items-center gap-8">
             <motion.a 
-              href="https://x.com/Spyly_Solana" 
+              href="https://x.com/MaxOnSolan" 
               target="_blank" 
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1, rotate: 10 }}

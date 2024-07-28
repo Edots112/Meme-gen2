@@ -76,6 +76,13 @@ const Header = () => {
               >
                 <a className="text-lg font-bold" href="#memes">Max Memes</a>
               </motion.li>
+              <motion.li
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                onClick={handleLinkClick}
+              >
+                <a className="text-lg font-bold" href="#roadmap">Roadmap</a>
+              </motion.li>
             </ul>
           </div>
 
