@@ -95,14 +95,14 @@ const Landing = () => {
             >
               <FaTelegram size={125} className='text-white' />
             </motion.a> 
-            <div className="flex items-center  absolute  left-[15rem]  p-5 rounded-2xl">
+            <div className="flex items-center  absolute  left-[15rem]  p-5 rounded-2xl ">
               <motion.a 
               href="https://pump.fun/"
               target="_blank" 
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              className="bg-yellow-400 font-Geo text-black font-bold py-8 px-40 rounded-full"
+              className="bg-yellow-400 font-Lon text-black font-bold py-10 w-80 text-center rounded-full text-3xl "
             >
               BUY NOW
             </motion.a> 

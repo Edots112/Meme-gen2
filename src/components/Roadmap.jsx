@@ -69,7 +69,7 @@ const Roadmap = () => {
   };
 
   return (
-    <div className="bg-black/50 shadow-2xl p-4 md:p-8 rounded-3xl mx-4 mb-10 relative overflow-hidden" ref={containerRef} id="roadmap">
+    <div className="bg-black/50 shadow-2xl p-4 md:p-8 rounded-3xl mx-4 mb-10 relative overflow-hidden font-Lon" ref={containerRef} id="roadmap">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">Roadmap</h2>
 
       <div className="relative mb-28 mx-auto" ref={roadmapRef}>

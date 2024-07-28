@@ -14,7 +14,7 @@ const CatMeme = () => {
 
     const [images, setImages] = useState({
         background: ["21.png", "17.png", "18.png", "19.png", "20.png", "16.png"],
-        character: ["25.png",],
+        character: ["25.png", "22.png", "23.png", "24.png"],
         face: ["8.png", "9.png", "10.png", "11.png", "12.png"],
         frontAccessory: ["13.png", "14.png", "15.png",],
         hat: ["3.png", "4.png", "5.png", "6.png", "7.png"],

@@ -14,6 +14,7 @@ module.exports = {
 				Demon: ["Demon"],
 				Alvin: ["Alvin"],
 				Flame: ["Flame"],
+				Lon: ["Lon"],
 			},
 			animation: {
 				pulse: "pulse 2s infinite",
