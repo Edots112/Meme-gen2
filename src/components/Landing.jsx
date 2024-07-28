@@ -97,7 +97,7 @@ const Landing = () => {
           </motion.a> 
         </div>
         <motion.a 
-          href="https://pump.fun/"
+          href="https://pump.fun/AeM2PqV6n4Jn3otRPenutWbfXfz6xtAME6URzCLppump"
           target="_blank" 
           rel="noopener noreferrer"
           whileHover={{ scale: 1.05 }}
@@ -136,7 +136,7 @@ const Landing = () => {
         
         <div className="flex items-center absolute bottom-24 left-[25rem] p-5 rounded-2xl">
           <motion.a 
-            href="https://pump.fun/"
+            href="https://pump.fun/AeM2PqV6n4Jn3otRPenutWbfXfz6xtAME6URzCLppump"
             target="_blank" 
             rel="noopener noreferrer"
             whileHover={{ scale: 1.1 }}
