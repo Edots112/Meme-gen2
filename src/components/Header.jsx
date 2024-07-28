@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaTwitter, FaTelegram } from 'react-icons/fa';
 import doggyImg2 from '../assets/jaxly/head.png';
+import solImg from '../assets/Max/sol.png';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -29,10 +30,10 @@ const Header = () => {
 
   return (
     <div className="w-full">
-      <nav className={`fixed z-50 w-full transition-all duration-300 ${scrolled ? 'bg-transparent' : 'bg-transparent'} ${hidden ? '-top-40' : 'top-0'}`}>
+      <nav className={`fixed z-50 w-full transition-all duration-300 ${scrolled ? 'bg-transparent' : 'bg-transparent'} ${hidden ? '-top-40' : 'top-6'}`}>
         <div className=" mx-auto px-4 py-2 flex justify-center items-center relative h-24">
           {/* Logo in the left corner */}
-          <motion.a 
+          {/* <motion.a 
             href="/"
             className="absolute left-10 top-0 "
             whileHover={{ scale: 1.05 }}
@@ -42,11 +43,11 @@ const Header = () => {
               alt="logo"
               className="w-32 h-32"
             />
-          </motion.a>
+          </motion.a> */}
 
           {/* Centered Navigation items */}
-          <div className="bg-gray-800 bg-opacity-90 rounded-full px-10 py-5">
-            <ul className="flex space-x-10 font-Geo text-white">
+          <div className="bg-green-500 bg-opacity-90 rounded-full px-10 py-5">
+            <ul className="flex space-x-10 font-Geo text-blue-700">
               <motion.li
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
@@ -72,8 +73,8 @@ const Header = () => {
           </div>
 
           {/* Right side with Buy button and social icons */}
-          <div className="flex items-center space-x-4 absolute right-20 top-1/2 transform -translate-y-1/2">
-            <motion.a 
+          <div className="flex items-center space-x-4 absolute right-8 top-1/2 transform -translate-y-1/2">
+            {/* <motion.a 
               href="https://pump.fun/"
               target="_blank" 
               rel="noopener noreferrer"
@@ -91,8 +92,8 @@ const Header = () => {
               whileTap={{ scale: 0.9 }}
             >
               <FaTwitter size={50} className='text-black' />
-            </motion.a>
-            <motion.a 
+            </motion.a> */}
+            {/* <motion.a 
               href="https://t.me/spylysol" 
               target="_blank" 
               rel="noopener noreferrer"
@@ -100,7 +101,13 @@ const Header = () => {
               whileTap={{ scale: 0.9 }}
             >
               <FaTelegram size={50} className='text-black' />
-            </motion.a>
+            </motion.a> */}
+
+            <motion.img
+              src={solImg}
+              alt="logo"
+              className="w-32 h-32"
+            />
           </div>
         </div>
       </nav>

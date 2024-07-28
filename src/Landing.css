@@ -7,6 +7,12 @@
     background-position: center;
 }
 
+.background-landing {
+    background-image: url('./assets/Max/bg.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .animate-text {
     animation: fadeIn 2s ease-in-out;
 }

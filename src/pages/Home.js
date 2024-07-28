@@ -7,17 +7,19 @@ import Buy from "../components/Buy";
 import Token from "../components/Token";
 import Footer from "../components/Footer";
 import MemeSection from "../components/MemeSection";
+import About from "../components/About";
 
 const Home = () => {
 	return (
 		<>
 			<Header />
 			<Landing />
+			<About />
 			<CatMeme />
 			{/* <Game /> */}
 			<Buy />
+			<MemeSection />
 			<Token />
-			{/* <MemeSection /> */}
 			{/* <Footer /> */}
 		</>
 	);

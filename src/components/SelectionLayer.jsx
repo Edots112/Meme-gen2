@@ -14,14 +14,14 @@ const SelectionLayer = ({ selected, images, layer, setSelected }) => {
 
     const scroll = (direction) => {
         if (scrollContainerRef.current) {
-            const scrollAmount = direction === 'left' ? -200 : 200;
+            const scrollAmount = direction === 'left' ? -115 : 110;
             scrollContainerRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
         }
     };
 
     return (
-        <div className="flex items-center bg-blue-900 rounded-lg p-4">
-            <button onClick={() => scroll('left')} className="bg-yellow-400 text-blue-900 p-2 rounded-full mr-4">
+        <div className="flex items-center bg-yellow-400 shadow-2xl rounded-lg p-2 max-w-[550px] justify-center">
+            <button onClick={() => scroll('left')} className="bg-yellow-400 text-blue-900 p-2 rounded-full mr-1">
                 <FaChevronLeft size={24} />
             </button>
             <div 
@@ -33,7 +33,7 @@ const SelectionLayer = ({ selected, images, layer, setSelected }) => {
                         onClick={() => handleClick('')}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="flex-shrink-0 w-32 h-32 bg-green-200 rounded-lg flex items-center justify-center cursor-pointer"
+                        className="flex-shrink-0 w-24 h-24 bg-white rounded-lg flex items-center justify-center cursor-pointer"
                     >
                         <img
                             src={`${process.env.PUBLIC_URL}/images/reset.png`}
@@ -48,7 +48,7 @@ const SelectionLayer = ({ selected, images, layer, setSelected }) => {
                         key={imageName}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="flex-shrink-0 w-32 h-32 bg-green-200 rounded-lg flex items-center justify-center cursor-pointer"
+                        className="flex-shrink-0 w-24 h-24 bg-white rounded-lg flex items-center justify-center cursor-pointer"
                         onClick={() => handleClick(imageName)}
                     >
                         <img
@@ -59,7 +59,7 @@ const SelectionLayer = ({ selected, images, layer, setSelected }) => {
                     </motion.div>
                 ))}
             </div>
-            <button onClick={() => scroll('right')} className="bg-yellow-400 text-blue-900 p-2 rounded-full ml-4">
+            <button onClick={() => scroll('right')} className="bg-yellow-400 text-blue-900 p-2 rounded-full ml-1">
                 <FaChevronRight size={24} />
             </button>
         </div>
