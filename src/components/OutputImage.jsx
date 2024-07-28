@@ -84,7 +84,7 @@ const OutputImage = (props) => {
             hat: images.hat[Math.floor(Math.random() * images.hat.length)] || '',
             frontaccessory: images.frontAccessory[Math.floor(Math.random() * images.frontAccessory.length)] || '',
             character: images.character[Math.floor(Math.random() * images.character.length)] || '',
-            accessory: images.accessory[Math.floor(Math.random() * images.accessory.length)] || ''
+            // accessory: images.accessory[Math.floor(Math.random() * images.accessory.length)] || ''
         });
     };
 
