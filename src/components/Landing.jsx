@@ -149,7 +149,7 @@ const Landing = () => {
       </div>
 
       <h3 className='text-white z-10 absolute left-6 bottom-6 w-full font-Priest text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-5xl font-bold'>
-        CA: Coming Soon
+        CA: AeM2PqV6n4Jn3otRPenutWbfXfz6xtAME6URzCLppump
       </h3>
     </div>
   );
