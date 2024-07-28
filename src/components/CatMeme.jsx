@@ -4,8 +4,8 @@ import SelectionLayer from './SelectionLayer';
 
 const CatMeme = () => {
     const [selected, setSelected] = useState({
-        background: '24.png',
-        character: '1.png',
+        background: '21.png',
+        character: '25.png',
         face: '',
         frontaccessory: '',
         hat: '',
@@ -13,12 +13,12 @@ const CatMeme = () => {
     });
 
     const [images, setImages] = useState({
-        background: ["24.png", "20.png", "21.png", "22.png", "23.png", "19.png"],
-        character: ["1.png", "25.png", "26.png", "27.png", "28.png"],
-        face: ["2.png", "4.png", "6.png", "8.png", "11.png", "12.png"],
-        frontAccessory: ["5.png", "7.png", "9.png",],
-        hat: ["3.png", "10.png", "13.png", "14.png",],
-        accessory: ["15.png", "16.png", "17.png", "18.png"] // Add your accessory images here
+        background: ["21.png", "17.png", "18.png", "19.png", "20.png", "16.png"],
+        character: ["25.png",],
+        face: ["8.png", "9.png", "10.png", "11.png", "12.png"],
+        frontAccessory: ["13.png", "14.png", "15.png",],
+        hat: ["3.png", "4.png", "5.png", "6.png", "7.png"],
+        // accessory: ["15.png", "16.png", "17.png", "18.png"] // Add your accessory images here
     });
 
     return (
@@ -47,7 +47,7 @@ const CatMeme = () => {
                         <SelectionLayer selected={selected} images={images.face} layer={'face'} setSelected={setSelected} />
                         <SelectionLayer selected={selected} images={images.frontAccessory} layer={'frontaccessory'} setSelected={setSelected} />
                         <SelectionLayer selected={selected} images={images.hat} layer={'hat'} setSelected={setSelected} />
-                        <SelectionLayer selected={selected} images={images.accessory} layer={'accessory'} setSelected={setSelected} />
+                        {/* <SelectionLayer selected={selected} images={images.accessory} layer={'accessory'} setSelected={setSelected} /> */}
                     </div>
                 </div>
             </div>

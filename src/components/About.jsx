@@ -5,7 +5,7 @@ import backgroundImg from '../assets/Max/bg.png'; // Make sure to add this image
 
 const About = () => {
   return (
-    <div className=" p-8  shadow-lg bg-yellow-400 mx-10 mt-24 " >
+    <div className=" p-8  shadow-lg bg-yellow-400 mx-10 mt-24 " id='about' >
         <div className="bg-blue-400 p-10 rounded-xl drop-shadow-2xl max-w-8xl mx-auto my-12">
       <motion.h1 
         className="text-6xl md:text-8xl font-bold text-yellow-400 mb-8 text-center"

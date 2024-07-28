@@ -92,7 +92,7 @@ const MemeSection = () => {
   }, [scrollYProgress]);
 
   return (
-    <div ref={containerRef} style={{ height: `${100 * memes.length}vh` }}>
+    <div  id="memes" ref={containerRef} style={{ height: `${100 * memes.length}vh` }}>
       {memes.map((meme, index) => (
         <Meme 
           key={index} 

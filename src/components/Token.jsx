@@ -17,7 +17,7 @@ const TokenInfo = ({ title, value }) => (
 
 const Token = () => {
   return (
-    <div id='token' className='bg-green-200 w-full text-white py-20 px-4 relative overflow-hidden'>
+    <div id='token' className=' w-full text-white py-20 px-4 relative overflow-hidden'>
       <div className="container mx-auto relative z-10">
         {/* <motion.h1 
           className='font-Priest text-5xl md:text-7xl text-center mb-16 text-blue-500'
@@ -40,8 +40,8 @@ const Token = () => {
           animate={{ scale: 1 }}
           transition={{ type: "spring", stiffness: 200, delay: 0.2 }}
         >
-          <h2 className='font-Priest text-6xl md:text-8xl text-center mb-6 text-yellow-400'>$SPY</h2>
-          <p className="font-Priest text-xl text-center text-white mb-8">Join the pack and get some $SPY tokens!</p>
+          <h2 className='font-Priest text-6xl md:text-8xl text-center mb-6 text-yellow-400'>$MAX</h2>
+          <p className="font-Priest text-xl text-center text-white mb-8">Join the pack and get some $MAX tokens!</p>
           
           <div className="flex justify-center items-center gap-8">
             <motion.a 

@@ -13,7 +13,7 @@ const OutputImage = (props) => {
         face: { zIndex: 4, width: 500, height: 500, top: 0, left: 0 },
         frontaccessory: { zIndex: 3, width: 500, height: 500, top: 0, left: 0 },
         hat: { zIndex: 2, width: 500, height: 500, top: 0, left: 0 },
-        accessory: { zIndex: 5, width: 500, height: 500, top: 0, left: 0 }
+        // accessory: { zIndex: 5, width: 500, height: 500, top: 0, left: 0 }
     };
 
     const handleDownload = async () => {
@@ -30,7 +30,7 @@ const OutputImage = (props) => {
             { layer: 'face' },
             { layer: 'frontaccessory' },
             { layer: 'hat' },
-            { layer: 'accessory' } // Add your new layer here
+            // { layer: 'accessory' } // Add your new layer here
         ];
 
         // Function to load an image
@@ -61,15 +61,15 @@ const OutputImage = (props) => {
 
         // Provide a download link for the canvas image
         const link = document.createElement('a');
-        link.download = 'Spyly.png';
+        link.download = 'Max.png';
         link.href = canvas.toDataURL();
         link.click();
     };
 
     const handleReset = () => {
         props.setSelected({
-            background: '24.png',
-            character: '1.png',
+            background: '21.png',
+            character: '25.png',
             face: '',
             frontaccessory: '',
             hat: '',

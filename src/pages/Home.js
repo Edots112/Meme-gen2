@@ -8,6 +8,7 @@ import Token from "../components/Token";
 import Footer from "../components/Footer";
 import MemeSection from "../components/MemeSection";
 import About from "../components/About";
+import Roadmap from "../components/Roadmap";
 
 const Home = () => {
 	return (
@@ -19,6 +20,7 @@ const Home = () => {
 			{/* <Game /> */}
 			<Buy />
 			<MemeSection />
+			<Roadmap />
 			<Token />
 			{/* <Footer /> */}
 		</>
