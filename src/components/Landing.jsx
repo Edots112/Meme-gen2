@@ -87,7 +87,7 @@ const Landing = () => {
 
             <div className="flex items-center space-x-4 absolute bottom-24 left-48 bg-blue-200 p-5 rounded-2xl">
              <motion.a 
-              href="https://t.me/spylysol" 
+              href="https://t.me/+fFU5cQ34Pb44ZjEx" 
               target="_blank" 
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1 }}

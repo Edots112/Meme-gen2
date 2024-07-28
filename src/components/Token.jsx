@@ -63,7 +63,7 @@ const Token = () => {
               <img src={pumpImg} alt='pumplogo' className='w-12 h-12' />
             </motion.a>
             <motion.a 
-              href="https://t.me/spylysol" 
+              href="https://t.me/+fFU5cQ34Pb44ZjEx" 
               target="_blank" 
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1, rotate: 10 }}
