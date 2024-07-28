@@ -19,7 +19,7 @@ const Token = () => {
   return (
     <div id='token' className='bg-green-200 w-full text-white py-20 px-4 relative overflow-hidden'>
       <div className="container mx-auto relative z-10">
-        <motion.h1 
+        {/* <motion.h1 
           className='font-Priest text-5xl md:text-7xl text-center mb-16 text-blue-500'
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -32,7 +32,7 @@ const Token = () => {
           <TokenInfo title="Supply" value="1 Billion" />
           <TokenInfo title="Tax" value="0% Buy/sell" />
           <TokenInfo title="Liquidity" value="100% Burn" />
-        </div>
+        </div> */}
 
         <motion.div
           className="bg-blue-900 rounded-3xl p-8 shadow-xl max-w-2xl mx-auto"
