@@ -35,7 +35,7 @@ const Landing = () => {
       <AnimatePresence>
         <motion.img
           src={headImg}
-          className='z-10  absolute left-[-100px] top-10 rounded-xl  cursor-pointer 2xl:w-[1250px] md:w-[1000px]'
+          className='z-10  absolute sm:left-[-100px] top-32 sm:top-12 rounded-xl   cursor-pointer 2xl:w-[1250px] md:w-[1000px]'
           alt="Max"
           transition={{ 
             type: 'spring', 
@@ -48,7 +48,7 @@ const Landing = () => {
       <AnimatePresence>
         <motion.img
           src={doggyImg}
-          className='z-10 2xl:w-[525px] 2xl:top-10 xl:right-32 w-[300px] absolute bottom-0 right-32 rounded-xl cursor-pointer'
+          className='z-10 2xl:w-[525px] 2xl:top-10 xl:right-32 w-[300px] absolute bottom-24 sm:bottom-0 right-32 rounded-xl cursor-pointer'
           alt="Max"
           initial="initial"
           animate="animate"
@@ -73,41 +73,80 @@ const Landing = () => {
       
 
 
-            <div className="flex items-center space-x-4 absolute bottom-24 left-5 bg-black p-5 rounded-2xl">
-            <motion.a 
-              href="https://x.com/MaxOnSolan" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <FaTwitter size={125} className='text-white  ' />
-            </motion.a> 
-            </div>
+         <div className="flex flex-col sm:hidden items-center justify-between w-full px-4 py-2 bg-gray-800 fixed top-0 left-0 z-20">
+        <div className="flex items-center space-x-2 mb-2">
+          <motion.a 
+            href="https://x.com/MaxOnSolan" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="bg-black p-2 rounded-full"
+          >
+            <FaTwitter size={30} className='text-white' />
+          </motion.a> 
+          <motion.a 
+            href="https://t.me/+fFU5cQ34Pb44ZjEx" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="bg-blue-200 p-2 rounded-full"
+          >
+            <FaTelegram size={30} className='text-white' />
+          </motion.a> 
+        </div>
+        <motion.a 
+          href="https://pump.fun/"
+          target="_blank" 
+          rel="noopener noreferrer"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="bg-yellow-400 font-Lon text-black font-bold py-2 px-4 rounded-full text-sm"
+        >
+          BUY NOW
+        </motion.a>
+      </div>
 
-            <div className="flex items-center space-x-4 absolute bottom-24 left-48 bg-blue-200 p-5 rounded-2xl">
-             <motion.a 
-              href="https://t.me/+fFU5cQ34Pb44ZjEx" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <FaTelegram size={125} className='text-white' />
-            </motion.a> 
-            <div className="flex items-center  absolute  left-[15rem]  p-5 rounded-2xl ">
-              <motion.a 
-              href="https://pump.fun/"
-              target="_blank" 
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              className="bg-yellow-400 font-Lon text-black font-bold py-10 w-80 text-center rounded-full text-3xl "
-            >
-              BUY NOW
-            </motion.a> 
-            </div>
-            </div>
+      {/* Desktop layout */}
+      <div className="hidden sm:block">
+        <div className="flex items-center space-x-4 absolute bottom-24 left-5 bg-black p-5 rounded-2xl">
+          <motion.a 
+            href="https://x.com/MaxOnSolan" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <FaTwitter size={125} className='text-white' />
+          </motion.a> 
+        </div>
+
+        <div className="flex items-center space-x-4 absolute bottom-24 left-48 bg-blue-200 p-5 rounded-2xl">
+          <motion.a 
+            href="https://t.me/+fFU5cQ34Pb44ZjEx" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <FaTelegram size={125} className='text-white' />
+          </motion.a> 
+        </div>
+        
+        <div className="flex items-center absolute bottom-24 left-[25rem] p-5 rounded-2xl">
+          <motion.a 
+            href="https://pump.fun/"
+            target="_blank" 
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="bg-yellow-400 font-Lon text-black font-bold py-10 w-80 text-center rounded-full text-3xl"
+          >
+            BUY NOW
+          </motion.a> 
+        </div>
+      </div>
 
       <h3 className='text-white z-10 absolute left-6 bottom-6 w-full font-Priest text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-5xl font-bold'>
         CA: Coming Soon

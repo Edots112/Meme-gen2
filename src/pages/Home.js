@@ -9,15 +9,21 @@ import Footer from "../components/Footer";
 import MemeSection from "../components/MemeSection";
 import About from "../components/About";
 import Roadmap from "../components/Roadmap";
+import EndlessRunner from "../components/EndlessRunner";
 
 const Home = () => {
 	return (
 		<>
-			<Header />
+			<div className="hidden md:block">
+				<Header />
+			</div>
 			<Landing />
 			<About />
-			<CatMeme />
+			<div className="hidden md:block">
+				<CatMeme />
+			</div>
 			{/* <Game /> */}
+			{/* <EndlessRunner /> */}
 			<Buy />
 			<MemeSection />
 			<Roadmap />
