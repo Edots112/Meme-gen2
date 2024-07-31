@@ -45,7 +45,7 @@ const Token = () => {
           
           <div className="flex justify-center items-center gap-8">
             <motion.a 
-              href="https://x.com/MaxOnSolan" 
+              href="https://x.com/Henrie_Solana" 
               target="_blank" 
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1, rotate: 10 }}
@@ -54,7 +54,7 @@ const Token = () => {
               <FaTwitter size={40} className='text-white'/>
             </motion.a>
             <motion.a 
-              href="https://pump.fun/AeM2PqV6n4Jn3otRPenutWbfXfz6xtAME6URzCLppump" 
+              href="https://pump.fun/" 
               target="_blank" 
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1, rotate: -10 }}
@@ -63,7 +63,7 @@ const Token = () => {
               <img src={pumpImg} alt='pumplogo' className='w-12 h-12' />
             </motion.a>
             <motion.a 
-              href="https://t.me/+fFU5cQ34Pb44ZjEx" 
+              href="https://t.me/+9LJl2fgVrxQ0N2Fk" 
               target="_blank" 
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1, rotate: 10 }}

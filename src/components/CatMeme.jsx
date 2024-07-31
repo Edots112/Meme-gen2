@@ -40,8 +40,8 @@ const CatMeme = () => {
                         <SelectionLayer selected={selected} images={images.character} layer={'character'} setSelected={setSelected} />
                         <SelectionLayer selected={selected} images={images.background} layer={'background'} setSelected={setSelected} />
                         <SelectionLayer selected={selected} images={images.face} layer={'face'} setSelected={setSelected} />
-                        <SelectionLayer selected={selected} images={images.frontAccessory} layer={'frontaccessory'} setSelected={setSelected} />
                         <SelectionLayer selected={selected} images={images.hat} layer={'hat'} setSelected={setSelected} />
+                        <SelectionLayer selected={selected} images={images.frontAccessory} layer={'frontaccessory'} setSelected={setSelected} />
                         <SelectionLayer selected={selected} images={images.accessory} layer={'accessory'} setSelected={setSelected} />
                     </div>
                     <div className='lg:w-1/2 sticky top-10'>

@@ -12,7 +12,7 @@ const OutputImage = (props) => {
         character: { zIndex: 1, width: 500, height: 500, top: 0, left: 0 },
         face: { zIndex: 4, width: 500, height: 500, top: 0, left: 0 },
         frontaccessory: { zIndex: 3, width: 500, height: 500, top: 0, left: 0 },
-        hat: { zIndex: 2, width: 500, height: 500, top: 0, left: 0 },
+        hat: { zIndex: 4, width: 500, height: 500, top: 0, left: 0 },
         accessory: { zIndex: 5, width: 500, height: 500, top: 0, left: 0 }
     };
 
@@ -61,7 +61,7 @@ const OutputImage = (props) => {
 
         // Provide a download link for the canvas image
         const link = document.createElement('a');
-        link.download = 'Max.png';
+        link.download = 'HENRIE.png';
         link.href = canvas.toDataURL();
         link.click();
     };

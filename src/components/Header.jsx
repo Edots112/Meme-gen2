@@ -99,7 +99,7 @@ const Header = () => {
               BUY NOW
             </motion.a>
             <motion.a 
-              href="https://x.com/Spyly_Solana" 
+              href="https://x.com/Henrie_Solana" 
               target="_blank" 
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1 }}
@@ -108,7 +108,7 @@ const Header = () => {
               <FaTwitter size={60} className='text-white' />
             </motion.a> 
              <motion.a 
-              href="https://t.me/spylysol" 
+              href="https://t.me/+9LJl2fgVrxQ0N2Fk" 
               target="_blank" 
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1 }}
