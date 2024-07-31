@@ -5,7 +5,7 @@ import SelectionLayer from './SelectionLayer';
 const CatMeme = () => {
     const [selected, setSelected] = useState({
         background: '21.png',
-        character: '25.png',
+        character: '1.png',
         face: '',
         frontaccessory: '',
         hat: '',
@@ -13,12 +13,12 @@ const CatMeme = () => {
     });
 
     const [images, setImages] = useState({
-        background: ["21.png", "17.png", "18.png", "19.png", "20.png", "16.png"],
-        character: ["25.png", "22.png", "23.png", "24.png"],
-        face: ["8.png", "9.png", "10.png", "11.png", "12.png"],
-        frontAccessory: ["13.png", "14.png", "15.png",],
-        hat: ["3.png", "4.png", "5.png", "6.png", "7.png"],
-        // accessory: ["15.png", "16.png", "17.png", "18.png"] // Add your accessory images here
+        background: ["21.png", "22.png", "23.png", "24.png", "25.png", "26.png", "27.png"],
+        character: ["1.png", "28.png", "29.png", ],
+        face: ["2.png", "3.png", "9.png", "10.png", "11.png"],
+        frontAccessory: ["12.png", "13.png", "16.png", "15.png"],
+        hat: ["4.png", "5.png", "6.png", "7.png", "8.png"],
+        accessory: ["18.png", "19.png", "20.png",] // Add your accessory images here
     });
 
     return (
@@ -42,7 +42,7 @@ const CatMeme = () => {
                         <SelectionLayer selected={selected} images={images.face} layer={'face'} setSelected={setSelected} />
                         <SelectionLayer selected={selected} images={images.frontAccessory} layer={'frontaccessory'} setSelected={setSelected} />
                         <SelectionLayer selected={selected} images={images.hat} layer={'hat'} setSelected={setSelected} />
-                        {/* <SelectionLayer selected={selected} images={images.accessory} layer={'accessory'} setSelected={setSelected} /> */}
+                        <SelectionLayer selected={selected} images={images.accessory} layer={'accessory'} setSelected={setSelected} />
                     </div>
                     <div className='lg:w-1/2 sticky top-10'>
                         <OutputImage selected={selected} setSelected={setSelected} images={images} />

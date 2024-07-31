@@ -53,28 +53,28 @@ const Header = () => {
                 whileTap={{ scale: 0.9 }}
                 onClick={handleLinkClick}
               >
-                <a className="text-lg font-bold" href="#about">About Max</a>
+                <a className="text-lg font-bold" href="#about">About </a>
               </motion.li>
               <motion.li
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 onClick={handleLinkClick}
               >
-                <a className="text-lg font-bold" href="#meme-gen">Make a Max</a>
+                <a className="text-lg font-bold" href="#meme-gen">Make a HENRIE</a>
               </motion.li>
-              <motion.li
+              {/* <motion.li
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 onClick={handleLinkClick}
               >
                 <a className="text-lg font-bold" href="#buy">How to buy?</a>
-              </motion.li>
+              </motion.li> */}
               <motion.li
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 onClick={handleLinkClick}
               >
-                <a className="text-lg font-bold" href="#memes">Max Memes</a>
+                <a className="text-lg font-bold" href="#memes">HENRIE Memes</a>
               </motion.li>
               <motion.li
                 whileHover={{ scale: 1.1 }}

@@ -13,7 +13,7 @@ const OutputImage = (props) => {
         face: { zIndex: 4, width: 500, height: 500, top: 0, left: 0 },
         frontaccessory: { zIndex: 3, width: 500, height: 500, top: 0, left: 0 },
         hat: { zIndex: 2, width: 500, height: 500, top: 0, left: 0 },
-        // accessory: { zIndex: 5, width: 500, height: 500, top: 0, left: 0 }
+        accessory: { zIndex: 5, width: 500, height: 500, top: 0, left: 0 }
     };
 
     const handleDownload = async () => {
@@ -30,7 +30,7 @@ const OutputImage = (props) => {
             { layer: 'face' },
             { layer: 'frontaccessory' },
             { layer: 'hat' },
-            // { layer: 'accessory' } // Add your new layer here
+            { layer: 'accessory' } // Add your new layer here
         ];
 
         // Function to load an image
@@ -69,7 +69,7 @@ const OutputImage = (props) => {
     const handleReset = () => {
         props.setSelected({
             background: '21.png',
-            character: '25.png',
+            character: '1.png',
             face: '',
             frontaccessory: '',
             hat: '',
@@ -84,7 +84,7 @@ const OutputImage = (props) => {
             hat: images.hat[Math.floor(Math.random() * images.hat.length)] || '',
             frontaccessory: images.frontAccessory[Math.floor(Math.random() * images.frontAccessory.length)] || '',
             character: images.character[Math.floor(Math.random() * images.character.length)] || '',
-            // accessory: images.accessory[Math.floor(Math.random() * images.accessory.length)] || ''
+            accessory: images.accessory[Math.floor(Math.random() * images.accessory.length)] || ''
         });
     };
 
