@@ -7,11 +7,7 @@ import meme2 from '../assets/Max/meme2.png';
 import meme3 from '../assets/Max/meme3.png';
 import meme4 from '../assets/Max/meme4.png';
 import meme5 from '../assets/Max/meme5.png';
-import meme6 from '../assets/Max/meme6.png';
-import meme7 from '../assets/Max/meme7.png';
-import meme8 from '../assets/Max/meme8.png';
-import meme9 from '../assets/Max/meme9.png';
-import meme10 from '../assets/Max/meme10.png';
+
 
 const memes = [
   { src: meme1, alt: "Meme 1", direction: "left" },
@@ -19,11 +15,7 @@ const memes = [
   { src: meme3, alt: "Meme 3", direction: "bottom" },
   { src: meme4, alt: "Meme 4", direction: "left" },
   { src: meme5, alt: "Meme 5", direction: "right" },
-  { src: meme6, alt: "Meme 6", direction: "bottom" },
-  { src: meme7, alt: "Meme 7", direction: "left" },
-  { src: meme8, alt: "Meme 8", direction: "right" },
-  { src: meme9, alt: "Meme 9", direction: "bottom" },
-  { src: meme10, alt: "Meme 10", direction: "left" },
+
 ];
 
 const Meme = ({ src, alt, opacity, direction }) => {

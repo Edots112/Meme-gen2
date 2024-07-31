@@ -35,13 +35,13 @@ const Token = () => {
         </div> */}
 
         <motion.div
-          className="rounded-3xl bg-white/20 p-8 shadow-2xl max-w-2xl mx-auto"
+          className="rounded-3xl bg-black/90 p-8 shadow-2xl max-w-2xl mx-auto"
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ type: "spring", stiffness: 200, delay: 0.2 }}
         >
-          <h2 className='font-Priest text-6xl md:text-8xl text-center mb-6 text-yellow-400'>$MAX</h2>
-          <p className="font-Priest text-xl text-center text-white mb-8">Join the pack and get some $MAX tokens!</p>
+          <h2 className='font-Priest text-6xl md:text-8xl text-center mb-6 text-white'>$HENRIE</h2>
+          <p className="font-Priest text-xl text-center text-white mb-8">Join the journey and get some $HENRIE!</p>
           
           <div className="flex justify-center items-center gap-8">
             <motion.a 

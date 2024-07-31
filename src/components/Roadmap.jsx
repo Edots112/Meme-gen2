@@ -1,43 +1,46 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import dogImg from '../assets/Max/dog.png';
+import rocketImg from '../assets/Max/dog.png'; // Replace with your rocket image
 
 const roadmapData = [
   {
-    step: "STEP 01",
-    title: "FAIR LAUNCH OF PUMP.FUN",
+    step: "LAUNCH",
+    title: "BLAST OFF",
     content: "1. Fair launch on pump.fun\n2. Update CA on website\n3. Prepay DEX",
-    color: "bg-red-500"
+    color: "bg-blue-400"
   },
   {
-    step: "STEP 02",
-    title: "MEME MAKING AND COMMUNITY FORMATION",
-    content: "Create and share memes to build a strong community around Max.",
-    color: "bg-purple-500"
+    step: "ORBIT",
+    title: "COMMUNITY FORMATION",
+    content: "Create and share cosmic memes to build a strong community around Max.",
+    color: "bg-purple-400"
   },
   {
-    step: "STEP 03",
-    title: "APPLY FOR DEX ADS",
+    step: "EXPLORE",
+    title: "EXPAND VISIBILITY",
     content: "Apply for DEX ads, SOL and Finder's trending on Ray for increased visibility.",
-    color: "bg-green-500"
+    color: "bg-pink-400"
   },
   {
-    step: "STEP 04",
-    title: "CONSTANT RAIDS AND COMMUNITY GROWTH",
-    content: "Organize constant raids and focus on further community formation and engagement.",
-    color: "bg-pink-500"
+    step: "COLONIZE",
+    title: "GALACTIC GROWTH",
+    content: "Organize interstellar raids and focus on further community expansion.",
+    color: "bg-green-400"
   }
 ];
 
-const RoadmapItem = ({ data, isActive, onClick, style }) => (
+const StarConstellation = ({ isActive, onClick, style }) => (
   <motion.div 
-    className={`cursor-pointer absolute ${isActive ? 'scale-110' : ''}`}
+    className={`cursor-pointer absolute ${isActive ? 'scale-125' : ''}`}
     style={style}
-    whileHover={{ scale: 1.1 }}
+    whileHover={{ scale: 1.2 }}
     onClick={onClick}
   >
-    <div className={`w-12 h-12 md:w-16 md:h-16 ${data.color} rounded-full flex items-center justify-center mb-2`}>
-      <span className="text-white font-bold text-xs md:text-sm">{data.step}</span>
+    <div className="relative">
+      <div className="w-2 h-2 bg-white rounded-full absolute top-0 left-0"></div>
+      <div className="w-2 h-2 bg-white rounded-full absolute top-2 left-2"></div>
+      <div className="w-2 h-2 bg-white rounded-full absolute top-0 left-4"></div>
+      <div className="w-3 h-3 bg-yellow-300 rounded-full absolute top-1 left-2 animate-pulse"></div>
     </div>
   </motion.div>
 );
@@ -52,7 +55,7 @@ const Roadmap = () => {
     const updateWidth = () => {
       if (containerRef.current && roadmapRef.current) {
         const fullWidth = containerRef.current.offsetWidth;
-        const roadmapWidth = fullWidth * 0.7; // 70% of container width
+        const roadmapWidth = fullWidth * 0.8;
         setContainerWidth(roadmapWidth);
         roadmapRef.current.style.width = `${roadmapWidth}px`;
       }
@@ -69,23 +72,22 @@ const Roadmap = () => {
   };
 
   return (
-    <div className="bg-black/50 shadow-2xl p-4 md:p-8 rounded-3xl mx-4 mb-10 relative overflow-hidden font-Lon" ref={containerRef} id="roadmap">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">Roadmap</h2>
+    <div className="bg-gradient-to-b from-purple-900/30 to-black p-6 md:p-10 rounded-3xl mx-4 mb-10 relative overflow-hidden font-Lon" ref={containerRef} id="roadmap">
+      <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-white">Roadmap</h2>
 
-      <div className="relative mb-28 mx-auto" ref={roadmapRef}>
-        <div className="h-2 bg-white rounded-full mb-8" />
+      <div className="relative mb-32 mx-auto" ref={roadmapRef}>
+        <div className="h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full mb-8" />
         <motion.div 
           className="absolute top-0 left-0"
           initial={{ x: 0 }}
           animate={{ x: `${(activeStep / (roadmapData.length - 1)) * containerWidth}px` }}
           transition={{ type: "spring", stiffness: 300, damping: 30 }}
         >
-          <img src={dogImg} alt="Max" className="w-12 h-16 md:w-28 md:h-20 rounded-full -mt-10 -ml-6 md:-ml-12" />
+          <img src={rocketImg} alt="Rocket" className="w-12 h-12 md:w-16 md:h-16 -mt-6 -ml-6 transform -rotate-45" />
         </motion.div>
         {roadmapData.map((item, index) => (
-          <RoadmapItem 
-            key={index} 
-            data={item} 
+          <StarConstellation 
+            key={index}
             isActive={index === activeStep}
             onClick={() => setActiveStep(index)}
             style={getItemPosition(index)}
@@ -98,12 +100,12 @@ const Roadmap = () => {
           key={activeStep}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.3 }}
-          className="text-center"
+          className="text-center text-white"
         >
-          <h3 className="text-xl md:text-2xl font-bold mb-2">{roadmapData[activeStep].title}</h3>
-          <p className="whitespace-pre-line text-sm md:text-base">{roadmapData[activeStep].content}</p>
+          <h3 className="text-2xl md:text-3xl font-bold mb-3">{roadmapData[activeStep].step}: {roadmapData[activeStep].title}</h3>
+          <p className="whitespace-pre-line text-sm md:text-base max-w-2xl mx-auto">{roadmapData[activeStep].content}</p>
         </motion.div>
       </AnimatePresence>
     </div>

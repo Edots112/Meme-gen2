@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import doggyImg from '../assets/Max/dog.png';
-import backgroundImg from '../assets/Max/bg.png'; // Import your background image
+import backgroundImg from '../assets/Max/bg.jpg'; // Import your background image
 import headImg from '../assets/Max/head.png'; // Import your head image
 import { FaTwitter, FaTelegram } from 'react-icons/fa';
 
@@ -32,23 +32,23 @@ const Landing = () => {
         </motion.h3>
       </div> */}
 
-      <AnimatePresence>
-        <motion.img
+      
+        
+      <div className="  shadow-2xl  border-black  z-10  absolute left-0 bottom-0 sm:bottom-0 rounded-xl   cursor-pointer">
+        <img
           src={headImg}
-          className='z-10  absolute sm:left-[-100px] top-32 sm:top-12 rounded-xl   cursor-pointer 2xl:w-[1250px] md:w-[1000px]'
+          className='z-20 rounded-xl cursor-pointer 2xl:w-[1350px] md:w-[1000px]  '
           alt="Max"
-          transition={{ 
-            type: 'spring', 
-            stiffness: 120, 
-            damping: 10 
-          }}
+         
         />
-      </AnimatePresence>
+        </div>
+      
+   
 
       <AnimatePresence>
         <motion.img
           src={doggyImg}
-          className='z-10 2xl:w-[525px] 2xl:top-10 xl:right-32 w-[300px] absolute bottom-24 sm:bottom-0 right-32 rounded-xl cursor-pointer'
+          className='z-10 2xl:w-[425px] 2xl:-bottom-0 xl:right-32 w-[200px] absolute bottom-10 sm:bottom-0 right-32 rounded-xl cursor-pointer'
           alt="Max"
           initial="initial"
           animate="animate"
@@ -109,7 +109,7 @@ const Landing = () => {
       </div>
 
       {/* Desktop layout */}
-      <div className="hidden sm:block">
+      {/* <div className="hidden sm:block">
         <div className="flex items-center space-x-4 absolute bottom-24 left-5 bg-black p-5 rounded-2xl">
           <motion.a 
             href="https://x.com/MaxOnSolan" 
@@ -145,12 +145,12 @@ const Landing = () => {
           >
             BUY NOW
           </motion.a> 
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
 
-      <h3 className='text-white z-10 absolute left-6 bottom-6 w-full font-Priest text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-5xl font-bold'>
+      {/* <h3 className='text-white z-10 absolute left-6 bottom-6 w-full font-Priest text-[1.5rem] md:text-[3.5rem] lg:text-5xl 2xl:text-5xl font-bold'>
         CA: AeM2PqV6n4Jn3otRPenutWbfXfz6xtAME6URzCLppump
-      </h3>
+      </h3> */}
     </div>
   );
 };

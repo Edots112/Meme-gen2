@@ -46,7 +46,7 @@ body {
   margin: 0;
   color: white;
   overflow-x: hidden;
-  background-image: url("./assets/Max/bg.png");
+  background-image: url("./assets/Max/bg.jpg");
   background-color: #3f7ff7;
   background-size: cover;
   background-attachment: fixed;
@@ -194,10 +194,9 @@ html {
   position: relative;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
-  background-color: white;
-  /* border-radius: 1000px; */
+  background-color: black;
   border: 2px solid white;
-  color: rgb(0, 0, 0) ;
+  color: white; 
 }
 
 .btn:hover {

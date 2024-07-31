@@ -24,7 +24,7 @@ const Home = () => {
 			</div>
 			{/* <Game /> */}
 			{/* <EndlessRunner /> */}
-			<Buy />
+			{/* <Buy /> */}
 			<MemeSection />
 			<Roadmap />
 			<Token />

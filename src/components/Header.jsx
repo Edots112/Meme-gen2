@@ -46,8 +46,8 @@ const Header = () => {
           </motion.a> */}
 
           {/* Centered Navigation items */}
-          <div className="bg-green-500 bg-opacity-90 rounded-full px-10 py-5">
-            <ul className="flex space-x-10  text-blue-700">
+          <div className="bg-gray-500 bg-opacity-90 rounded-full px-10 py-5 border-4 border-black">
+            <ul className="flex space-x-10  text-black">
               <motion.li
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
@@ -88,13 +88,13 @@ const Header = () => {
 
           {/* Right side with Buy button and social icons */}
           <div className="flex items-center space-x-4 absolute right-8 top-1/2 transform -translate-y-1/2">
-            {/* <motion.a 
+             <motion.a 
               href="https://pump.fun/"
               target="_blank" 
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              className="bg-yellow-400 font-Geo text-black font-bold py-4 px-12 rounded-full"
+              className="bg-green-500  font-Lon text-white font-bold py-5 px-20 rounded-full border-4 border-black"
             >
               BUY NOW
             </motion.a>
@@ -105,23 +105,23 @@ const Header = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
-              <FaTwitter size={50} className='text-black' />
-            </motion.a> */}
-            {/* <motion.a 
+              <FaTwitter size={60} className='text-white' />
+            </motion.a> 
+             <motion.a 
               href="https://t.me/spylysol" 
               target="_blank" 
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
-              <FaTelegram size={50} className='text-black' />
-            </motion.a> */}
+              <FaTelegram size={60} className='text-white' />
+            </motion.a> 
 
-            <motion.img
+            {/* <motion.img
               src={solImg}
               alt="logo"
               className="w-32 h-32"
-            />
+            /> */}
           </div>
         </div>
       </nav>

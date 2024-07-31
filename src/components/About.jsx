@@ -1,19 +1,19 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import maxImage from '../assets/Max/maxfull.png'; // Make sure to add this image to your assets folder
-import backgroundImg from '../assets/Max/bg.png'; // Make sure to add this image to your assets folder
+import backgroundImg from '../assets/Max/bg.jpg'; // Make sure to add this image to your assets folder
 
 const About = () => {
   return (
-    <div className=" p-8 font-Lon shadow-lg bg-yellow-400 mx-10 mt-24 " id='about' >
-        <div className="bg-blue-400 p-10 rounded-xl drop-shadow-2xl max-w-8xl mx-auto my-12">
+    <div className=" p-8 font-Lon shadow-lg bg-slate-500 mx-10 mt-24 " id='about' >
+        <div className="bg-black p-10 rounded-xl drop-shadow-2xl max-w-8xl mx-auto my-12">
       <motion.h1 
-        className="text-6xl md:text-8xl font-bold text-yellow-400 mb-8 text-center"
+        className="text-6xl md:text-8xl font-bold text-white mb-8 text-center"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        MAX, THE GOLDEN PUPPER
+        HENRIE!
       </motion.h1>
       </div>
       
@@ -24,8 +24,9 @@ const About = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <p className="text-xl md:text-6xl font-semibold  p-4 rounded-lg shadow-inner text-center ">
-            MAX ISN'T JUST A PUP.... HE'S A BEACON OF HAPPINESS AND A REMINDER THAT EVEN IN THE WORLD OF JEETING DEGENERATES, THERE'S ALWAYS ROOM FOR A LITTLE CANINE CHARM. WILL THIS GOLDEN PUPPY BE YOUR GOLDEN TICKET?
+          <p className="sm:text-xl md:text-4xl font-semibold  p-4 rounded-lg shadow-inner text-center ">
+           Henrie is not just a pet but a beloved member of the family, that wants to be at the top with his brothers and sisters. Henrie is the youngest and dreams about standing at the same marketcap as his family. Jeeters won't stop Henrie on his journey to the top. 
+Will you help Henrie reunite with his family?
           </p>
         </motion.div>
         
@@ -35,7 +36,7 @@ const About = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          <img src={maxImage} alt="Max the Golden Pupper" className=" shadow-lg w-full" />
+          <img src={maxImage} alt="HENRI" className=" shadow-lg w-full" />
         </motion.div>
       </div>
     </div>

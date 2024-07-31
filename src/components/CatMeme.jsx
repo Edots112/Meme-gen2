@@ -22,20 +22,15 @@ const CatMeme = () => {
     });
 
     return (
-        <div id='meme-gen' className='min-h-screen bg-yellow-400 py-10 px-4  mx-10'>
+        <div id='meme-gen' className='min-h-screen bg-slate-500 py-10 px-4  mx-10'>
             <div className='container mx-auto'>
-                <h1 className="font-Priest text-4xl lg:text-8xl font-bold text-center text-red-600 mb-10">
-                    Make your own <span className='text-blue-500'>Max</span>
+                <h1 className="font-Priest text-4xl lg:text-8xl font-bold text-center text-white mb-10">
+                     <span className='text-black'>HENRI </span>
+                     MEME GEN
                 </h1>
                 
                 <div className='flex flex-col lg:flex-row justify-between items-start gap-10'>
                     {/* Left column: Output Image */}
-                    <div className='lg:w-1/2 sticky top-10'>
-                        <OutputImage selected={selected} setSelected={setSelected} images={images} />
-                        {/* <p className="font-Priest text-xl text-center text-white mt-4">
-                            When you're happy, click the Download button and share your awesome creation!
-                        </p> */}
-                    </div>
                     
                     {/* Right column: Selection Layers */}
                     <div className='lg:w-1/2 space-y-2'>
@@ -48,6 +43,12 @@ const CatMeme = () => {
                         <SelectionLayer selected={selected} images={images.frontAccessory} layer={'frontaccessory'} setSelected={setSelected} />
                         <SelectionLayer selected={selected} images={images.hat} layer={'hat'} setSelected={setSelected} />
                         {/* <SelectionLayer selected={selected} images={images.accessory} layer={'accessory'} setSelected={setSelected} /> */}
+                    </div>
+                    <div className='lg:w-1/2 sticky top-10'>
+                        <OutputImage selected={selected} setSelected={setSelected} images={images} />
+                        {/* <p className="font-Priest text-xl text-center text-white mt-4">
+                            When you're happy, click the Download button and share your awesome creation!
+                        </p> */}
                     </div>
                 </div>
             </div>

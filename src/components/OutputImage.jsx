@@ -111,16 +111,16 @@ const OutputImage = (props) => {
                 ))}
             </div>
             <div className='w-[68%] mx-auto flex flex-col gap-1 pt-2 '>
-                <button id='random' className='btn flex justify-center items-center gap-5 font-Geo' onClick={handleRandom}>
-                    <GiPerspectiveDiceSixFacesRandom size={30} className='text-black' />
+                <button id='random' className='btn flex justify-center items-center gap-5  font-Lon' onClick={handleRandom}>
+                    {/* <GiPerspectiveDiceSixFacesRandom size={30} className='text-white' /> */}
                     Random
                 </button>
-                <button id='download' className='btn flex justify-center items-center gap-5 font-Geo' onClick={handleDownload}>
-                    <MdDownload size={30} className='text-black' />
+                <button id='download' className='btn flex justify-center items-center gap-5 font-Lon' onClick={handleDownload}>
+                    {/* <MdDownload size={30} className='text-white' /> */}
                     Download
                 </button>
-                <button id='reset' className='btn flex justify-center items-center gap-5 font-Geo' onClick={handleReset}>
-                    <GrPowerReset size={30} className='text-black' />
+                <button id='reset' className='btn flex justify-center items-center gap-5  font-Lon' onClick={handleReset}>
+                    {/* <GrPowerReset size={30} className='text-white' /> */}
                     Reset
                 </button>
             </div>

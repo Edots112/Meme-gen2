@@ -20,8 +20,8 @@ const SelectionLayer = ({ selected, images, layer, setSelected }) => {
     };
 
     return (
-        <div className="flex items-center bg-yellow-400 shadow-2xl rounded-lg p-2 max-w-[550px] justify-center">
-            <button onClick={() => scroll('left')} className="bg-yellow-400 text-blue-900 p-2 rounded-full mr-1">
+        <div className="flex items-center bg-black shadow-2xl rounded-lg p-2 max-w-[550px] justify-center">
+            <button onClick={() => scroll('left')} className="bg-white text-black p-2 rounded-full mr-1">
                 <FaChevronLeft size={24} />
             </button>
             <div 
@@ -59,7 +59,7 @@ const SelectionLayer = ({ selected, images, layer, setSelected }) => {
                     </motion.div>
                 ))}
             </div>
-            <button onClick={() => scroll('right')} className="bg-yellow-400 text-blue-900 p-2 rounded-full ml-1">
+            <button onClick={() => scroll('right')} className="bg-white text-black p-2 rounded-full ml-1">
                 <FaChevronRight size={24} />
             </button>
         </div>
